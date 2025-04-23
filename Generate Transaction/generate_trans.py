@@ -1,18 +1,18 @@
 import random
 
-def generate_transaction(num_accounts):
+def generate_transaction(num_dataItems):
     """Generate a single transaction with random operations"""
     num_ops = random.randint(1, 150)  
     transaction = []
     for _ in range(num_ops):
         op = random.choice(["r", "w"])
-        account = random.randint(1, num_accounts)
-        transaction.append((op, account))
+        dataItem = random.randint(1, num_dataItems)
+        transaction.append((op, dataItem))
     return transaction
 
-def generate_transactions(num_transactions, num_accounts):
+def generate_transactions(num_transactions, num_dataItems):
     """Generate list of transactions with random operations"""
-    return [generate_transaction(num_accounts) for _ in range(num_transactions)]
+    return [generate_transaction(num_dataItems) for _ in range(num_transactions)]
 
 def transaction_has_conflict(t1, t2):
     """Check if two transactions have any conflicting operations"""
@@ -51,7 +51,7 @@ def main():
         try:
             target_dep = float(input("Target dependency percentage (0-100): "))
             num_trans = int(input("Number of transactions (≥2): "))
-            num_acc = int(input("Number of accounts (≥1): "))
+            num_dataItems = int(input("Number of data items (≥1): "))
             
             if not (0 <= target_dep <= 100):
                 print("Percentage must be 0-100")
@@ -59,8 +59,8 @@ def main():
             if num_trans < 2:
                 print("Need ≥2 transactions")
                 continue
-            if num_acc < 1:
-                print("Need ≥1 account")
+            if num_dataItems < 1:
+                print("Need ≥1 data items")
                 continue
             break
         except ValueError:
@@ -70,7 +70,7 @@ def main():
     tolerance = 1
     
     for attempt in range(1, max_attempts+1):
-        transactions = generate_transactions(num_trans, num_acc)
+        transactions = generate_transactions(num_trans, num_dataItems)
         current_dep = calculate_dependency(transactions)
         
         if abs(current_dep - target_dep) <= tolerance:
