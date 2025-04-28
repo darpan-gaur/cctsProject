@@ -2,7 +2,7 @@ import random
 
 def generate_transaction(num_dataItems):
     """Generate a single transaction with random operations"""
-    num_ops = random.randint(1, 150)  
+    num_ops = random.randint(1, 5)  
     transaction = []
     for _ in range(num_ops):
         op = random.choice(["r", "w"])
