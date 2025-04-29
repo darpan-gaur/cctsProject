@@ -27,6 +27,9 @@ int totTrans = 0;
 
 mutex OutputMutex;
 
+// open output file
+FILE *logFile = fopen("output_OCC.txt", "w");
+
 void readTransactions(string fileName) {
     // Each line has a transaction in the format w(369), r(356), w(819)
     ifstream fin(fileName);
@@ -82,6 +85,7 @@ public:
             int expected = 0;  // Fresh expected value every time
             if (status[i].load() == 0) {
                 if (status[i].compare_exchange_strong(expected, -1)) {
+                    
                     lastTxn.store(i);  // Update lastTxn
                     return i;
                 }
@@ -92,6 +96,7 @@ public:
             int expected = 0;  // Fresh expected value every time
             if (status[i].load() == 0) {
                 if (status[i].compare_exchange_strong(expected, -1)) {
+                    
                     lastTxn.store(i);  // Update lastTxn
                     return i;
                 }
@@ -101,9 +106,10 @@ public:
         return -1;
     }
 
-    void executeTx(int txnID) {
+    void executeTx(int txnID, int threadID) {
         // get read and write sets
         status[txnID].store(1);
+        cout << "Thread " << threadID << " selected transaction " << txnID << endl;
     }
     int detectConflict(int tID, set<int> readSet, set<int> writeSet) {
         transaction *t = transactions[tID];
@@ -129,29 +135,29 @@ OCC_WSI *OCC;
 void threadFunction(int threadID) {
     while (OCC->completedTxn < totTrans) {
         int txnID = OCC->selectTxn();
-        cout << "Thread " << threadID << " selected transaction " << txnID << endl;
+        
         if (txnID < 0) {
             continue;
         }
         else {
-            OCC->executeTx(txnID);
+            OCC->executeTx(txnID, threadID);
             transaction *t = transactions[txnID];
             t->snapVer = OCC->state;
             int conflictResult = OCC->detectConflict(txnID, t->readSet, t->writeSet);
             if (conflictResult == -1) {
                 // Transaction aborted
                 OutputMutex.lock();
-                ofstream fout("output_OCC.txt", ios::app);
-                fout << "Thread " << threadID << " aborted transaction " << txnID << endl;
-                fout.close();
+                // ofstream fout("output_OCC.txt", ios::app);
+                // fout << "Thread " << threadID << " aborted transaction " << txnID << endl;
+                // fout.close();
+                fprintf(logFile, "Thread %d aborted transaction %d\n", threadID, txnID);
                 OutputMutex.unlock();
                 continue;
             }
             OCC->completedTxn++;
 
             OutputMutex.lock();
-            ofstream fout("output_OCC.txt", ios::app);
-            fout << "Thread " << threadID << " executing transaction " << txnID << endl;
+            fprintf(logFile, "Thread %d executing transaction %d\n", threadID, txnID);
             // fout << "Read set: ";
             // for (int addr : t->readSet) {
             //     fout << addr << " ";
@@ -162,8 +168,7 @@ void threadFunction(int threadID) {
             //     fout << addr << " ";
             // }
             // fout << endl;
-            fout << "Transaction " << txnID << " completed" << endl;
-            fout.close();
+            fprintf(logFile, "Transaction %d completed\n", txnID);
             OutputMutex.unlock();
         }
     }
@@ -197,6 +202,9 @@ int main() {
         threads[i].join();
     }
     cout << "All transactions completed." << endl;
+
+    // close output file
+    fclose(logFile);
 
     // Clean up
     for (auto t : transactions) {
