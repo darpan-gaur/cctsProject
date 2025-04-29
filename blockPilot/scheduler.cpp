@@ -11,19 +11,58 @@
 #include <atomic>
 #include <fstream>
 #include <sstream>
+#include <unistd.h> // for sleep
 
 using namespace std;
+
+int numDataItems = 1005; // number of data items
+
+class dataItem {
+    public:
+        mutex dataItemLock; // lock for data item
+        int val; // value of data item
+
+        // constructor
+        dataItem(int v) {
+            val = v;
+        }
+
+        // read function
+        int read() {
+            return val;
+        }
+
+        // write function
+        void write(int newVal) {
+            val = newVal;
+        }
+
+};
 
 class transaction {
 public:
     int tID; // transaction id
     int snapVer;
+    vector<int> localMem; // local memory of transaction
     set<int> readSet;
     set<int> writeSet;
+
 };
 
 vector<transaction*> transactions;
 int totTrans = 0;
+vector<long long> totalAbortCnt;
+
+// random number generator
+random_device rd;
+mt19937 gen(rd());
+
+double lambda = 20;
+
+
+// global start time in microseconds
+auto startTime = chrono::high_resolution_clock::now();
+auto S = chrono::duration_cast<chrono::microseconds>(startTime.time_since_epoch()).count();
 
 mutex OutputMutex;
 
@@ -40,6 +79,10 @@ void readTransactions(string fileName) {
         string token;
         int txnID = transactions.size();
         transaction* t = new transaction();
+        t->localMem = vector<int>();
+        for (int i = 0; i < numDataItems; i++) {
+            t->localMem.push_back(-1);
+        }
         t->tID = txnID;
         while (getline(ss, token, ',')) {
             token.erase(0, token.find_first_not_of(' '));
@@ -57,6 +100,8 @@ void readTransactions(string fileName) {
     fin.close();
 }
 
+
+
 class OCC_WSI {
 public:
     // vector<int> Table; // reserve table
@@ -66,6 +111,8 @@ public:
     atomic<int> transactionCount{0};
     unique_ptr<std::atomic<int>[]> status;
     unique_ptr<std::atomic<int>[]> Table;
+    vector<dataItem*> dataItems;
+    
 
     OCC_WSI(int size, int state) {
         // Table.resize(size, 0);
@@ -75,6 +122,10 @@ public:
         for (int i = 0; i < size; ++i) {
             status[i].store(0);  // Atomic store to set initial value to 0
             Table[i].store(0);  // Atomic store to set initial value to 0
+        }
+        dataItems = vector<dataItem*>();
+        for (int i = 0; i < numDataItems; i++) {
+            dataItems.push_back(new dataItem(0));
         }
     }
 
@@ -109,7 +160,25 @@ public:
     void executeTx(int txnID, int threadID) {
         // get read and write sets
         status[txnID].store(1);
-        cout << "Thread " << threadID << " selected transaction " << txnID << endl;
+        // exponential_distribution<double> exp(lambda);
+        // sleep(exp(gen)); // Simulate some work
+
+        transaction *t = transactions[txnID];
+        for (int rec: t->readSet) {
+            dataItems[rec]->dataItemLock.lock();
+            t->localMem[rec] = dataItems[rec]->read();
+            // cout << "Thread " << threadID << " read from " << rec << " value " << t->localMem[rec] << endl;
+            dataItems[rec]->dataItemLock.unlock();
+        }
+
+        for (int rec: t->writeSet) {
+            // get random value
+            int randVal = rand() % 10;
+            t->localMem[rec] += randVal;
+        }
+
+
+        // cout << "Thread " << threadID << " selected transaction " << txnID << endl;
     }
     int detectConflict(int tID, set<int> readSet, set<int> writeSet) {
         transaction *t = transactions[tID];
@@ -124,6 +193,9 @@ public:
         state = t->snapVer + 1;
         for (int rec: writeSet) {
             Table[rec].store(state);
+            dataItems[rec]->dataItemLock.lock();
+            dataItems[rec]->write(t->localMem[rec]);
+            dataItems[rec]->dataItemLock.unlock();
         }
 
         return 0;
@@ -152,6 +224,7 @@ void threadFunction(int threadID) {
                 // fout.close();
                 fprintf(logFile, "Thread %d aborted transaction %d\n", threadID, txnID);
                 OutputMutex.unlock();
+                totalAbortCnt[threadID]++;
                 continue;
             }
             OCC->completedTxn++;
@@ -186,11 +259,17 @@ int main() {
     cout << "Transactions file: " << TransactionsFile << endl;
     fin.close();
 
+    totalAbortCnt.resize(n, 0);
+
     //initialize OCC_WSI
     OCC = new OCC_WSI(totTrans, 0);
     cout << "Reading transactions from file..." << endl;
     readTransactions(TransactionsFile);
     cout << "Transactions read successfully." << endl;
+
+    // start time 
+    auto thrdStartTime = chrono::high_resolution_clock::now();
+    auto tST = chrono::duration_cast<chrono::microseconds>(thrdStartTime.time_since_epoch()).count();
 
     // create threads
     vector<thread> threads;
@@ -203,12 +282,26 @@ int main() {
     }
     cout << "All transactions completed." << endl;
 
+
+    auto thrdEndTime = chrono::high_resolution_clock::now();
+    auto elapsedTime = chrono::duration_cast<chrono::microseconds>(thrdEndTime - thrdStartTime).count();
+    cout << "Elapsed time: " << elapsedTime << " microseconds" << endl;
+
+    long long totalAborts=0;
+    for (int i = 0; i < n; i++) {
+        totalAborts += totalAbortCnt[i];
+    }
+    cout << "Total aborts: " << totalAborts << endl;
+
     // close output file
     fclose(logFile);
 
     // Clean up
     for (auto t : transactions) {
         delete t;
+    }
+    for (auto di : OCC->dataItems) {
+        delete di;
     }
     delete OCC;
 

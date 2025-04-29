@@ -14,10 +14,35 @@
 
 using namespace std;
 
+int numDataItems = 1005; // number of data items
+
+class dataItem {
+    public:
+        mutex dataItemLock; // lock for data item
+        int val; // value of data item
+
+        // constructor
+        dataItem(int v) {
+            val = v;
+        }
+
+        // read function
+        int read() {
+            return val;
+        }
+
+        // write function
+        void write(int newVal) {
+            val = newVal;
+        }
+
+};
+
 struct transaction {
     // int txnID;
     set<int> readSet;
     set<int> writeSet;
+    vector<int> localMem; // local memory of transaction
 };
 
 class DAGmodule {
@@ -76,6 +101,21 @@ DAGmodule *DAG;
 
 mutex OutputMutex; // mutex for output file
 
+// open output file
+FILE *logFile = fopen("output_DAG.txt", "w");
+
+// random number generator
+random_device rd;
+mt19937 gen(rd());
+
+double lambda = 20;
+
+// global start time in microseconds
+auto startTime = chrono::high_resolution_clock::now();
+auto S = chrono::duration_cast<chrono::microseconds>(startTime.time_since_epoch()).count();
+
+vector<dataItem*> dataItems; // vector to hold data items
+
 // function to read transactions from the file
 void readTransactions(string fileName) {
     // Each line has a transaction in the format w(369), r(356), w(819)
@@ -87,6 +127,10 @@ void readTransactions(string fileName) {
         string token;
         int txnID = transactions.size();
         transaction *t = new transaction();
+        t->localMem = vector<int>();
+        for (int i = 0; i < numDataItems; i++) {
+            t->localMem.push_back(-1);
+        }
         // t->txnID = txnID;
         while (getline(ss, token, ',')) {
             token.erase(0, token.find_first_not_of(' '));
@@ -200,9 +244,31 @@ void executeTransaction(int txnID) {
     for(auto it : DAG->adjList[txnID]) {
         DAG->inDegree[it].fetch_sub(1);
     }
+    
+    // simulate transaction execution
+    transaction *t = transactions[txnID];
+    for (int addr : t->readSet) {
+        dataItems[addr]->dataItemLock.lock();
+        t->localMem[addr] = dataItems[addr]->read();
+        // cout << "Thread " << threadID << " read from " << addr << " value " << t->localMem[addr] << endl;
+        dataItems[addr]->dataItemLock.unlock();
+    }
+    for (int addr : t->writeSet) {
+        // get random value
+        int randVal = rand() % 10;
+        t->localMem[addr] += randVal;
+        dataItems[addr]->dataItemLock.lock();
+        dataItems[addr]->write(t->localMem[addr]);
+        dataItems[addr]->dataItemLock.unlock();
+    }
+
     // cout << "Transaction " << txnID << " executed" << endl;
     DAG->completedTxn++;
 
+
+
+    // exponential_distribution<double> exp(lambda);
+    // sleep(exp(gen)); // Simulate some work
     return;
 }
 
@@ -210,33 +276,36 @@ void threadFunction(int threadID) {
 
     while (DAG->completedTxn < totTrans) {
         int txnID = selectTxn(threadID);
-        cout<< "Thread " << threadID << " selected transaction " << txnID << endl;
+        // cout<< "Thread " << threadID << " selected transaction " << txnID << endl;
         // cout<< DAG->completedTxn.load() << " transactions completed" << endl;
         if(txnID < 0) {
-            OutputMutex.lock();
-            ofstream fout("output_DAG.txt", ios::app);
+            // OutputMutex.lock();
+            // ofstream fout("output_DAG.txt", ios::app);
             // fout << "Thread " << threadID << " found no transaction to execute" << endl;
-            fout.close();
-            OutputMutex.unlock();
+            // fout.close();
+            // OutputMutex.unlock();
+            continue;
         }
         else{
             executeTransaction(txnID);
 
             OutputMutex.lock();
-            ofstream fout("output_DAG.txt", ios::app);
-            fout << "Thread " << threadID << " executing transaction " << txnID << endl;
-            fout << "Read set: ";
-            for (int addr : transactions[txnID]->readSet) {
-                fout << addr << " ";
-            }
-            fout << endl;
-            fout << "Write set: ";
-            for (int addr : transactions[txnID]->writeSet) {
-                fout << addr << " ";
-            }
-            fout << endl;
-            fout << "Transaction " << txnID << " completed" << endl;
-            fout.close();
+            // ofstream fout("output_DAG.txt", ios::app);
+            // fout << "Thread " << threadID << " executing transaction " << txnID << endl;
+            // fout << "Read set: ";
+            // for (int addr : transactions[txnID]->readSet) {
+            //     fout << addr << " ";
+            // }
+            // fout << endl;
+            // fout << "Write set: ";
+            // for (int addr : transactions[txnID]->writeSet) {
+            //     fout << addr << " ";
+            // }
+            // fout << endl;
+            // fout << "Transaction " << txnID << " completed" << endl;
+            // fout.close();
+            fprintf(logFile, "Thread %d executing transaction %d\n", threadID, txnID);
+            fprintf(logFile, "Transaction %d completed\n", txnID);  
             OutputMutex.unlock();
 
         }
@@ -266,8 +335,19 @@ int main() {
     readTransactions(TransactionsFile);
     cout<< "Transactions read successfully" << endl;
 
+    //create data items
+    dataItems = vector<dataItem*>();
+    for (int i = 0; i < numDataItems; i++) {
+        dataItems.push_back(new dataItem(0));
+    }
+
     //create DAG using n threads
     cout<<" Created DAG using " << n << " threads" << endl;
+
+    // start time 
+    auto thrdStartTime = chrono::high_resolution_clock::now();
+    auto tST = chrono::duration_cast<chrono::microseconds>(thrdStartTime.time_since_epoch()).count();
+
     vector<thread> threads(n);
     for (int i = 0; i < n; i++) {
         threads[i] = thread(createDAG, i);
@@ -279,8 +359,12 @@ int main() {
         threads[i].join();
     }
     //output the DAG
-    DAG->printDAG();
-    cout<< "Printing DAG completed" << endl;
+    // DAG->printDAG();
+    // cout<< "Printing DAG completed" << endl;
+
+    auto thrdEndTime = chrono::high_resolution_clock::now();
+    auto elapsedTime = chrono::duration_cast<chrono::microseconds>(thrdEndTime - thrdStartTime).count();
+    cout << "Elapsed time for DAG creation: " << elapsedTime << " microseconds" << endl;
 
     //create threads to execute transactions
     vector<thread> execThreads(n);
@@ -294,10 +378,19 @@ int main() {
     }
     cout << "All transactions executed" << endl;
 
+    auto thrdEndTime2 = chrono::high_resolution_clock::now();
+    auto elapsedTime2 = chrono::duration_cast<chrono::microseconds>(thrdEndTime2 - thrdEndTime).count();
+    cout << "Elapsed time for transaction execution: " << elapsedTime2 << " microseconds" << endl;
+    cout << "Total elapsed time: " << elapsedTime + elapsedTime2 << " microseconds" << endl;
 
+    fclose(logFile);
     delete DAG;
     for (auto t : transactions) {
         delete t;
     }
+    for (auto x : dataItems) {
+        delete x;
+    }
+    
     return 0;
 }

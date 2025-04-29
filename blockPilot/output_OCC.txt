@@ -1,2566 +1,2507 @@
-Thread 5 executing transaction 0
-Transaction 0 completed
-Thread 5 executing transaction 9
+Thread 0 executing transaction 1
+Transaction 1 completed
+Thread 0 executing transaction 3
+Transaction 3 completed
+Thread 1 aborted transaction 0
+Thread 1 executing transaction 6
+Transaction 6 completed
+Thread 0 executing transaction 5
+Transaction 5 completed
+Thread 0 executing transaction 9
 Transaction 9 completed
-Thread 5 executing transaction 10
+Thread 0 executing transaction 10
 Transaction 10 completed
-Thread 5 executing transaction 11
-Transaction 11 completed
-Thread 5 executing transaction 12
-Transaction 12 completed
-Thread 5 executing transaction 14
+Thread 1 executing transaction 8
+Transaction 8 completed
+Thread 1 executing transaction 13
+Transaction 13 completed
+Thread 1 executing transaction 14
 Transaction 14 completed
-Thread 0 aborted transaction 1
-Thread 5 executing transaction 15
+Thread 0 executing transaction 11
+Transaction 11 completed
+Thread 1 executing transaction 15
 Transaction 15 completed
-Thread 1 aborted transaction 3
-Thread 5 executing transaction 17
-Transaction 17 completed
 Thread 0 executing transaction 16
 Transaction 16 completed
+Thread 1 executing transaction 17
+Transaction 17 completed
+Thread 0 executing transaction 18
+Transaction 18 completed
 Thread 0 executing transaction 20
 Transaction 20 completed
-Thread 5 executing transaction 19
+Thread 5 aborted transaction 12
+Thread 4 aborted transaction 7
+Thread 1 executing transaction 19
 Transaction 19 completed
-Thread 1 executing transaction 18
-Transaction 18 completed
-Thread 0 executing transaction 21
-Transaction 21 completed
-Thread 5 aborted transaction 22
-Thread 0 executing transaction 24
+Thread 0 aborted transaction 21
+Thread 2 aborted transaction 2
+Thread 1 executing transaction 24
 Transaction 24 completed
-Thread 1 executing transaction 23
+Thread 3 aborted transaction 4
+Thread 4 executing transaction 23
 Transaction 23 completed
-Thread 1 executing transaction 27
+Thread 2 executing transaction 27
 Transaction 27 completed
-Thread 7 aborted transaction 6
-Thread 5 executing transaction 25
-Transaction 25 completed
-Thread 6 aborted transaction 2
-Thread 4 aborted transaction 4
-Thread 7 executing transaction 29
-Transaction 29 completed
-Thread 5 aborted transaction 30
-Thread 0 aborted transaction 26
-Thread 1 aborted transaction 28
-Thread 6 executing transaction 34
-Transaction 34 completed
-Thread 7 executing transaction 31
+Thread 5 executing transaction 22
+Transaction 22 completed
+Thread 5 executing transaction 31
 Transaction 31 completed
-Thread 4 aborted transaction 30
-Thread 5 executing transaction 32
-Transaction 32 completed
-Thread 1 executing transaction 35
-Transaction 35 completed
-Thread 6 executing transaction 36
+Thread 1 aborted transaction 26
+Thread 3 aborted transaction 28
+Thread 1 executing transaction 34
+Transaction 34 completed
+Thread 0 executing transaction 25
+Transaction 25 completed
+Thread 2 executing transaction 30
+Transaction 30 completed
+Thread 4 executing transaction 29
+Transaction 29 completed
+Thread 0 executing transaction 37
+Transaction 37 completed
+Thread 1 executing transaction 36
 Transaction 36 completed
-Thread 8 aborted transaction 7
-Thread 2 aborted transaction 5
-Thread 9 aborted transaction 13
-Thread 3 aborted transaction 8
-Thread 6 executing transaction 42
-Transaction 42 completed
-Thread 0 aborted transaction 33
-Thread 5 executing transaction 39
-Transaction 39 completed
-Thread 4 executing transaction 38
-Transaction 38 completed
-Thread 2 executing transaction 44
+Thread 3 executing transaction 35
+Transaction 35 completed
+Thread 3 executing transaction 44
 Transaction 44 completed
-Thread 8 aborted transaction 43
-Thread 2 executing transaction 52
-Transaction 52 completed
-Thread 0 executing transaction 48
-Transaction 48 completed
-Thread 8 executing transaction 53
-Transaction 53 completed
-Thread 0 executing transaction 55
-Transaction 55 completed
+Thread 0 executing transaction 41
+Transaction 41 completed
+Thread 5 aborted transaction 33
+Thread 1 executing transaction 42
+Transaction 42 completed
 Thread 3 executing transaction 46
 Transaction 46 completed
-Thread 11 aborted transaction 49
-Thread 11 executing transaction 61
-Transaction 61 completed
-Thread 12 aborted transaction 57
-Thread 13 aborted transaction 60
-Thread 5 executing transaction 50
+Thread 6 aborted transaction 32
+Thread 0 aborted transaction 47
+Thread 4 executing transaction 40
+Transaction 40 completed
+Thread 5 aborted transaction 48
+Thread 5 executing transaction 53
+Transaction 53 completed
+Thread 1 executing transaction 49
+Transaction 49 completed
+Thread 3 executing transaction 50
 Transaction 50 completed
-Thread 4 aborted transaction 51
-Thread 10 aborted transaction 40
-Thread 9 executing transaction 45
-Transaction 45 completed
-Thread 8 aborted transaction 56
-Thread 9 executing transaction 68
-Transaction 68 completed
-Thread 12 executing transaction 63
-Transaction 63 completed
-Thread 5 executing transaction 65
-Transaction 65 completed
-Thread 12 executing transaction 71
-Transaction 71 completed
-Thread 11 aborted transaction 62
-Thread 5 executing transaction 73
-Transaction 73 completed
-Thread 10 aborted transaction 67
-Thread 12 aborted transaction 74
-Thread 6 executing transaction 47
-Transaction 47 completed
-Thread 9 executing transaction 70
-Transaction 70 completed
-Thread 10 executing transaction 78
-Transaction 78 completed
-Thread 2 executing transaction 54
+Thread 5 executing transaction 55
+Transaction 55 completed
+Thread 0 executing transaction 54
 Transaction 54 completed
-Thread 2 executing transaction 83
-Transaction 83 completed
-Thread 6 executing transaction 80
-Transaction 80 completed
-Thread 15 aborted transaction 77
-Thread 2 aborted transaction 84
-Thread 8 executing transaction 69
-Transaction 69 completed
-Thread 0 executing transaction 58
+Thread 3 executing transaction 57
+Transaction 57 completed
+Thread 5 executing transaction 58
 Transaction 58 completed
-Thread 6 executing transaction 85
-Transaction 85 completed
+Thread 6 aborted transaction 51
+Thread 7 aborted transaction 38
+Thread 5 aborted transaction 61
+Thread 3 executing transaction 60
+Transaction 60 completed
+Thread 8 aborted transaction 43
+Thread 1 executing transaction 56
+Transaction 56 completed
+Thread 3 executing transaction 65
+Transaction 65 completed
+Thread 6 executing transaction 62
+Transaction 62 completed
+Thread 3 executing transaction 68
+Transaction 68 completed
+Thread 5 aborted transaction 64
+Thread 7 executing transaction 63
+Transaction 63 completed
+Thread 9 aborted transaction 45
+Thread 1 aborted transaction 67
+Thread 6 executing transaction 69
+Transaction 69 completed
+Thread 5 executing transaction 71
+Transaction 71 completed
+Thread 7 aborted transaction 72
+Thread 3 executing transaction 70
+Transaction 70 completed
+Thread 3 executing transaction 78
+Transaction 78 completed
+Thread 6 executing transaction 75
+Transaction 75 completed
+Thread 9 executing transaction 73
+Transaction 73 completed
+Thread 5 executing transaction 76
+Transaction 76 completed
+Thread 5 executing transaction 82
+Transaction 82 completed
 Thread 9 executing transaction 81
 Transaction 81 completed
-Thread 3 aborted transaction 59
-Thread 1 executing transaction 41
-Transaction 41 completed
-Thread 10 executing transaction 82
-Transaction 82 completed
-Thread 13 executing transaction 64
-Transaction 64 completed
-Thread 2 executing transaction 87
+Thread 6 aborted transaction 80
+Thread 5 executing transaction 83
+Transaction 83 completed
+Thread 3 executing transaction 79
+Transaction 79 completed
+Thread 7 executing transaction 77
+Transaction 77 completed
+Thread 9 executing transaction 84
+Transaction 84 completed
+Thread 4 aborted transaction 52
+Thread 4 executing transaction 90
+Transaction 90 completed
+Thread 5 executing transaction 87
 Transaction 87 completed
-Thread 15 executing transaction 86
-Transaction 86 completed
-Thread 10 executing transaction 94
-Transaction 94 completed
-Thread 14 aborted transaction 72
-Thread 3 aborted transaction 92
-Thread 9 executing transaction 91
-Transaction 91 completed
-Thread 11 executing transaction 75
-Transaction 75 completed
-Thread 1 aborted transaction 93
-Thread 0 executing transaction 89
+Thread 1 executing transaction 74
+Transaction 74 completed
+Thread 9 executing transaction 89
 Transaction 89 completed
-Thread 8 executing transaction 88
+Thread 3 executing transaction 88
 Transaction 88 completed
-Thread 2 aborted transaction 96
-Thread 9 executing transaction 101
-Transaction 101 completed
-Thread 13 executing transaction 95
+Thread 1 aborted transaction 92
+Thread 4 executing transaction 91
+Transaction 91 completed
+Thread 9 executing transaction 94
+Transaction 94 completed
+Thread 3 executing transaction 95
 Transaction 95 completed
-Thread 4 aborted transaction 66
+Thread 9 aborted transaction 98
+Thread 4 executing transaction 97
+Transaction 97 completed
+Thread 5 aborted transaction 93
 Thread 3 executing transaction 99
 Transaction 99 completed
-Thread 0 executing transaction 104
-Transaction 104 completed
-Thread 6 executing transaction 90
-Transaction 90 completed
-Thread 3 aborted transaction 110
-Thread 12 executing transaction 79
-Transaction 79 completed
-Thread 10 executing transaction 98
-Transaction 98 completed
-Thread 9 executing transaction 107
-Transaction 107 completed
-Thread 4 aborted transaction 109
-Thread 9 executing transaction 116
-Transaction 116 completed
-Thread 5 aborted transaction 76
-Thread 10 executing transaction 115
-Transaction 115 completed
-Thread 9 aborted transaction 118
-Thread 14 executing transaction 100
+Thread 4 executing transaction 101
+Transaction 101 completed
+Thread 5 aborted transaction 102
+Thread 1 executing transaction 96
+Transaction 96 completed
+Thread 7 aborted transaction 89
+Thread 1 executing transaction 106
+Transaction 106 completed
+Thread 9 executing transaction 100
 Transaction 100 completed
-Thread 1 aborted transaction 103
-Thread 7 aborted transaction 37
-Thread 15 executing transaction 97
-Transaction 97 completed
-Thread 5 aborted transaction 119
-Thread 13 executing transaction 108
+Thread 9 executing transaction 108
 Transaction 108 completed
-Thread 12 aborted transaction 114
+Thread 4 executing transaction 104
+Transaction 104 completed
+Thread 6 executing transaction 85
+Transaction 85 completed
+Thread 1 executing transaction 107
+Transaction 107 completed
+Thread 5 executing transaction 105
+Transaction 105 completed
+Thread 9 aborted transaction 110
+Thread 1 aborted transaction 113
+Thread 7 executing transaction 109
+Transaction 109 completed
 Thread 6 executing transaction 112
 Transaction 112 completed
-Thread 4 aborted transaction 117
-Thread 0 executing transaction 111
-Transaction 111 completed
-Thread 13 executing transaction 127
-Transaction 127 completed
-Thread 6 executing transaction 129
-Transaction 129 completed
-Thread 15 executing transaction 125
-Transaction 125 completed
-Thread 14 executing transaction 122
-Transaction 122 completed
-Thread 1 aborted transaction 123
-Thread 2 executing transaction 106
-Transaction 106 completed
-Thread 0 aborted transaction 131
-Thread 7 executing transaction 124
-Transaction 124 completed
-Thread 7 executing transaction 139
-Transaction 139 completed
-Thread 9 aborted transaction 121
-Thread 1 aborted transaction 136
-Thread 4 executing transaction 130
-Transaction 130 completed
-Thread 2 executing transaction 137
-Transaction 137 completed
-Thread 11 aborted transaction 102
-Thread 8 executing transaction 105
-Transaction 105 completed
-Thread 12 executing transaction 128
-Transaction 128 completed
-Thread 14 aborted transaction 135
-Thread 0 executing transaction 138
-Transaction 138 completed
-Thread 13 executing transaction 132
-Transaction 132 completed
-Thread 15 executing transaction 134
-Transaction 134 completed
-Thread 7 executing transaction 140
-Transaction 140 completed
-Thread 0 aborted transaction 148
-Thread 13 executing transaction 150
-Transaction 150 completed
-Thread 3 executing transaction 113
-Transaction 113 completed
-Thread 12 executing transaction 147
-Transaction 147 completed
-Thread 1 executing transaction 142
-Transaction 142 completed
-Thread 5 executing transaction 126
-Transaction 126 completed
-Thread 9 executing transaction 141
-Transaction 141 completed
-Thread 5 aborted transaction 158
-Thread 10 executing transaction 120
+Thread 9 executing transaction 115
+Transaction 115 completed
+Thread 6 executing transaction 118
+Transaction 118 completed
+Thread 5 executing transaction 114
+Transaction 114 completed
+Thread 9 aborted transaction 119
+Thread 7 aborted transaction 117
+Thread 0 executing transaction 59
+Transaction 59 completed
+Thread 1 executing transaction 116
+Transaction 116 completed
+Thread 6 executing transaction 120
 Transaction 120 completed
-Thread 9 executing transaction 158
-Transaction 158 completed
-Thread 10 executing transaction 160
-Transaction 160 completed
-Thread 15 executing transaction 151
-Transaction 151 completed
-Thread 0 aborted transaction 153
-Thread 4 executing transaction 143
+Thread 7 executing transaction 123
+Transaction 123 completed
+Thread 9 executing transaction 122
+Transaction 122 completed
+Thread 4 executing transaction 111
+Transaction 111 completed
+Thread 7 executing transaction 127
+Transaction 127 completed
+Thread 1 aborted transaction 125
+Thread 2 aborted transaction 39
+Thread 4 aborted transaction 129
+Thread 5 executing transaction 121
+Transaction 121 completed
+Thread 9 executing transaction 128
+Transaction 128 completed
+Thread 1 aborted transaction 131
+Thread 4 aborted transaction 133
+Thread 5 executing transaction 134
+Transaction 134 completed
+Thread 9 aborted transaction 135
+Thread 3 aborted transaction 103
+Thread 3 executing transaction 140
+Transaction 140 completed
+Thread 6 executing transaction 126
+Transaction 126 completed
+Thread 3 executing transaction 143
 Transaction 143 completed
-Thread 14 executing transaction 149
-Transaction 149 completed
-Thread 2 executing transaction 144
-Transaction 144 completed
-Thread 0 executing transaction 164
-Transaction 164 completed
-Thread 4 executing transaction 165
-Transaction 165 completed
-Thread 5 aborted transaction 159
-Thread 13 aborted transaction 154
-Thread 10 executing transaction 162
-Transaction 162 completed
-Thread 1 executing transaction 157
-Transaction 157 completed
-Thread 8 executing transaction 146
+Thread 0 executing transaction 124
+Transaction 124 completed
+Thread 3 executing transaction 146
 Transaction 146 completed
-Thread 9 executing transaction 161
-Transaction 161 completed
-Thread 12 aborted transaction 156
-Thread 11 executing transaction 145
-Transaction 145 completed
-Thread 6 executing transaction 133
-Transaction 133 completed
-Thread 15 executing transaction 163
-Transaction 163 completed
-Thread 8 executing transaction 174
-Transaction 174 completed
-Thread 3 executing transaction 155
-Transaction 155 completed
-Thread 10 aborted transaction 172
-Thread 2 executing transaction 167
-Transaction 167 completed
-Thread 15 executing transaction 179
-Transaction 179 completed
+Thread 8 aborted transaction 66
+Thread 10 aborted transaction 86
+Thread 6 executing transaction 144
+Transaction 144 completed
+Thread 0 aborted transaction 147
+Thread 6 executing transaction 151
+Transaction 151 completed
+Thread 11 aborted transaction 141
+Thread 3 executing transaction 148
+Transaction 148 completed
+Thread 14 aborted transaction 145
+Thread 2 executing transaction 132
+Transaction 132 completed
+Thread 8 aborted transaction 150
+Thread 7 executing transaction 130
+Transaction 130 completed
+Thread 10 aborted transaction 149
+Thread 10 aborted transaction 160
+Thread 10 aborted transaction 160
+Thread 3 aborted transaction 155
+Thread 10 aborted transaction 160
+Thread 8 aborted transaction 158
+Thread 13 aborted transaction 142
+Thread 10 aborted transaction 162
+Thread 0 aborted transaction 152
+Thread 6 aborted transaction 153
+Thread 11 aborted transaction 154
+Thread 3 aborted transaction 161
+Thread 13 executing transaction 164
+Transaction 164 completed
+Thread 8 aborted transaction 163
+Thread 2 aborted transaction 157
+Thread 4 aborted transaction 136
+Thread 3 aborted transaction 170
 Thread 13 aborted transaction 171
-Thread 4 executing transaction 169
-Transaction 169 completed
-Thread 2 executing transaction 183
+Thread 5 aborted transaction 138
+Thread 11 aborted transaction 169
+Thread 10 aborted transaction 165
+Thread 2 aborted transaction 173
+Thread 11 aborted transaction 179
+Thread 4 aborted transaction 174
+Thread 13 aborted transaction 176
+Thread 4 executing transaction 183
 Transaction 183 completed
-Thread 5 executing transaction 170
-Transaction 170 completed
-Thread 14 aborted transaction 166
-Thread 6 executing transaction 178
-Transaction 178 completed
-Thread 0 aborted transaction 168
-Thread 5 aborted transaction 188
-Thread 12 executing transaction 176
-Transaction 176 completed
-Thread 4 executing transaction 186
-Transaction 186 completed
-Thread 11 aborted transaction 177
-Thread 7 aborted transaction 152
-Thread 14 aborted transaction 189
-Thread 1 executing transaction 173
-Transaction 173 completed
-Thread 9 executing transaction 175
-Transaction 175 completed
-Thread 5 executing transaction 192
-Transaction 192 completed
-Thread 8 executing transaction 180
-Transaction 180 completed
-Thread 10 aborted transaction 182
-Thread 0 executing transaction 191
-Transaction 191 completed
-Thread 11 executing transaction 195
-Transaction 195 completed
-Thread 3 aborted transaction 181
-Thread 7 aborted transaction 196
-Thread 6 executing transaction 190
+Thread 10 aborted transaction 180
+Thread 11 aborted transaction 182
+Thread 10 aborted transaction 186
+Thread 4 aborted transaction 185
+Thread 13 aborted transaction 184
+Thread 9 aborted transaction 139
+Thread 11 aborted transaction 187
+Thread 9 aborted transaction 191
+Thread 13 executing transaction 190
 Transaction 190 completed
-Thread 4 executing transaction 194
-Transaction 194 completed
-Thread 12 executing transaction 193
-Transaction 193 completed
-Thread 15 executing transaction 184
-Transaction 184 completed
-Thread 2 executing transaction 187
-Transaction 187 completed
-Thread 8 executing transaction 201
-Transaction 201 completed
-Thread 1 aborted transaction 198
-Thread 7 executing transaction 206
-Transaction 206 completed
-Thread 9 executing transaction 199
-Transaction 199 completed
-Thread 8 aborted transaction 212
-Thread 6 executing transaction 207
-Transaction 207 completed
-Thread 3 executing transaction 205
-Transaction 205 completed
-Thread 15 aborted transaction 210
-Thread 1 aborted transaction 213
-Thread 0 aborted transaction 203
-Thread 2 executing transaction 211
-Transaction 211 completed
-Thread 1 executing transaction 220
+Thread 4 aborted transaction 189
+Thread 9 aborted transaction 193
+Thread 4 aborted transaction 195
+Thread 11 aborted transaction 192
+Thread 9 aborted transaction 196
+Thread 9 aborted transaction 199
+Thread 13 aborted transaction 194
+Thread 9 aborted transaction 199
+Thread 4 aborted transaction 197
+Thread 11 aborted transaction 198
+Thread 13 aborted transaction 200
+Thread 9 aborted transaction 201
+Thread 11 aborted transaction 203
+Thread 13 aborted transaction 204
+Thread 4 aborted transaction 202
+Thread 9 aborted transaction 205
+Thread 4 aborted transaction 208
+Thread 13 aborted transaction 207
+Thread 9 aborted transaction 209
+Thread 9 aborted transaction 212
+Thread 4 aborted transaction 210
+Thread 12 aborted transaction 177
+Thread 4 aborted transaction 213
+Thread 13 aborted transaction 211
+Thread 9 aborted transaction 212
+Thread 12 aborted transaction 214
+Thread 10 aborted transaction 188
+Thread 13 aborted transaction 216
+Thread 9 executing transaction 217
+Transaction 217 completed
+Thread 13 executing transaction 220
 Transaction 220 completed
-Thread 11 executing transaction 204
-Transaction 204 completed
-Thread 5 executing transaction 200
-Transaction 200 completed
-Thread 8 executing transaction 216
-Transaction 216 completed
-Thread 1 aborted transaction 223
-Thread 11 executing transaction 224
-Transaction 224 completed
-Thread 5 aborted transaction 225
-Thread 12 executing transaction 209
-Transaction 209 completed
-Thread 1 executing transaction 227
-Transaction 227 completed
-Thread 13 executing transaction 185
-Transaction 185 completed
-Thread 1 executing transaction 231
-Transaction 231 completed
-Thread 0 aborted transaction 221
-Thread 13 aborted transaction 232
-Thread 4 executing transaction 208
-Transaction 208 completed
-Thread 3 aborted transaction 218
+Thread 12 aborted transaction 218
+Thread 4 aborted transaction 215
+Thread 10 aborted transaction 219
+Thread 12 aborted transaction 223
+Thread 9 aborted transaction 221
+Thread 4 aborted transaction 224
+Thread 12 executing transaction 226
+Transaction 226 completed
+Thread 12 executing transaction 229
+Transaction 229 completed
+Thread 13 aborted transaction 222
 Thread 12 executing transaction 230
 Transaction 230 completed
-Thread 5 executing transaction 229
-Transaction 229 completed
-Thread 5 executing transaction 239
-Transaction 239 completed
-Thread 15 aborted transaction 219
-Thread 14 executing transaction 197
-Transaction 197 completed
-Thread 0 executing transaction 234
+Thread 9 aborted transaction 227
+Thread 10 executing transaction 225
+Transaction 225 completed
+Thread 13 executing transaction 231
+Transaction 231 completed
+Thread 4 executing transaction 228
+Transaction 228 completed
+Thread 15 aborted transaction 168
+Thread 12 executing transaction 232
+Transaction 232 completed
+Thread 10 executing transaction 234
 Transaction 234 completed
-Thread 6 executing transaction 217
-Transaction 217 completed
-Thread 8 executing transaction 226
-Transaction 226 completed
-Thread 13 executing transaction 235
-Transaction 235 completed
-Thread 5 executing transaction 240
-Transaction 240 completed
-Thread 0 aborted transaction 243
-Thread 5 aborted transaction 247
-Thread 4 aborted transaction 236
-Thread 9 executing transaction 215
-Transaction 215 completed
-Thread 10 executing transaction 202
-Transaction 202 completed
-Thread 0 executing transaction 248
-Transaction 248 completed
-Thread 8 aborted transaction 245
-Thread 10 executing transaction 252
-Transaction 252 completed
-Thread 9 aborted transaction 251
-Thread 2 executing transaction 222
-Transaction 222 completed
 Thread 12 executing transaction 238
 Transaction 238 completed
-Thread 14 executing transaction 242
-Transaction 242 completed
-Thread 15 aborted transaction 241
+Thread 13 executing transaction 235
+Transaction 235 completed
+Thread 10 executing transaction 239
+Transaction 239 completed
+Thread 0 aborted transaction 167
+Thread 12 executing transaction 240
+Transaction 240 completed
+Thread 4 aborted transaction 236
+Thread 4 executing transaction 245
+Transaction 245 completed
+Thread 13 executing transaction 241
+Transaction 241 completed
+Thread 14 aborted transaction 156
+Thread 10 aborted transaction 242
+Thread 12 executing transaction 243
+Transaction 243 completed
+Thread 6 aborted transaction 166
+Thread 4 executing transaction 247
+Transaction 247 completed
+Thread 5 aborted transaction 178
+Thread 4 executing transaction 252
+Transaction 252 completed
+Thread 12 aborted transaction 250
 Thread 13 executing transaction 246
 Transaction 246 completed
-Thread 3 aborted transaction 237
-Thread 12 executing transaction 258
-Transaction 258 completed
-Thread 11 executing transaction 228
-Transaction 228 completed
-Thread 15 executing transaction 260
-Transaction 260 completed
-Thread 6 aborted transaction 244
-Thread 7 executing transaction 214
-Transaction 214 completed
-Thread 7 executing transaction 267
-Transaction 267 completed
-Thread 4 aborted transaction 250
-Thread 14 executing transaction 259
-Transaction 259 completed
-Thread 9 executing transaction 256
-Transaction 256 completed
-Thread 11 executing transaction 264
-Transaction 264 completed
-Thread 14 aborted transaction 270
-Thread 13 executing transaction 261
-Transaction 261 completed
-Thread 10 aborted transaction 255
-Thread 6 executing transaction 266
-Transaction 266 completed
-Thread 8 aborted transaction 254
-Thread 12 executing transaction 263
-Transaction 263 completed
-Thread 14 aborted transaction 273
-Thread 3 executing transaction 262
-Transaction 262 completed
-Thread 10 executing transaction 275
-Transaction 275 completed
-Thread 4 executing transaction 269
-Transaction 269 completed
-Thread 2 executing transaction 257
+Thread 6 aborted transaction 251
+Thread 14 executing transaction 248
+Transaction 248 completed
+Thread 5 executing transaction 253
+Transaction 253 completed
+Thread 6 executing transaction 257
 Transaction 257 completed
-Thread 1 aborted transaction 233
-Thread 4 aborted transaction 282
+Thread 9 executing transaction 233
+Transaction 233 completed
+Thread 14 executing transaction 258
+Transaction 258 completed
+Thread 4 aborted transaction 254
+Thread 6 executing transaction 262
+Transaction 262 completed
+Thread 5 executing transaction 259
+Transaction 259 completed
+Thread 9 executing transaction 260
+Transaction 260 completed
+Thread 2 aborted transaction 181
+Thread 6 executing transaction 264
+Transaction 264 completed
+Thread 14 executing transaction 261
+Transaction 261 completed
+Thread 2 executing transaction 267
+Transaction 267 completed
+Thread 4 aborted transaction 263
+Thread 5 executing transaction 265
+Transaction 265 completed
+Thread 3 aborted transaction 175
+Thread 14 aborted transaction 269
+Thread 4 executing transaction 272
+Transaction 272 completed
+Thread 0 aborted transaction 244
+Thread 2 executing transaction 270
+Transaction 270 completed
+Thread 9 executing transaction 266
+Transaction 266 completed
+Thread 5 executing transaction 271
+Transaction 271 completed
+Thread 4 executing transaction 275
+Transaction 275 completed
+Thread 3 aborted transaction 273
+Thread 5 executing transaction 279
+Transaction 279 completed
+Thread 0 executing transaction 276
+Transaction 276 completed
+Thread 1 executing transaction 137
+Transaction 137 completed
+Thread 3 executing transaction 281
+Transaction 281 completed
+Thread 9 executing transaction 278
+Transaction 278 completed
 Thread 1 executing transaction 284
 Transaction 284 completed
-Thread 15 executing transaction 265
-Transaction 265 completed
-Thread 13 aborted transaction 274
-Thread 1 executing transaction 286
-Transaction 286 completed
-Thread 15 executing transaction 287
-Transaction 287 completed
-Thread 5 executing transaction 249
-Transaction 249 completed
-Thread 12 executing transaction 278
-Transaction 278 completed
-Thread 14 executing transaction 279
-Transaction 279 completed
-Thread 9 executing transaction 271
-Transaction 271 completed
-Thread 6 executing transaction 276
-Transaction 276 completed
-Thread 15 executing transaction 290
-Transaction 290 completed
-Thread 7 executing transaction 268
-Transaction 268 completed
-Thread 10 executing transaction 281
-Transaction 281 completed
-Thread 11 executing transaction 272
-Transaction 272 completed
-Thread 4 executing transaction 285
+Thread 4 aborted transaction 280
+Thread 2 executing transaction 277
+Transaction 277 completed
+Thread 3 executing transaction 285
 Transaction 285 completed
-Thread 7 executing transaction 297
-Transaction 297 completed
-Thread 1 executing transaction 289
-Transaction 289 completed
-Thread 4 aborted transaction 300
-Thread 14 executing transaction 293
-Transaction 293 completed
-Thread 8 aborted transaction 277
-Thread 12 executing transaction 292
+Thread 1 executing transaction 287
+Transaction 287 completed
+Thread 7 aborted transaction 159
+Thread 0 aborted transaction 283
+Thread 2 aborted transaction 289
+Thread 5 executing transaction 282
+Transaction 282 completed
+Thread 7 executing transaction 292
 Transaction 292 completed
-Thread 8 executing transaction 305
-Transaction 305 completed
-Thread 10 executing transaction 298
+Thread 9 executing transaction 286
+Transaction 286 completed
+Thread 11 aborted transaction 206
+Thread 0 executing transaction 293
+Transaction 293 completed
+Thread 15 aborted transaction 237
+Thread 2 executing transaction 294
+Transaction 294 completed
+Thread 7 executing transaction 296
+Transaction 296 completed
+Thread 11 executing transaction 298
 Transaction 298 completed
-Thread 3 executing transaction 280
-Transaction 280 completed
-Thread 8 aborted transaction 307
-Thread 10 executing transaction 308
-Transaction 308 completed
-Thread 15 aborted transaction 296
-Thread 0 aborted transaction 253
-Thread 3 aborted transaction 309
-Thread 8 executing transaction 310
-Transaction 310 completed
-Thread 4 executing transaction 303
+Thread 11 executing transaction 303
 Transaction 303 completed
-Thread 7 executing transaction 301
+Thread 2 executing transaction 301
 Transaction 301 completed
-Thread 5 executing transaction 291
-Transaction 291 completed
-Thread 6 executing transaction 295
-Transaction 295 completed
-Thread 7 executing transaction 317
-Transaction 317 completed
-Thread 5 aborted transaction 318
-Thread 0 executing transaction 313
-Transaction 313 completed
-Thread 4 executing transaction 316
-Transaction 316 completed
-Thread 11 executing transaction 299
+Thread 0 executing transaction 299
 Transaction 299 completed
-Thread 7 executing transaction 320
-Transaction 320 completed
-Thread 12 aborted transaction 306
-Thread 10 executing transaction 311
-Transaction 311 completed
-Thread 6 executing transaction 319
-Transaction 319 completed
-Thread 7 executing transaction 325
-Transaction 325 completed
-Thread 2 aborted transaction 283
-Thread 13 aborted transaction 288
-Thread 15 aborted transaction 312
-Thread 5 executing transaction 321
-Transaction 321 completed
-Thread 4 executing transaction 323
-Transaction 323 completed
-Thread 1 executing transaction 302
+Thread 2 executing transaction 305
+Transaction 305 completed
+Thread 7 executing transaction 302
 Transaction 302 completed
-Thread 14 executing transaction 304
+Thread 15 aborted transaction 300
+Thread 11 executing transaction 304
 Transaction 304 completed
-Thread 11 executing transaction 324
-Transaction 324 completed
-Thread 6 executing transaction 328
-Transaction 328 completed
-Thread 7 executing transaction 329
-Transaction 329 completed
-Thread 13 executing transaction 331
-Transaction 331 completed
-Thread 0 aborted transaction 322
-Thread 4 executing transaction 334
-Transaction 334 completed
-Thread 4 executing transaction 342
-Transaction 342 completed
-Thread 6 aborted transaction 338
-Thread 3 aborted transaction 314
-Thread 1 executing transaction 335
-Transaction 335 completed
-Thread 7 executing transaction 339
-Transaction 339 completed
-Thread 12 aborted transaction 326
-Thread 5 executing transaction 333
-Transaction 333 completed
-Thread 8 executing transaction 315
+Thread 14 aborted transaction 274
+Thread 14 executing transaction 311
+Transaction 311 completed
+Thread 2 executing transaction 307
+Transaction 307 completed
+Thread 15 executing transaction 309
+Transaction 309 completed
+Thread 5 aborted transaction 295
+Thread 2 aborted transaction 313
+Thread 11 executing transaction 310
+Transaction 310 completed
+Thread 2 executing transaction 316
+Transaction 316 completed
+Thread 14 executing transaction 312
+Transaction 312 completed
+Thread 5 executing transaction 315
 Transaction 315 completed
-Thread 3 aborted transaction 345
-Thread 4 executing transaction 343
+Thread 15 aborted transaction 314
+Thread 5 aborted transaction 320
+Thread 14 executing transaction 319
+Transaction 319 completed
+Thread 14 executing transaction 323
+Transaction 323 completed
+Thread 11 executing transaction 317
+Transaction 317 completed
+Thread 9 aborted transaction 297
+Thread 9 executing transaction 325
+Transaction 325 completed
+Thread 6 executing transaction 268
+Transaction 268 completed
+Thread 14 aborted transaction 324
+Thread 5 executing transaction 322
+Transaction 322 completed
+Thread 14 executing transaction 329
+Transaction 329 completed
+Thread 11 aborted transaction 326
+Thread 9 executing transaction 327
+Transaction 327 completed
+Thread 14 executing transaction 331
+Transaction 331 completed
+Thread 9 executing transaction 333
+Transaction 333 completed
+Thread 15 executing transaction 321
+Transaction 321 completed
+Thread 8 aborted transaction 172
+Thread 6 aborted transaction 328
+Thread 10 executing transaction 249
+Transaction 249 completed
+Thread 9 executing transaction 336
+Transaction 336 completed
+Thread 6 executing transaction 338
+Transaction 338 completed
+Thread 10 executing transaction 339
+Transaction 339 completed
+Thread 14 executing transaction 334
+Transaction 334 completed
+Thread 3 aborted transaction 290
+Thread 9 executing transaction 340
+Transaction 340 completed
+Thread 8 aborted transaction 337
+Thread 10 executing transaction 342
+Transaction 342 completed
+Thread 6 executing transaction 341
+Transaction 341 completed
+Thread 0 aborted transaction 306
+Thread 14 executing transaction 343
 Transaction 343 completed
-Thread 3 executing transaction 351
-Transaction 351 completed
-Thread 1 aborted transaction 346
-Thread 15 executing transaction 332
-Transaction 332 completed
-Thread 0 aborted transaction 341
-Thread 2 aborted transaction 330
+Thread 10 executing transaction 347
+Transaction 347 completed
+Thread 9 executing transaction 345
+Transaction 345 completed
+Thread 12 executing transaction 255
+Transaction 255 completed
+Thread 3 aborted transaction 344
+Thread 0 executing transaction 349
+Transaction 349 completed
+Thread 7 executing transaction 308
+Transaction 308 completed
+Thread 0 executing transaction 354
+Transaction 354 completed
+Thread 6 executing transaction 350
+Transaction 350 completed
+Thread 7 aborted transaction 355
+Thread 9 executing transaction 352
+Transaction 352 completed
 Thread 0 executing transaction 356
 Transaction 356 completed
-Thread 9 aborted transaction 294
-Thread 10 executing transaction 327
-Transaction 327 completed
-Thread 3 aborted transaction 353
-Thread 4 executing transaction 352
-Transaction 352 completed
-Thread 11 aborted transaction 337
-Thread 4 aborted transaction 362
-Thread 5 executing transaction 349
-Transaction 349 completed
-Thread 2 aborted transaction 357
-Thread 13 executing transaction 340
-Transaction 340 completed
-Thread 11 aborted transaction 363
-Thread 15 aborted transaction 355
-Thread 5 aborted transaction 365
-Thread 10 executing transaction 360
-Transaction 360 completed
-Thread 13 aborted transaction 367
-Thread 15 executing transaction 369
-Transaction 369 completed
-Thread 5 executing transaction 370
-Transaction 370 completed
-Thread 2 executing transaction 366
-Transaction 366 completed
-Thread 13 executing transaction 372
-Transaction 372 completed
-Thread 12 executing transaction 348
-Transaction 348 completed
-Thread 14 aborted transaction 336
+Thread 10 executing transaction 351
+Transaction 351 completed
 Thread 9 executing transaction 359
 Transaction 359 completed
-Thread 6 executing transaction 344
-Transaction 344 completed
-Thread 0 executing transaction 358
+Thread 12 aborted transaction 353
+Thread 7 executing transaction 358
 Transaction 358 completed
-Thread 8 aborted transaction 350
-Thread 1 executing transaction 354
-Transaction 354 completed
-Thread 7 executing transaction 347
-Transaction 347 completed
-Thread 13 executing transaction 376
+Thread 6 aborted transaction 357
+Thread 2 aborted transaction 318
+Thread 2 executing transaction 366
+Transaction 366 completed
+Thread 0 executing transaction 360
+Transaction 360 completed
+Thread 9 executing transaction 362
+Transaction 362 completed
+Thread 6 aborted transaction 365
+Thread 1 executing transaction 291
+Transaction 291 completed
+Thread 7 aborted transaction 364
+Thread 9 aborted transaction 369
+Thread 2 aborted transaction 367
+Thread 0 executing transaction 368
+Transaction 368 completed
+Thread 7 executing transaction 372
+Transaction 372 completed
+Thread 6 executing transaction 370
+Transaction 370 completed
+Thread 0 aborted transaction 375
+Thread 9 executing transaction 373
+Transaction 373 completed
+Thread 2 aborted transaction 374
+Thread 5 executing transaction 330
+Transaction 330 completed
+Thread 1 aborted transaction 371
+Thread 6 executing transaction 377
+Transaction 377 completed
+Thread 9 executing transaction 380
+Transaction 380 completed
+Thread 13 executing transaction 256
+Transaction 256 completed
+Thread 8 aborted transaction 346
+Thread 12 executing transaction 363
+Transaction 363 completed
+Thread 5 executing transaction 382
+Transaction 382 completed
+Thread 7 executing transaction 376
 Transaction 376 completed
-Thread 12 aborted transaction 377
+Thread 11 executing transaction 332
+Transaction 332 completed
+Thread 10 aborted transaction 361
+Thread 10 executing transaction 392
+Transaction 392 completed
+Thread 7 executing transaction 390
+Transaction 390 completed
+Thread 1 executing transaction 381
+Transaction 381 completed
+Thread 1 executing transaction 395
+Transaction 395 completed
+Thread 2 executing transaction 379
+Transaction 379 completed
+Thread 15 aborted transaction 335
+Thread 2 executing transaction 397
+Transaction 397 completed
+Thread 7 executing transaction 394
+Transaction 394 completed
+Thread 1 executing transaction 396
+Transaction 396 completed
+Thread 3 executing transaction 387
+Transaction 387 completed
+Thread 15 executing transaction 398
+Transaction 398 completed
+Thread 2 executing transaction 399
+Transaction 399 completed
+Thread 6 executing transaction 383
+Transaction 383 completed
+Thread 8 executing transaction 386
+Transaction 386 completed
+Thread 2 executing transaction 404
+Transaction 404 completed
+Thread 10 aborted transaction 393
+Thread 8 executing transaction 406
+Transaction 406 completed
+Thread 3 aborted transaction 402
+Thread 2 executing transaction 407
+Transaction 407 completed
+Thread 15 executing transaction 403
+Transaction 403 completed
+Thread 10 executing transaction 408
+Transaction 408 completed
+Thread 2 executing transaction 411
+Transaction 411 completed
+Thread 1 executing transaction 401
+Transaction 401 completed
+Thread 11 executing transaction 391
+Transaction 391 completed
+Thread 6 aborted transaction 405
+Thread 2 executing transaction 414
+Transaction 414 completed
+Thread 15 aborted transaction 412
+Thread 7 executing transaction 400
+Transaction 400 completed
+Thread 6 executing transaction 417
+Transaction 417 completed
+Thread 0 aborted transaction 378
+Thread 8 aborted transaction 409
+Thread 7 executing transaction 420
+Transaction 420 completed
+Thread 1 aborted transaction 415
+Thread 7 executing transaction 424
+Transaction 424 completed
+Thread 7 executing transaction 426
+Transaction 426 completed
+Thread 3 executing transaction 410
+Transaction 410 completed
+Thread 12 executing transaction 388
+Transaction 388 completed
+Thread 14 executing transaction 348
+Transaction 348 completed
+Thread 7 executing transaction 427
+Transaction 427 completed
+Thread 8 aborted transaction 423
+Thread 3 executing transaction 428
+Transaction 428 completed
+Thread 14 executing transaction 430
+Transaction 430 completed
+Thread 7 executing transaction 431
+Transaction 431 completed
+Thread 10 executing transaction 413
+Transaction 413 completed
+Thread 0 aborted transaction 422
+Thread 12 executing transaction 429
+Transaction 429 completed
 Thread 13 executing transaction 385
 Transaction 385 completed
-Thread 1 executing transaction 383
-Transaction 383 completed
-Thread 14 executing transaction 378
-Transaction 378 completed
-Thread 5 executing transaction 374
-Transaction 374 completed
-Thread 0 executing transaction 381
-Transaction 381 completed
-Thread 4 aborted transaction 364
-Thread 13 executing transaction 387
-Transaction 387 completed
-Thread 8 executing transaction 382
-Transaction 382 completed
-Thread 12 executing transaction 386
-Transaction 386 completed
-Thread 14 executing transaction 389
-Transaction 389 completed
-Thread 10 aborted transaction 371
-Thread 7 executing transaction 384
-Transaction 384 completed
-Thread 12 aborted transaction 395
-Thread 7 executing transaction 398
-Transaction 398 completed
-Thread 13 aborted transaction 393
-Thread 7 aborted transaction 400
-Thread 0 executing transaction 391
-Transaction 391 completed
-Thread 15 aborted transaction 373
-Thread 13 executing transaction 401
-Transaction 401 completed
-Thread 5 aborted transaction 390
-Thread 6 executing transaction 380
-Transaction 380 completed
-Thread 14 executing transaction 396
-Transaction 396 completed
-Thread 7 aborted transaction 402
-Thread 11 executing transaction 368
-Transaction 368 completed
-Thread 12 executing transaction 399
-Transaction 399 completed
-Thread 14 executing transaction 408
-Transaction 408 completed
-Thread 8 executing transaction 394
-Transaction 394 completed
-Thread 4 executing transaction 392
-Transaction 392 completed
-Thread 0 aborted transaction 403
-Thread 1 aborted transaction 388
-Thread 2 executing transaction 375
-Transaction 375 completed
-Thread 8 executing transaction 413
-Transaction 413 completed
-Thread 9 aborted transaction 379
-Thread 13 aborted transaction 405
-Thread 3 aborted transaction 361
-Thread 8 aborted transaction 418
-Thread 4 executing transaction 414
-Transaction 414 completed
-Thread 12 executing transaction 411
-Transaction 411 completed
-Thread 5 executing transaction 406
-Transaction 406 completed
-Thread 11 aborted transaction 410
-Thread 0 executing transaction 415
-Transaction 415 completed
-Thread 3 executing transaction 421
-Transaction 421 completed
-Thread 2 aborted transaction 417
-Thread 0 executing transaction 427
-Transaction 427 completed
-Thread 14 executing transaction 412
-Transaction 412 completed
-Thread 10 executing transaction 397
-Transaction 397 completed
-Thread 14 executing transaction 431
-Transaction 431 completed
-Thread 4 executing transaction 423
-Transaction 423 completed
-Thread 11 executing transaction 426
-Transaction 426 completed
-Thread 15 executing transaction 404
-Transaction 404 completed
-Thread 4 executing transaction 434
-Transaction 434 completed
-Thread 8 executing transaction 422
-Transaction 422 completed
-Thread 4 executing transaction 437
-Transaction 437 completed
-Thread 12 executing transaction 424
-Transaction 424 completed
-Thread 11 executing transaction 435
+Thread 8 executing transaction 432
+Transaction 432 completed
+Thread 7 executing transaction 435
 Transaction 435 completed
-Thread 15 executing transaction 436
-Transaction 436 completed
-Thread 2 aborted transaction 429
-Thread 9 executing transaction 419
-Transaction 419 completed
-Thread 6 executing transaction 407
-Transaction 407 completed
-Thread 11 aborted transaction 441
-Thread 6 executing transaction 445
-Transaction 445 completed
-Thread 6 executing transaction 447
-Transaction 447 completed
-Thread 7 aborted transaction 409
-Thread 7 executing transaction 449
-Transaction 449 completed
-Thread 12 executing transaction 440
-Transaction 440 completed
-Thread 13 aborted transaction 420
-Thread 1 executing transaction 416
-Transaction 416 completed
-Thread 9 executing transaction 444
-Transaction 444 completed
-Thread 1 executing transaction 453
-Transaction 453 completed
-Thread 5 executing transaction 425
-Transaction 425 completed
-Thread 10 aborted transaction 432
-Thread 2 aborted transaction 443
-Thread 5 executing transaction 456
-Transaction 456 completed
-Thread 1 aborted transaction 455
-Thread 0 executing transaction 430
-Transaction 430 completed
-Thread 15 executing transaction 442
+Thread 3 aborted transaction 433
+Thread 0 executing transaction 438
+Transaction 438 completed
+Thread 3 executing transaction 442
 Transaction 442 completed
-Thread 12 aborted transaction 451
-Thread 6 executing transaction 448
-Transaction 448 completed
-Thread 7 executing transaction 450
-Transaction 450 completed
-Thread 6 executing transaction 464
-Transaction 464 completed
-Thread 12 aborted transaction 462
-Thread 14 executing transaction 433
-Transaction 433 completed
-Thread 10 aborted transaction 457
-Thread 12 executing transaction 467
-Transaction 467 completed
-Thread 3 aborted transaction 428
-Thread 1 executing transaction 460
-Transaction 460 completed
-Thread 14 aborted transaction 468
-Thread 2 executing transaction 458
-Transaction 458 completed
+Thread 13 executing transaction 439
+Transaction 439 completed
+Thread 13 executing transaction 445
+Transaction 445 completed
+Thread 5 executing transaction 389
+Transaction 389 completed
+Thread 5 executing transaction 447
+Transaction 447 completed
+Thread 0 executing transaction 443
+Transaction 443 completed
+Thread 13 aborted transaction 446
+Thread 3 executing transaction 444
+Transaction 444 completed
+Thread 11 executing transaction 416
+Transaction 416 completed
+Thread 10 aborted transaction 436
+Thread 9 executing transaction 384
+Transaction 384 completed
+Thread 12 executing transaction 437
+Transaction 437 completed
 Thread 9 executing transaction 454
 Transaction 454 completed
-Thread 8 executing transaction 438
-Transaction 438 completed
-Thread 5 executing transaction 459
+Thread 0 executing transaction 449
+Transaction 449 completed
+Thread 8 executing transaction 440
+Transaction 440 completed
+Thread 12 executing transaction 455
+Transaction 455 completed
+Thread 9 aborted transaction 456
+Thread 10 executing transaction 452
+Transaction 452 completed
+Thread 14 aborted transaction 434
+Thread 8 executing transaction 458
+Transaction 458 completed
+Thread 5 executing transaction 448
+Transaction 448 completed
+Thread 12 executing transaction 459
 Transaction 459 completed
-Thread 10 aborted transaction 469
-Thread 11 executing transaction 446
-Transaction 446 completed
-Thread 12 aborted transaction 470
-Thread 1 executing transaction 472
+Thread 9 executing transaction 460
+Transaction 460 completed
+Thread 12 executing transaction 465
+Transaction 465 completed
+Thread 14 aborted transaction 462
+Thread 11 executing transaction 453
+Transaction 453 completed
+Thread 5 executing transaction 463
+Transaction 463 completed
+Thread 7 executing transaction 441
+Transaction 441 completed
+Thread 5 aborted transaction 470
+Thread 5 executing transaction 472
 Transaction 472 completed
-Thread 6 aborted transaction 466
-Thread 2 executing transaction 474
-Transaction 474 completed
-Thread 4 executing transaction 439
-Transaction 439 completed
-Thread 12 executing transaction 480
-Transaction 480 completed
-Thread 15 aborted transaction 463
-Thread 10 executing transaction 478
-Transaction 478 completed
-Thread 7 aborted transaction 465
-Thread 12 executing transaction 485
-Transaction 485 completed
-Thread 15 executing transaction 486
-Transaction 486 completed
-Thread 3 executing transaction 471
+Thread 12 executing transaction 467
+Transaction 467 completed
+Thread 9 aborted transaction 466
+Thread 11 executing transaction 469
+Transaction 469 completed
+Thread 2 aborted transaction 418
+Thread 1 executing transaction 425
+Transaction 425 completed
+Thread 7 executing transaction 471
 Transaction 471 completed
-Thread 13 aborted transaction 452
-Thread 4 executing transaction 484
-Transaction 484 completed
-Thread 11 aborted transaction 479
-Thread 8 aborted transaction 476
-Thread 12 executing transaction 489
-Transaction 489 completed
-Thread 14 executing transaction 473
-Transaction 473 completed
-Thread 9 executing transaction 475
-Transaction 475 completed
-Thread 2 executing transaction 483
-Transaction 483 completed
-Thread 6 executing transaction 482
-Transaction 482 completed
-Thread 0 aborted transaction 461
-Thread 5 executing transaction 477
+Thread 11 executing transaction 476
+Transaction 476 completed
+Thread 2 executing transaction 477
 Transaction 477 completed
-Thread 0 aborted transaction 501
-Thread 1 aborted transaction 481
-Thread 12 executing transaction 496
-Transaction 496 completed
-Thread 6 aborted transaction 499
-Thread 3 executing transaction 491
-Transaction 491 completed
-Thread 9 aborted transaction 498
-Thread 10 executing transaction 487
-Transaction 487 completed
-Thread 13 executing transaction 492
-Transaction 492 completed
-Thread 10 executing transaction 509
-Transaction 509 completed
-Thread 5 aborted transaction 502
-Thread 13 aborted transaction 510
-Thread 8 executing transaction 495
-Transaction 495 completed
-Thread 6 executing transaction 506
-Transaction 506 completed
-Thread 2 executing transaction 500
-Transaction 500 completed
-Thread 6 executing transaction 515
-Transaction 515 completed
-Thread 8 aborted transaction 514
-Thread 2 executing transaction 516
-Transaction 516 completed
-Thread 8 aborted transaction 518
-Thread 12 executing transaction 505
-Transaction 505 completed
-Thread 5 executing transaction 512
-Transaction 512 completed
-Thread 15 executing transaction 490
-Transaction 490 completed
-Thread 2 aborted transaction 519
-Thread 14 executing transaction 497
-Transaction 497 completed
-Thread 1 executing transaction 504
-Transaction 504 completed
-Thread 5 aborted transaction 522
-Thread 9 executing transaction 508
-Transaction 508 completed
-Thread 13 executing transaction 513
-Transaction 513 completed
-Thread 3 executing transaction 507
-Transaction 507 completed
-Thread 11 executing transaction 494
-Transaction 494 completed
-Thread 3 aborted transaction 530
-Thread 4 executing transaction 493
-Transaction 493 completed
-Thread 13 aborted transaction 529
-Thread 6 executing transaction 517
-Transaction 517 completed
-Thread 6 executing transaction 535
-Transaction 535 completed
-Thread 8 executing transaction 520
-Transaction 520 completed
-Thread 9 executing transaction 528
-Transaction 528 completed
-Thread 15 aborted transaction 523
-Thread 7 executing transaction 488
+Thread 8 aborted transaction 464
+Thread 13 executing transaction 450
+Transaction 450 completed
+Thread 8 executing transaction 482
+Transaction 482 completed
+Thread 3 executing transaction 451
+Transaction 451 completed
+Thread 11 aborted transaction 480
+Thread 13 aborted transaction 483
+Thread 2 executing transaction 481
+Transaction 481 completed
+Thread 3 executing transaction 485
+Transaction 485 completed
+Thread 8 executing transaction 484
+Transaction 484 completed
+Thread 2 executing transaction 488
 Transaction 488 completed
-Thread 9 aborted transaction 538
-Thread 3 aborted transaction 532
-Thread 10 executing transaction 511
-Transaction 511 completed
-Thread 2 executing transaction 524
-Transaction 524 completed
-Thread 11 executing transaction 531
-Transaction 531 completed
-Thread 5 aborted transaction 527
-Thread 6 executing transaction 536
-Transaction 536 completed
+Thread 11 executing transaction 486
+Transaction 486 completed
+Thread 3 aborted transaction 489
+Thread 13 executing transaction 487
+Transaction 487 completed
+Thread 2 aborted transaction 491
+Thread 8 executing transaction 490
+Transaction 490 completed
+Thread 13 executing transaction 494
+Transaction 494 completed
+Thread 4 aborted transaction 288
+Thread 8 executing transaction 496
+Transaction 496 completed
+Thread 11 aborted transaction 492
+Thread 2 executing transaction 495
+Transaction 495 completed
+Thread 6 executing transaction 421
+Transaction 421 completed
+Thread 15 executing transaction 419
+Transaction 419 completed
+Thread 0 aborted transaction 457
+Thread 6 executing transaction 500
+Transaction 500 completed
+Thread 10 aborted transaction 461
+Thread 2 executing transaction 501
+Transaction 501 completed
+Thread 6 executing transaction 504
+Transaction 504 completed
+Thread 7 executing transaction 479
+Transaction 479 completed
 Thread 0 executing transaction 503
 Transaction 503 completed
-Thread 1 aborted transaction 526
-Thread 2 executing transaction 544
-Transaction 544 completed
-Thread 12 aborted transaction 521
-Thread 13 executing transaction 534
-Transaction 534 completed
-Thread 14 aborted transaction 525
-Thread 7 executing transaction 540
-Transaction 540 completed
-Thread 3 executing transaction 542
-Transaction 542 completed
-Thread 4 aborted transaction 533
-Thread 10 executing transaction 543
+Thread 6 executing transaction 507
+Transaction 507 completed
+Thread 10 aborted transaction 505
+Thread 0 executing transaction 509
+Transaction 509 completed
+Thread 2 executing transaction 506
+Transaction 506 completed
+Thread 7 executing transaction 508
+Transaction 508 completed
+Thread 15 executing transaction 502
+Transaction 502 completed
+Thread 0 executing transaction 512
+Transaction 512 completed
+Thread 6 aborted transaction 510
+Thread 2 executing transaction 513
+Transaction 513 completed
+Thread 10 executing transaction 511
+Transaction 511 completed
+Thread 15 executing transaction 515
+Transaction 515 completed
+Thread 6 executing transaction 517
+Transaction 517 completed
+Thread 7 executing transaction 514
+Transaction 514 completed
+Thread 15 executing transaction 520
+Transaction 520 completed
+Thread 10 executing transaction 519
+Transaction 519 completed
+Thread 10 executing transaction 524
+Transaction 524 completed
+Thread 15 executing transaction 523
+Transaction 523 completed
+Thread 2 executing transaction 518
+Transaction 518 completed
+Thread 10 executing transaction 525
+Transaction 525 completed
+Thread 6 executing transaction 521
+Transaction 521 completed
+Thread 7 executing transaction 522
+Transaction 522 completed
+Thread 0 executing transaction 516
+Transaction 516 completed
+Thread 11 aborted transaction 500
+Thread 9 aborted transaction 474
+Thread 2 executing transaction 527
+Transaction 527 completed
+Thread 12 executing transaction 475
+Transaction 475 completed
+Thread 5 aborted transaction 473
+Thread 1 executing transaction 478
+Transaction 478 completed
+Thread 10 aborted transaction 528
+Thread 6 aborted transaction 529
+Thread 0 executing transaction 531
+Transaction 531 completed
+Thread 13 executing transaction 497
+Transaction 497 completed
+Thread 1 aborted transaction 536
+Thread 4 executing transaction 498
+Transaction 498 completed
+Thread 10 executing transaction 537
+Transaction 537 completed
+Thread 9 executing transaction 532
+Transaction 532 completed
+Thread 14 aborted transaction 468
+Thread 4 executing transaction 543
 Transaction 543 completed
-Thread 15 executing transaction 539
+Thread 13 executing transaction 540
+Transaction 540 completed
+Thread 6 executing transaction 539
 Transaction 539 completed
-Thread 0 executing transaction 548
+Thread 14 aborted transaction 545
+Thread 6 executing transaction 548
 Transaction 548 completed
+Thread 1 aborted transaction 541
+Thread 8 aborted transaction 499
 Thread 14 executing transaction 553
 Transaction 553 completed
-Thread 7 executing transaction 554
-Transaction 554 completed
-Thread 12 executing transaction 551
-Transaction 551 completed
-Thread 3 aborted transaction 555
-Thread 0 executing transaction 559
-Transaction 559 completed
-Thread 9 executing transaction 541
-Transaction 541 completed
-Thread 6 executing transaction 547
-Transaction 547 completed
-Thread 14 executing transaction 560
-Transaction 560 completed
-Thread 8 executing transaction 537
-Transaction 537 completed
-Thread 0 aborted transaction 564
-Thread 3 executing transaction 563
-Transaction 563 completed
-Thread 10 executing transaction 557
-Transaction 557 completed
-Thread 9 executing transaction 565
-Transaction 565 completed
-Thread 2 aborted transaction 550
-Thread 10 executing transaction 571
-Transaction 571 completed
-Thread 11 executing transaction 545
-Transaction 545 completed
-Thread 13 executing transaction 552
+Thread 13 aborted transaction 547
+Thread 8 executing transaction 552
 Transaction 552 completed
-Thread 5 aborted transaction 546
-Thread 12 aborted transaction 562
-Thread 0 executing transaction 569
-Transaction 569 completed
-Thread 2 aborted transaction 573
-Thread 6 executing transaction 568
-Transaction 568 completed
-Thread 7 executing transaction 561
-Transaction 561 completed
-Thread 5 aborted transaction 577
-Thread 1 executing transaction 549
-Transaction 549 completed
-Thread 14 executing transaction 566
-Transaction 566 completed
-Thread 13 executing transaction 576
-Transaction 576 completed
-Thread 3 executing transaction 570
-Transaction 570 completed
-Thread 10 executing transaction 574
-Transaction 574 completed
-Thread 0 aborted transaction 579
+Thread 0 aborted transaction 538
+Thread 7 executing transaction 530
+Transaction 530 completed
+Thread 15 aborted transaction 526
 Thread 15 executing transaction 558
 Transaction 558 completed
-Thread 13 executing transaction 586
-Transaction 586 completed
-Thread 15 executing transaction 590
-Transaction 590 completed
-Thread 13 executing transaction 591
-Transaction 591 completed
-Thread 4 executing transaction 556
+Thread 12 executing transaction 534
+Transaction 534 completed
+Thread 0 executing transaction 557
+Transaction 557 completed
+Thread 15 executing transaction 560
+Transaction 560 completed
+Thread 12 executing transaction 561
+Transaction 561 completed
+Thread 1 executing transaction 551
+Transaction 551 completed
+Thread 2 executing transaction 533
+Transaction 533 completed
+Thread 6 aborted transaction 549
+Thread 8 executing transaction 556
 Transaction 556 completed
-Thread 6 executing transaction 581
-Transaction 581 completed
-Thread 1 aborted transaction 584
-Thread 13 aborted transaction 593
-Thread 6 executing transaction 594
-Transaction 594 completed
-Thread 3 aborted transaction 587
-Thread 1 executing transaction 596
-Transaction 596 completed
-Thread 13 aborted transaction 597
-Thread 12 executing transaction 578
-Transaction 578 completed
-Thread 11 executing transaction 575
+Thread 7 executing transaction 559
+Transaction 559 completed
+Thread 1 executing transaction 565
+Transaction 565 completed
+Thread 4 aborted transaction 546
+Thread 4 executing transaction 571
+Transaction 571 completed
+Thread 14 executing transaction 554
+Transaction 554 completed
+Thread 15 executing transaction 563
+Transaction 563 completed
+Thread 1 executing transaction 570
+Transaction 570 completed
+Thread 7 executing transaction 569
+Transaction 569 completed
+Thread 15 aborted transaction 574
+Thread 7 executing transaction 576
+Transaction 576 completed
+Thread 1 executing transaction 575
 Transaction 575 completed
-Thread 14 aborted transaction 585
-Thread 13 executing transaction 601
-Transaction 601 completed
-Thread 1 aborted transaction 600
-Thread 12 executing transaction 602
-Transaction 602 completed
-Thread 5 executing transaction 583
+Thread 12 aborted transaction 564
+Thread 14 executing transaction 573
+Transaction 573 completed
+Thread 3 aborted transaction 493
+Thread 7 executing transaction 578
+Transaction 578 completed
+Thread 14 executing transaction 581
+Transaction 581 completed
+Thread 7 executing transaction 583
 Transaction 583 completed
-Thread 1 executing transaction 606
-Transaction 606 completed
-Thread 9 executing transaction 572
-Transaction 572 completed
-Thread 5 executing transaction 608
-Transaction 608 completed
-Thread 3 executing transaction 599
-Transaction 599 completed
-Thread 15 executing transaction 592
-Transaction 592 completed
-Thread 8 executing transaction 567
-Transaction 567 completed
-Thread 12 aborted transaction 607
+Thread 1 executing transaction 579
+Transaction 579 completed
+Thread 13 executing transaction 555
+Transaction 555 completed
+Thread 10 executing transaction 542
+Transaction 542 completed
+Thread 14 aborted transaction 584
+Thread 7 executing transaction 585
+Transaction 585 completed
+Thread 1 executing transaction 586
+Transaction 586 completed
+Thread 14 executing transaction 590
+Transaction 590 completed
+Thread 1 executing transaction 591
+Transaction 591 completed
 Thread 10 executing transaction 588
 Transaction 588 completed
-Thread 8 executing transaction 614
-Transaction 614 completed
-Thread 6 executing transaction 598
-Transaction 598 completed
-Thread 13 executing transaction 605
-Transaction 605 completed
-Thread 11 aborted transaction 603
-Thread 14 executing transaction 604
-Transaction 604 completed
-Thread 12 executing transaction 615
-Transaction 615 completed
-Thread 14 executing transaction 621
-Transaction 621 completed
-Thread 8 aborted transaction 617
-Thread 15 executing transaction 613
-Transaction 613 completed
-Thread 11 executing transaction 620
-Transaction 620 completed
-Thread 8 executing transaction 624
-Transaction 624 completed
-Thread 15 executing transaction 625
-Transaction 625 completed
-Thread 10 executing transaction 616
-Transaction 616 completed
-Thread 5 executing transaction 611
-Transaction 611 completed
-Thread 10 executing transaction 629
-Transaction 629 completed
-Thread 7 executing transaction 582
-Transaction 582 completed
-Thread 8 aborted transaction 627
-Thread 4 executing transaction 595
-Transaction 595 completed
-Thread 0 executing transaction 589
+Thread 7 executing transaction 589
 Transaction 589 completed
-Thread 13 executing transaction 619
+Thread 14 executing transaction 592
+Transaction 592 completed
+Thread 7 executing transaction 595
+Transaction 595 completed
+Thread 14 executing transaction 596
+Transaction 596 completed
+Thread 2 executing transaction 566
+Transaction 566 completed
+Thread 13 aborted transaction 587
+Thread 10 aborted transaction 594
+Thread 14 executing transaction 598
+Transaction 598 completed
+Thread 2 executing transaction 599
+Transaction 599 completed
+Thread 7 executing transaction 597
+Transaction 597 completed
+Thread 7 executing transaction 604
+Transaction 604 completed
+Thread 15 aborted transaction 577
+Thread 15 executing transaction 606
+Transaction 606 completed
+Thread 10 executing transaction 601
+Transaction 601 completed
+Thread 10 executing transaction 608
+Transaction 608 completed
+Thread 7 executing transaction 605
+Transaction 605 completed
+Thread 1 aborted transaction 593
+Thread 4 aborted transaction 572
+Thread 15 aborted transaction 607
+Thread 10 aborted transaction 609
+Thread 4 executing transaction 614
+Transaction 614 completed
+Thread 8 aborted transaction 568
+Thread 10 executing transaction 613
+Transaction 613 completed
+Thread 8 executing transaction 616
+Transaction 616 completed
+Thread 7 aborted transaction 610
+Thread 13 aborted transaction 600
+Thread 7 executing transaction 619
 Transaction 619 completed
-Thread 9 aborted transaction 610
-Thread 12 executing transaction 622
-Transaction 622 completed
-Thread 9 executing transaction 637
-Transaction 637 completed
-Thread 2 executing transaction 580
-Transaction 580 completed
-Thread 10 aborted transaction 631
-Thread 6 executing transaction 618
-Transaction 618 completed
-Thread 1 aborted transaction 609
-Thread 11 executing transaction 626
-Transaction 626 completed
-Thread 4 executing transaction 634
-Transaction 634 completed
-Thread 14 executing transaction 623
+Thread 14 executing transaction 602
+Transaction 602 completed
+Thread 3 aborted transaction 582
+Thread 7 executing transaction 621
+Transaction 621 completed
+Thread 3 executing transaction 623
 Transaction 623 completed
-Thread 13 executing transaction 636
-Transaction 636 completed
-Thread 3 executing transaction 612
+Thread 0 executing transaction 562
+Transaction 562 completed
+Thread 8 aborted transaction 618
+Thread 7 executing transaction 624
+Transaction 624 completed
+Thread 15 executing transaction 612
 Transaction 612 completed
-Thread 0 executing transaction 635
-Transaction 635 completed
-Thread 10 executing transaction 641
-Transaction 641 completed
-Thread 7 executing transaction 632
-Transaction 632 completed
-Thread 5 executing transaction 630
-Transaction 630 completed
-Thread 8 executing transaction 633
+Thread 15 executing transaction 629
+Transaction 629 completed
+Thread 13 aborted transaction 620
+Thread 3 executing transaction 625
+Transaction 625 completed
+Thread 5 executing transaction 535
+Transaction 535 completed
+Thread 13 aborted transaction 631
+Thread 2 aborted transaction 603
+Thread 8 executing transaction 626
+Transaction 626 completed
+Thread 11 aborted transaction 550
+Thread 8 executing transaction 636
+Transaction 636 completed
+Thread 12 executing transaction 580
+Transaction 580 completed
+Thread 2 aborted transaction 635
+Thread 13 aborted transaction 634
+Thread 6 executing transaction 567
+Transaction 567 completed
+Thread 13 aborted transaction 641
+Thread 11 executing transaction 637
+Transaction 637 completed
+Thread 8 executing transaction 638
+Transaction 638 completed
+Thread 5 executing transaction 633
 Transaction 633 completed
-Thread 9 aborted transaction 639
 Thread 2 executing transaction 640
 Transaction 640 completed
-Thread 10 executing transaction 650
-Transaction 650 completed
-Thread 8 aborted transaction 653
-Thread 10 executing transaction 656
-Transaction 656 completed
-Thread 5 executing transaction 652
-Transaction 652 completed
-Thread 12 aborted transaction 638
+Thread 8 executing transaction 645
+Transaction 645 completed
+Thread 3 executing transaction 632
+Transaction 632 completed
 Thread 6 aborted transaction 642
-Thread 1 executing transaction 643
-Transaction 643 completed
-Thread 4 aborted transaction 645
-Thread 12 executing transaction 660
-Transaction 660 completed
-Thread 15 aborted transaction 628
-Thread 3 aborted transaction 648
+Thread 15 aborted transaction 630
+Thread 5 executing transaction 646
+Transaction 646 completed
+Thread 15 aborted transaction 651
+Thread 8 aborted transaction 648
+Thread 14 executing transaction 622
+Transaction 622 completed
+Thread 3 aborted transaction 649
+Thread 15 executing transaction 652
+Transaction 652 completed
+Thread 2 executing transaction 647
+Transaction 647 completed
+Thread 15 executing transaction 655
+Transaction 655 completed
+Thread 7 aborted transaction 628
+Thread 12 executing transaction 639
+Transaction 639 completed
+Thread 2 executing transaction 656
+Transaction 656 completed
+Thread 3 executing transaction 654
+Transaction 654 completed
+Thread 0 executing transaction 627
+Transaction 627 completed
+Thread 8 executing transaction 653
+Transaction 653 completed
+Thread 5 executing transaction 651
+Transaction 651 completed
+Thread 3 executing transaction 661
+Transaction 661 completed
+Thread 2 aborted transaction 660
+Thread 6 executing transaction 650
+Transaction 650 completed
+Thread 7 executing transaction 658
+Transaction 658 completed
+Thread 8 executing transaction 663
+Transaction 663 completed
+Thread 15 aborted transaction 657
+Thread 9 executing transaction 544
+Transaction 544 completed
+Thread 4 executing transaction 615
+Transaction 615 completed
 Thread 11 executing transaction 644
 Transaction 644 completed
-Thread 4 executing transaction 663
-Transaction 663 completed
-Thread 11 executing transaction 667
+Thread 7 executing transaction 667
 Transaction 667 completed
-Thread 10 executing transaction 658
-Transaction 658 completed
-Thread 4 aborted transaction 668
-Thread 14 executing transaction 646
-Transaction 646 completed
-Thread 2 executing transaction 655
-Transaction 655 completed
-Thread 3 executing transaction 666
+Thread 2 executing transaction 666
 Transaction 666 completed
-Thread 15 executing transaction 665
-Transaction 665 completed
-Thread 12 executing transaction 664
-Transaction 664 completed
-Thread 9 executing transaction 654
-Transaction 654 completed
-Thread 7 executing transaction 651
-Transaction 651 completed
-Thread 13 aborted transaction 647
-Thread 6 executing transaction 661
-Transaction 661 completed
-Thread 12 aborted transaction 676
-Thread 6 executing transaction 680
-Transaction 680 completed
-Thread 1 aborted transaction 662
-Thread 11 executing transaction 669
-Transaction 669 completed
-Thread 12 executing transaction 681
-Transaction 681 completed
-Thread 4 executing transaction 671
-Transaction 671 completed
-Thread 8 executing transaction 657
-Transaction 657 completed
-Thread 15 executing transaction 675
-Transaction 675 completed
-Thread 5 aborted transaction 659
-Thread 14 executing transaction 672
+Thread 11 executing transaction 672
 Transaction 672 completed
-Thread 3 executing transaction 674
-Transaction 674 completed
-Thread 12 executing transaction 685
-Transaction 685 completed
-Thread 10 executing transaction 670
-Transaction 670 completed
-Thread 8 executing transaction 687
-Transaction 687 completed
-Thread 2 executing transaction 673
+Thread 6 aborted transaction 668
+Thread 13 aborted transaction 643
+Thread 4 executing transaction 673
 Transaction 673 completed
-Thread 12 aborted transaction 692
-Thread 8 executing transaction 694
-Transaction 694 completed
-Thread 2 executing transaction 695
-Transaction 695 completed
-Thread 15 executing transaction 688
-Transaction 688 completed
-Thread 7 aborted transaction 678
-Thread 10 executing transaction 693
-Transaction 693 completed
-Thread 11 executing transaction 684
-Transaction 684 completed
-Thread 2 executing transaction 698
-Transaction 698 completed
-Thread 4 aborted transaction 686
-Thread 13 executing transaction 679
-Transaction 679 completed
-Thread 0 aborted transaction 649
-Thread 4 executing transaction 704
-Transaction 704 completed
-Thread 5 aborted transaction 689
-Thread 14 executing transaction 690
-Transaction 690 completed
-Thread 0 aborted transaction 706
+Thread 15 executing transaction 670
+Transaction 670 completed
+Thread 7 executing transaction 674
+Transaction 674 completed
+Thread 8 executing transaction 669
+Transaction 669 completed
+Thread 1 executing transaction 611
+Transaction 611 completed
+Thread 9 executing transaction 671
+Transaction 671 completed
+Thread 12 aborted transaction 659
 Thread 1 executing transaction 683
 Transaction 683 completed
-Thread 6 executing transaction 682
+Thread 2 executing transaction 675
+Transaction 675 completed
+Thread 6 aborted transaction 677
+Thread 1 executing transaction 687
+Transaction 687 completed
+Thread 13 executing transaction 678
+Transaction 678 completed
+Thread 8 executing transaction 682
 Transaction 682 completed
-Thread 14 executing transaction 709
-Transaction 709 completed
-Thread 0 executing transaction 710
-Transaction 710 completed
-Thread 8 aborted transaction 697
-Thread 12 executing transaction 696
+Thread 13 executing transaction 691
+Transaction 691 completed
+Thread 0 executing transaction 662
+Transaction 662 completed
+Thread 8 executing transaction 692
+Transaction 692 completed
+Thread 9 executing transaction 685
+Transaction 685 completed
+Thread 4 executing transaction 681
+Transaction 681 completed
+Thread 3 executing transaction 665
+Transaction 665 completed
+Thread 9 executing transaction 696
 Transaction 696 completed
-Thread 12 executing transaction 716
-Transaction 716 completed
-Thread 9 executing transaction 677
-Transaction 677 completed
-Thread 15 executing transaction 699
-Transaction 699 completed
-Thread 7 aborted transaction 700
-Thread 10 executing transaction 701
-Transaction 701 completed
-Thread 5 aborted transaction 708
+Thread 7 aborted transaction 680
+Thread 5 aborted transaction 664
+Thread 2 aborted transaction 688
+Thread 1 executing transaction 690
+Transaction 690 completed
+Thread 12 executing transaction 686
+Transaction 686 completed
+Thread 0 executing transaction 694
+Transaction 694 completed
+Thread 8 executing transaction 695
+Transaction 695 completed
+Thread 4 executing transaction 697
+Transaction 697 completed
+Thread 13 executing transaction 693
+Transaction 693 completed
+Thread 1 executing transaction 703
+Transaction 703 completed
+Thread 11 aborted transaction 676
 Thread 2 executing transaction 702
 Transaction 702 completed
-Thread 11 aborted transaction 703
-Thread 14 executing transaction 713
-Transaction 713 completed
-Thread 6 executing transaction 712
-Transaction 712 completed
-Thread 1 executing transaction 711
-Transaction 711 completed
-Thread 15 executing transaction 719
-Transaction 719 completed
-Thread 14 aborted transaction 725
-Thread 3 executing transaction 691
-Transaction 691 completed
-Thread 1 executing transaction 727
-Transaction 727 completed
-Thread 5 aborted transaction 722
-Thread 0 executing transaction 714
-Transaction 714 completed
-Thread 1 executing transaction 731
-Transaction 731 completed
-Thread 11 executing transaction 724
-Transaction 724 completed
-Thread 13 executing transaction 705
+Thread 5 executing transaction 701
+Transaction 701 completed
+Thread 0 executing transaction 705
 Transaction 705 completed
-Thread 9 executing transaction 718
-Transaction 718 completed
-Thread 10 executing transaction 721
+Thread 14 executing transaction 684
+Transaction 684 completed
+Thread 11 executing transaction 710
+Transaction 710 completed
+Thread 1 executing transaction 709
+Transaction 709 completed
+Thread 0 executing transaction 713
+Transaction 713 completed
+Thread 1 executing transaction 716
+Transaction 716 completed
+Thread 9 executing transaction 699
+Transaction 699 completed
+Thread 13 aborted transaction 708
+Thread 3 executing transaction 698
+Transaction 698 completed
+Thread 9 executing transaction 720
+Transaction 720 completed
+Thread 15 executing transaction 679
+Transaction 679 completed
+Thread 0 aborted transaction 717
+Thread 8 executing transaction 706
+Transaction 706 completed
+Thread 14 executing transaction 714
+Transaction 714 completed
+Thread 6 aborted transaction 689
+Thread 5 executing transaction 712
+Transaction 712 completed
+Thread 7 aborted transaction 700
+Thread 9 aborted transaction 722
+Thread 3 executing transaction 721
 Transaction 721 completed
-Thread 8 executing transaction 715
-Transaction 715 completed
-Thread 0 executing transaction 733
+Thread 14 executing transaction 727
+Transaction 727 completed
+Thread 8 executing transaction 725
+Transaction 725 completed
+Thread 12 aborted transaction 704
+Thread 0 executing transaction 724
+Transaction 724 completed
+Thread 12 executing transaction 734
+Transaction 734 completed
+Thread 1 executing transaction 718
+Transaction 718 completed
+Thread 2 executing transaction 711
+Transaction 711 completed
+Thread 8 executing transaction 733
 Transaction 733 completed
+Thread 4 aborted transaction 707
+Thread 5 executing transaction 726
+Transaction 726 completed
 Thread 8 executing transaction 739
 Transaction 739 completed
-Thread 6 aborted transaction 726
-Thread 0 executing transaction 740
-Transaction 740 completed
-Thread 4 aborted transaction 707
-Thread 2 aborted transaction 723
-Thread 0 executing transaction 743
-Transaction 743 completed
-Thread 5 aborted transaction 732
-Thread 14 executing transaction 729
-Transaction 729 completed
-Thread 8 executing transaction 741
-Transaction 741 completed
-Thread 15 aborted transaction 728
-Thread 5 executing transaction 747
-Transaction 747 completed
-Thread 9 aborted transaction 737
-Thread 3 executing transaction 730
+Thread 7 executing transaction 728
+Transaction 728 completed
+Thread 2 aborted transaction 738
+Thread 3 executing transaction 731
+Transaction 731 completed
+Thread 9 executing transaction 730
 Transaction 730 completed
-Thread 7 executing transaction 720
-Transaction 720 completed
-Thread 12 aborted transaction 717
-Thread 7 executing transaction 754
-Transaction 754 completed
-Thread 1 executing transaction 734
-Transaction 734 completed
-Thread 12 executing transaction 755
-Transaction 755 completed
-Thread 10 aborted transaction 738
-Thread 4 executing transaction 744
+Thread 9 executing transaction 746
+Transaction 746 completed
+Thread 0 aborted transaction 736
+Thread 4 executing transaction 740
+Transaction 740 completed
+Thread 14 aborted transaction 732
+Thread 2 executing transaction 744
 Transaction 744 completed
-Thread 5 executing transaction 751
+Thread 9 executing transaction 747
+Transaction 747 completed
+Thread 8 executing transaction 742
+Transaction 742 completed
+Thread 2 executing transaction 751
 Transaction 751 completed
-Thread 13 executing transaction 736
-Transaction 736 completed
-Thread 5 executing transaction 761
-Transaction 761 completed
-Thread 2 aborted transaction 745
-Thread 4 aborted transaction 760
-Thread 7 executing transaction 756
-Transaction 756 completed
-Thread 13 aborted transaction 762
-Thread 3 executing transaction 753
-Transaction 753 completed
-Thread 5 executing transaction 763
-Transaction 763 completed
-Thread 4 executing transaction 765
-Transaction 765 completed
-Thread 6 aborted transaction 742
-Thread 5 executing transaction 769
-Transaction 769 completed
-Thread 4 executing transaction 770
-Transaction 770 completed
-Thread 7 aborted transaction 766
-Thread 11 executing transaction 735
+Thread 11 executing transaction 715
+Transaction 715 completed
+Thread 10 aborted transaction 617
+Thread 2 aborted transaction 754
+Thread 14 executing transaction 750
+Transaction 750 completed
+Thread 15 aborted transaction 723
+Thread 10 aborted transaction 756
+Thread 6 executing transaction 729
+Transaction 729 completed
+Thread 12 executing transaction 735
 Transaction 735 completed
 Thread 9 executing transaction 752
 Transaction 752 completed
-Thread 15 executing transaction 750
-Transaction 750 completed
-Thread 5 aborted transaction 772
-Thread 8 aborted transaction 749
-Thread 0 executing transaction 746
-Transaction 746 completed
-Thread 2 executing transaction 764
-Transaction 764 completed
-Thread 7 aborted transaction 774
-Thread 1 executing transaction 757
-Transaction 757 completed
-Thread 4 executing transaction 773
-Transaction 773 completed
-Thread 12 aborted transaction 758
-Thread 3 executing transaction 768
-Transaction 768 completed
-Thread 4 executing transaction 784
-Transaction 784 completed
-Thread 0 executing transaction 780
-Transaction 780 completed
-Thread 11 executing transaction 775
-Transaction 775 completed
-Thread 10 executing transaction 759
-Transaction 759 completed
-Thread 4 aborted transaction 787
-Thread 12 executing transaction 785
-Transaction 785 completed
-Thread 2 executing transaction 781
-Transaction 781 completed
-Thread 13 executing transaction 767
+Thread 13 executing transaction 719
+Transaction 719 completed
+Thread 4 executing transaction 749
+Transaction 749 completed
+Thread 9 executing transaction 763
+Transaction 763 completed
+Thread 14 aborted transaction 758
+Thread 14 executing transaction 767
 Transaction 767 completed
-Thread 9 executing transaction 776
+Thread 6 executing transaction 761
+Transaction 761 completed
+Thread 14 executing transaction 768
+Transaction 768 completed
+Thread 8 executing transaction 753
+Transaction 753 completed
+Thread 1 aborted transaction 737
+Thread 14 executing transaction 770
+Transaction 770 completed
+Thread 4 executing transaction 765
+Transaction 765 completed
+Thread 3 executing transaction 745
+Transaction 745 completed
+Thread 4 aborted transaction 774
+Thread 12 aborted transaction 762
+Thread 1 executing transaction 772
+Transaction 772 completed
+Thread 9 executing transaction 766
+Transaction 766 completed
+Thread 4 executing transaction 776
 Transaction 776 completed
-Thread 6 executing transaction 771
+Thread 13 executing transaction 764
+Transaction 764 completed
+Thread 0 aborted transaction 748
+Thread 2 aborted transaction 757
+Thread 3 executing transaction 775
+Transaction 775 completed
+Thread 8 executing transaction 771
 Transaction 771 completed
-Thread 15 executing transaction 777
+Thread 6 executing transaction 769
+Transaction 769 completed
+Thread 9 executing transaction 779
+Transaction 779 completed
+Thread 15 aborted transaction 759
+Thread 12 executing transaction 777
 Transaction 777 completed
-Thread 11 executing transaction 789
-Transaction 789 completed
-Thread 10 executing transaction 790
+Thread 13 executing transaction 781
+Transaction 781 completed
+Thread 4 aborted transaction 780
+Thread 11 executing transaction 755
+Transaction 755 completed
+Thread 13 executing transaction 790
 Transaction 790 completed
+Thread 9 executing transaction 787
+Transaction 787 completed
 Thread 4 executing transaction 791
 Transaction 791 completed
-Thread 5 executing transaction 778
-Transaction 778 completed
-Thread 14 executing transaction 748
-Transaction 748 completed
-Thread 8 executing transaction 779
-Transaction 779 completed
-Thread 11 executing transaction 798
-Transaction 798 completed
-Thread 3 executing transaction 786
-Transaction 786 completed
-Thread 4 executing transaction 800
-Transaction 800 completed
-Thread 3 executing transaction 805
-Transaction 805 completed
-Thread 0 aborted transaction 788
-Thread 7 executing transaction 782
-Transaction 782 completed
-Thread 15 executing transaction 797
-Transaction 797 completed
-Thread 2 executing transaction 793
-Transaction 793 completed
-Thread 10 executing transaction 799
-Transaction 799 completed
-Thread 1 executing transaction 783
-Transaction 783 completed
-Thread 12 executing transaction 792
+Thread 8 executing transaction 785
+Transaction 785 completed
+Thread 11 executing transaction 792
 Transaction 792 completed
-Thread 5 executing transaction 801
-Transaction 801 completed
-Thread 4 executing transaction 806
+Thread 1 aborted transaction 778
+Thread 15 aborted transaction 788
+Thread 1 executing transaction 798
+Transaction 798 completed
+Thread 13 executing transaction 793
+Transaction 793 completed
+Thread 7 aborted transaction 743
+Thread 11 executing transaction 797
+Transaction 797 completed
+Thread 4 executing transaction 795
+Transaction 795 completed
+Thread 14 executing transaction 773
+Transaction 773 completed
+Thread 14 executing transaction 804
+Transaction 804 completed
+Thread 15 executing transaction 799
+Transaction 799 completed
+Thread 14 executing transaction 806
 Transaction 806 completed
-Thread 2 aborted transaction 811
-Thread 9 aborted transaction 795
-Thread 8 executing transaction 803
-Transaction 803 completed
-Thread 7 executing transaction 809
-Transaction 809 completed
-Thread 9 executing transaction 818
-Transaction 818 completed
-Thread 13 aborted transaction 794
-Thread 1 executing transaction 813
-Transaction 813 completed
-Thread 15 executing transaction 810
+Thread 0 aborted transaction 782
+Thread 13 executing transaction 801
+Transaction 801 completed
+Thread 12 executing transaction 789
+Transaction 789 completed
+Thread 3 executing transaction 784
+Transaction 784 completed
+Thread 5 aborted transaction 741
+Thread 10 aborted transaction 760
+Thread 2 executing transaction 783
+Transaction 783 completed
+Thread 3 executing transaction 810
 Transaction 810 completed
-Thread 0 aborted transaction 808
-Thread 13 aborted transaction 822
-Thread 4 executing transaction 816
-Transaction 816 completed
-Thread 6 aborted transaction 796
-Thread 0 executing transaction 825
-Transaction 825 completed
-Thread 8 executing transaction 819
-Transaction 819 completed
-Thread 4 executing transaction 827
-Transaction 827 completed
-Thread 2 executing transaction 817
+Thread 14 aborted transaction 807
+Thread 0 executing transaction 808
+Transaction 808 completed
+Thread 14 aborted transaction 815
+Thread 0 executing transaction 817
 Transaction 817 completed
-Thread 15 aborted transaction 823
-Thread 6 executing transaction 828
-Transaction 828 completed
-Thread 8 executing transaction 830
-Transaction 830 completed
-Thread 7 executing transaction 820
-Transaction 820 completed
-Thread 15 executing transaction 833
-Transaction 833 completed
-Thread 5 executing transaction 815
-Transaction 815 completed
+Thread 1 aborted transaction 800
+Thread 5 executing transaction 812
+Transaction 812 completed
+Thread 11 executing transaction 803
+Transaction 803 completed
+Thread 12 executing transaction 811
+Transaction 811 completed
+Thread 5 aborted transaction 820
+Thread 7 executing transaction 802
+Transaction 802 completed
+Thread 9 executing transaction 794
+Transaction 794 completed
+Thread 8 executing transaction 796
+Transaction 796 completed
+Thread 10 aborted transaction 813
+Thread 0 executing transaction 819
+Transaction 819 completed
+Thread 4 aborted transaction 805
+Thread 3 executing transaction 816
+Transaction 816 completed
+Thread 11 aborted transaction 821
 Thread 4 executing transaction 831
 Transaction 831 completed
-Thread 6 executing transaction 834
-Transaction 834 completed
-Thread 11 executing transaction 804
-Transaction 804 completed
-Thread 9 executing transaction 821
-Transaction 821 completed
-Thread 0 executing transaction 829
+Thread 8 executing transaction 829
 Transaction 829 completed
-Thread 12 executing transaction 814
-Transaction 814 completed
-Thread 9 aborted transaction 842
-Thread 1 aborted transaction 824
-Thread 6 executing transaction 840
-Transaction 840 completed
-Thread 3 executing transaction 807
-Transaction 807 completed
-Thread 10 aborted transaction 812
-Thread 0 executing transaction 843
-Transaction 843 completed
-Thread 2 aborted transaction 832
-Thread 0 executing transaction 850
-Transaction 850 completed
-Thread 6 executing transaction 846
-Transaction 846 completed
+Thread 9 executing transaction 826
+Transaction 826 completed
+Thread 10 aborted transaction 827
+Thread 4 executing transaction 834
+Transaction 834 completed
+Thread 10 executing transaction 837
+Transaction 837 completed
+Thread 6 executing transaction 786
+Transaction 786 completed
+Thread 7 aborted transaction 825
+Thread 1 aborted transaction 822
 Thread 8 executing transaction 835
 Transaction 835 completed
-Thread 6 executing transaction 853
-Transaction 853 completed
-Thread 5 aborted transaction 838
-Thread 11 executing transaction 841
-Transaction 841 completed
-Thread 10 executing transaction 849
-Transaction 849 completed
-Thread 15 executing transaction 837
-Transaction 837 completed
-Thread 10 executing transaction 858
-Transaction 858 completed
-Thread 3 executing transaction 848
-Transaction 848 completed
-Thread 0 aborted transaction 852
-Thread 9 executing transaction 845
+Thread 6 executing transaction 840
+Transaction 840 completed
+Thread 13 executing transaction 809
+Transaction 809 completed
+Thread 0 executing transaction 830
+Transaction 830 completed
+Thread 9 aborted transaction 836
+Thread 10 aborted transaction 839
+Thread 0 executing transaction 845
 Transaction 845 completed
-Thread 4 executing transaction 839
-Transaction 839 completed
-Thread 13 executing transaction 826
-Transaction 826 completed
-Thread 4 aborted transaction 864
-Thread 8 executing transaction 854
-Transaction 854 completed
-Thread 10 executing transaction 860
+Thread 14 executing transaction 818
+Transaction 818 completed
+Thread 11 aborted transaction 833
+Thread 10 executing transaction 848
+Transaction 848 completed
+Thread 14 executing transaction 850
+Transaction 850 completed
+Thread 4 executing transaction 838
+Transaction 838 completed
+Thread 5 executing transaction 824
+Transaction 824 completed
+Thread 12 executing transaction 823
+Transaction 823 completed
+Thread 15 executing transaction 828
+Transaction 828 completed
+Thread 14 executing transaction 853
+Transaction 853 completed
+Thread 12 aborted transaction 856
+Thread 14 executing transaction 858
+Transaction 858 completed
+Thread 10 executing transaction 852
+Transaction 852 completed
+Thread 9 executing transaction 846
+Transaction 846 completed
+Thread 14 executing transaction 860
 Transaction 860 completed
-Thread 1 aborted transaction 847
-Thread 5 executing transaction 856
-Transaction 856 completed
-Thread 0 executing transaction 862
-Transaction 862 completed
-Thread 6 aborted transaction 855
-Thread 11 executing transaction 857
-Transaction 857 completed
-Thread 7 aborted transaction 836
-Thread 12 executing transaction 844
-Transaction 844 completed
-Thread 10 aborted transaction 868
-Thread 9 aborted transaction 863
-Thread 14 aborted transaction 802
-Thread 11 executing transaction 873
-Transaction 873 completed
-Thread 15 executing transaction 859
-Transaction 859 completed
-Thread 9 executing transaction 877
-Transaction 877 completed
-Thread 2 executing transaction 851
+Thread 4 aborted transaction 854
+Thread 1 aborted transaction 842
+Thread 11 executing transaction 851
 Transaction 851 completed
-Thread 4 aborted transaction 866
-Thread 2 executing transaction 882
-Transaction 882 completed
-Thread 14 executing transaction 878
-Transaction 878 completed
-Thread 5 executing transaction 870
-Transaction 870 completed
-Thread 13 executing transaction 865
+Thread 15 aborted transaction 857
+Thread 12 executing transaction 859
+Transaction 859 completed
+Thread 1 executing transaction 865
 Transaction 865 completed
-Thread 8 executing transaction 867
-Transaction 867 completed
-Thread 3 executing transaction 861
+Thread 10 executing transaction 861
 Transaction 861 completed
-Thread 3 executing transaction 889
-Transaction 889 completed
-Thread 8 aborted transaction 888
-Thread 2 executing transaction 884
-Transaction 884 completed
-Thread 7 executing transaction 874
-Transaction 874 completed
+Thread 6 aborted transaction 844
+Thread 2 aborted transaction 814
+Thread 10 executing transaction 870
+Transaction 870 completed
+Thread 0 executing transaction 849
+Transaction 849 completed
+Thread 7 executing transaction 841
+Transaction 841 completed
+Thread 9 executing transaction 862
+Transaction 862 completed
+Thread 8 executing transaction 843
+Transaction 843 completed
+Thread 14 aborted transaction 863
+Thread 13 aborted transaction 847
+Thread 13 executing transaction 879
+Transaction 879 completed
+Thread 10 executing transaction 873
+Transaction 873 completed
+Thread 9 executing transaction 876
+Transaction 876 completed
+Thread 7 executing transaction 875
+Transaction 875 completed
+Thread 6 executing transaction 871
+Transaction 871 completed
+Thread 1 aborted transaction 869
 Thread 9 executing transaction 881
 Transaction 881 completed
-Thread 15 executing transaction 880
-Transaction 880 completed
-Thread 0 executing transaction 871
-Transaction 871 completed
-Thread 5 aborted transaction 886
-Thread 3 executing transaction 890
-Transaction 890 completed
-Thread 4 aborted transaction 883
-Thread 6 executing transaction 872
+Thread 10 executing transaction 882
+Transaction 882 completed
+Thread 12 executing transaction 868
+Transaction 868 completed
+Thread 15 executing transaction 867
+Transaction 867 completed
+Thread 15 executing transaction 889
+Transaction 889 completed
+Thread 9 executing transaction 886
+Transaction 886 completed
+Thread 2 executing transaction 872
 Transaction 872 completed
-Thread 9 aborted transaction 894
-Thread 3 executing transaction 898
-Transaction 898 completed
 Thread 2 executing transaction 892
 Transaction 892 completed
-Thread 4 aborted transaction 899
-Thread 0 executing transaction 896
-Transaction 896 completed
-Thread 1 executing transaction 869
-Transaction 869 completed
-Thread 12 executing transaction 875
-Transaction 875 completed
-Thread 13 executing transaction 887
+Thread 7 aborted transaction 883
+Thread 10 executing transaction 887
 Transaction 887 completed
-Thread 0 executing transaction 905
+Thread 9 executing transaction 891
+Transaction 891 completed
+Thread 1 aborted transaction 885
+Thread 14 executing transaction 878
+Transaction 878 completed
+Thread 12 executing transaction 888
+Transaction 888 completed
+Thread 13 executing transaction 880
+Transaction 880 completed
+Thread 12 executing transaction 897
+Transaction 897 completed
+Thread 9 executing transaction 896
+Transaction 896 completed
+Thread 6 executing transaction 884
+Transaction 884 completed
+Thread 12 executing transaction 901
+Transaction 901 completed
+Thread 4 aborted transaction 864
+Thread 10 executing transaction 895
+Transaction 895 completed
+Thread 1 executing transaction 899
+Transaction 899 completed
+Thread 3 aborted transaction 832
+Thread 3 executing transaction 907
+Transaction 907 completed
+Thread 8 executing transaction 877
+Transaction 877 completed
+Thread 13 aborted transaction 900
+Thread 14 executing transaction 898
+Transaction 898 completed
+Thread 5 executing transaction 855
+Transaction 855 completed
+Thread 0 aborted transaction 874
+Thread 2 executing transaction 893
+Transaction 893 completed
+Thread 15 executing transaction 890
+Transaction 890 completed
+Thread 10 executing transaction 905
 Transaction 905 completed
+Thread 2 executing transaction 913
+Transaction 913 completed
+Thread 8 executing transaction 910
+Transaction 910 completed
 Thread 1 executing transaction 906
 Transaction 906 completed
-Thread 11 executing transaction 879
-Transaction 879 completed
-Thread 15 executing transaction 895
-Transaction 895 completed
-Thread 12 executing transaction 907
-Transaction 907 completed
-Thread 11 executing transaction 911
+Thread 7 aborted transaction 894
+Thread 14 executing transaction 911
 Transaction 911 completed
-Thread 12 executing transaction 913
-Transaction 913 completed
-Thread 12 executing transaction 915
+Thread 3 aborted transaction 908
+Thread 0 executing transaction 915
 Transaction 915 completed
-Thread 11 executing transaction 914
-Transaction 914 completed
-Thread 1 executing transaction 910
-Transaction 910 completed
-Thread 4 aborted transaction 904
-Thread 8 executing transaction 891
-Transaction 891 completed
-Thread 15 executing transaction 912
-Transaction 912 completed
-Thread 14 aborted transaction 885
-Thread 3 executing transaction 902
-Transaction 902 completed
-Thread 4 executing transaction 919
-Transaction 919 completed
-Thread 11 executing transaction 917
-Transaction 917 completed
-Thread 15 aborted transaction 921
-Thread 9 executing transaction 901
-Transaction 901 completed
-Thread 12 executing transaction 916
-Transaction 916 completed
-Thread 10 aborted transaction 876
-Thread 5 executing transaction 897
-Transaction 897 completed
-Thread 7 executing transaction 893
-Transaction 893 completed
-Thread 5 aborted transaction 930
-Thread 8 aborted transaction 920
-Thread 11 executing transaction 925
-Transaction 925 completed
-Thread 5 executing transaction 932
-Transaction 932 completed
-Thread 8 aborted transaction 933
-Thread 5 executing transaction 935
-Transaction 935 completed
-Thread 3 executing transaction 923
-Transaction 923 completed
-Thread 9 aborted transaction 927
+Thread 13 aborted transaction 909
+Thread 11 aborted transaction 866
 Thread 14 executing transaction 922
 Transaction 922 completed
-Thread 6 aborted transaction 900
-Thread 8 executing transaction 936
-Transaction 936 completed
-Thread 14 executing transaction 940
-Transaction 940 completed
-Thread 0 executing transaction 909
-Transaction 909 completed
-Thread 10 executing transaction 929
-Transaction 929 completed
-Thread 3 executing transaction 938
-Transaction 938 completed
-Thread 1 executing transaction 918
-Transaction 918 completed
-Thread 15 executing transaction 926
-Transaction 926 completed
-Thread 13 aborted transaction 908
-Thread 11 executing transaction 934
-Transaction 934 completed
-Thread 14 aborted transaction 943
-Thread 6 executing transaction 941
-Transaction 941 completed
-Thread 8 executing transaction 942
-Transaction 942 completed
-Thread 2 executing transaction 903
-Transaction 903 completed
-Thread 1 executing transaction 948
-Transaction 948 completed
-Thread 11 executing transaction 950
-Transaction 950 completed
-Thread 12 executing transaction 928
-Transaction 928 completed
-Thread 13 executing transaction 949
-Transaction 949 completed
-Thread 8 aborted transaction 953
-Thread 7 aborted transaction 931
-Thread 2 executing transaction 954
-Transaction 954 completed
-Thread 0 executing transaction 944
-Transaction 944 completed
-Thread 11 executing transaction 956
-Transaction 956 completed
-Thread 10 aborted transaction 945
-Thread 15 executing transaction 947
-Transaction 947 completed
-Thread 7 aborted transaction 960
-Thread 13 aborted transaction 958
-Thread 3 executing transaction 946
-Transaction 946 completed
-Thread 4 executing transaction 924
-Transaction 924 completed
-Thread 14 executing transaction 951
-Transaction 951 completed
-Thread 8 aborted transaction 959
-Thread 2 executing transaction 961
-Transaction 961 completed
-Thread 6 executing transaction 952
-Transaction 952 completed
-Thread 5 executing transaction 937
-Transaction 937 completed
-Thread 1 executing transaction 955
-Transaction 955 completed
-Thread 9 aborted transaction 939
-Thread 14 aborted transaction 970
-Thread 13 executing transaction 967
-Transaction 967 completed
-Thread 2 aborted transaction 972
-Thread 3 executing transaction 968
-Transaction 968 completed
-Thread 4 executing transaction 969
-Transaction 969 completed
-Thread 1 executing transaction 975
-Transaction 975 completed
-Thread 12 aborted transaction 957
-Thread 4 executing transaction 981
-Transaction 981 completed
-Thread 10 executing transaction 964
-Transaction 964 completed
-Thread 15 executing transaction 965
-Transaction 965 completed
-Thread 0 aborted transaction 962
-Thread 10 executing transaction 985
-Transaction 985 completed
-Thread 3 executing transaction 980
-Transaction 980 completed
-Thread 13 aborted transaction 978
-Thread 1 aborted transaction 982
-Thread 11 executing transaction 963
-Transaction 963 completed
-Thread 15 executing transaction 986
-Transaction 986 completed
-Thread 3 executing transaction 989
-Transaction 989 completed
-Thread 3 executing transaction 994
-Transaction 994 completed
-Thread 14 executing transaction 977
-Transaction 977 completed
-Thread 5 executing transaction 974
-Transaction 974 completed
-Thread 12 aborted transaction 983
-Thread 8 executing transaction 971
-Transaction 971 completed
-Thread 0 executing transaction 987
-Transaction 987 completed
-Thread 0 aborted transaction 1
-Thread 7 executing transaction 966
-Transaction 966 completed
-Thread 5 executing transaction 997
-Transaction 997 completed
-Thread 11 aborted transaction 992
-Thread 6 executing transaction 973
-Transaction 973 completed
-Thread 3 executing transaction 995
-Transaction 995 completed
-Thread 10 aborted transaction 988
-Thread 9 executing transaction 976
-Transaction 976 completed
-Thread 0 aborted transaction 1
-Thread 13 aborted transaction 990
-Thread 4 aborted transaction 984
-Thread 6 aborted transaction 5
-Thread 7 executing transaction 2
-Transaction 2 completed
-Thread 8 executing transaction 999
-Transaction 999 completed
-Thread 2 aborted transaction 979
-Thread 1 aborted transaction 991
-Thread 8 executing transaction 33
-Transaction 33 completed
-Thread 2 aborted transaction 37
-Thread 15 executing transaction 993
-Transaction 993 completed
-Thread 3 executing transaction 6
-Transaction 6 completed
-Thread 10 executing transaction 7
-Transaction 7 completed
-Thread 7 aborted transaction 30
-Thread 6 executing transaction 28
-Transaction 28 completed
-Thread 7 aborted transaction 59
-Thread 5 executing transaction 3
-Transaction 3 completed
-Thread 6 aborted transaction 60
-Thread 8 aborted transaction 43
-Thread 0 executing transaction 13
-Transaction 13 completed
-Thread 3 aborted transaction 56
-Thread 9 aborted transaction 8
-Thread 7 aborted transaction 62
-Thread 14 aborted transaction 996
-Thread 6 executing transaction 67
-Transaction 67 completed
-Thread 1 executing transaction 40
-Transaction 40 completed
-Thread 4 executing transaction 26
-Transaction 26 completed
-Thread 12 aborted transaction 998
-Thread 9 aborted transaction 77
-Thread 11 aborted transaction 4
-Thread 5 executing transaction 66
-Transaction 66 completed
-Thread 7 executing transaction 84
-Transaction 84 completed
-Thread 6 executing transaction 93
-Transaction 93 completed
-Thread 15 aborted transaction 51
-Thread 12 aborted transaction 103
-Thread 4 executing transaction 102
-Transaction 102 completed
-Thread 14 aborted transaction 92
-Thread 3 executing transaction 76
-Transaction 76 completed
-Thread 10 executing transaction 57
-Transaction 57 completed
-Thread 6 aborted transaction 118
-Thread 5 executing transaction 114
-Transaction 114 completed
-Thread 15 aborted transaction 119
-Thread 8 aborted transaction 72
-Thread 4 aborted transaction 123
-Thread 15 aborted transaction 153
-Thread 11 executing transaction 110
-Transaction 110 completed
-Thread 10 executing transaction 136
-Transaction 136 completed
-Thread 14 aborted transaction 131
-Thread 3 executing transaction 135
-Transaction 135 completed
-Thread 14 executing transaction 168
-Transaction 168 completed
-Thread 0 aborted transaction 74
-Thread 1 aborted transaction 96
-Thread 9 executing transaction 109
-Transaction 109 completed
-Thread 14 aborted transaction 172
-Thread 4 aborted transaction 156
-Thread 15 aborted transaction 154
-Thread 6 executing transaction 148
-Transaction 148 completed
-Thread 2 aborted transaction 49
-Thread 11 executing transaction 159
-Transaction 159 completed
-Thread 5 executing transaction 152
-Transaction 152 completed
-Thread 0 aborted transaction 177
-Thread 13 executing transaction 22
-Transaction 22 completed
-Thread 0 executing transaction 213
-Transaction 213 completed
-Thread 8 executing transaction 153
-Transaction 153 completed
-Thread 13 executing transaction 218
-Transaction 218 completed
-Thread 5 executing transaction 212
-Transaction 212 completed
-Thread 6 aborted transaction 198
-Thread 3 executing transaction 171
-Transaction 171 completed
-Thread 15 executing transaction 196
-Transaction 196 completed
-Thread 10 executing transaction 166
-Transaction 166 completed
-Thread 11 executing transaction 210
-Transaction 210 completed
-Thread 5 aborted transaction 225
-Thread 11 aborted transaction 241
-Thread 12 executing transaction 121
-Transaction 121 completed
-Thread 2 executing transaction 203
-Transaction 203 completed
-Thread 5 executing transaction 243
-Transaction 243 completed
-Thread 0 aborted transaction 219
-Thread 9 executing transaction 182
-Transaction 182 completed
-Thread 1 executing transaction 181
-Transaction 181 completed
-Thread 12 executing transaction 245
-Transaction 245 completed
-Thread 5 aborted transaction 250
-Thread 0 executing transaction 251
-Transaction 251 completed
-Thread 9 executing transaction 253
-Transaction 253 completed
-Thread 7 executing transaction 117
-Transaction 117 completed
-Thread 0 executing transaction 273
-Transaction 273 completed
-Thread 4 aborted transaction 189
-Thread 13 executing transaction 223
-Transaction 223 completed
-Thread 14 aborted transaction 188
-Thread 6 executing transaction 232
-Transaction 232 completed
-Thread 9 aborted transaction 274
-Thread 8 aborted transaction 221
-Thread 1 aborted transaction 254
-Thread 14 executing transaction 294
-Transaction 294 completed
-Thread 11 aborted transaction 244
-Thread 9 executing transaction 300
-Transaction 300 completed
-Thread 7 executing transaction 277
-Transaction 277 completed
-Thread 15 aborted transaction 236
-Thread 2 aborted transaction 247
-Thread 11 executing transaction 312
-Transaction 312 completed
-Thread 5 aborted transaction 270
-Thread 15 aborted transaction 322
-Thread 14 executing transaction 309
-Transaction 309 completed
-Thread 5 executing transaction 336
-Transaction 336 completed
-Thread 2 executing transaction 326
-Transaction 326 completed
-Thread 6 executing transaction 296
-Transaction 296 completed
-Thread 12 executing transaction 255
-Transaction 255 completed
-Thread 14 executing transaction 338
-Transaction 338 completed
-Thread 6 aborted transaction 346
-Thread 5 aborted transaction 341
-Thread 10 executing transaction 237
-Transaction 237 completed
-Thread 14 executing transaction 350
-Transaction 350 completed
-Thread 13 executing transaction 288
-Transaction 288 completed
-Thread 15 executing transaction 337
-Transaction 337 completed
-Thread 5 executing transaction 355
-Transaction 355 completed
-Thread 12 aborted transaction 346
-Thread 11 aborted transaction 330
-Thread 15 executing transaction 363
-Transaction 363 completed
-Thread 1 executing transaction 307
-Transaction 307 completed
-Thread 8 aborted transaction 306
-Thread 6 aborted transaction 353
-Thread 4 executing transaction 283
-Transaction 283 completed
-Thread 3 executing transaction 233
-Transaction 233 completed
-Thread 0 aborted transaction 282
-Thread 9 aborted transaction 314
-Thread 7 aborted transaction 318
-Thread 13 executing transaction 362
-Transaction 362 completed
-Thread 3 executing transaction 390
-Transaction 390 completed
-Thread 15 executing transaction 371
-Transaction 371 completed
-Thread 3 executing transaction 403
-Transaction 403 completed
-Thread 11 aborted transaction 367
-Thread 2 executing transaction 345
-Transaction 345 completed
-Thread 7 aborted transaction 400
-Thread 13 executing transaction 402
-Transaction 402 completed
-Thread 8 executing transaction 377
-Transaction 377 completed
-Thread 12 aborted transaction 365
-Thread 5 executing transaction 364
-Transaction 364 completed
-Thread 8 aborted transaction 428
-Thread 10 executing transaction 357
-Transaction 357 completed
-Thread 12 aborted transaction 429
-Thread 10 aborted transaction 443
-Thread 8 executing transaction 441
-Transaction 441 completed
-Thread 11 executing transaction 410
-Transaction 410 completed
-Thread 6 aborted transaction 379
-Thread 7 executing transaction 418
-Transaction 418 completed
-Thread 9 executing transaction 395
-Transaction 395 completed
-Thread 6 aborted transaction 461
-Thread 15 executing transaction 405
-Transaction 405 completed
-Thread 9 executing transaction 463
-Transaction 463 completed
-Thread 14 executing transaction 361
-Transaction 361 completed
-Thread 4 aborted transaction 388
-Thread 1 aborted transaction 373
-Thread 2 executing transaction 417
-Transaction 417 completed
-Thread 12 executing transaction 451
-Transaction 451 completed
-Thread 4 executing transaction 470
-Transaction 470 completed
-Thread 15 aborted transaction 466
-Thread 13 aborted transaction 420
-Thread 6 executing transaction 465
-Transaction 465 completed
-Thread 11 aborted transaction 457
-Thread 10 executing transaction 452
-Transaction 452 completed
-Thread 7 aborted transaction 462
-Thread 8 aborted transaction 455
-Thread 8 aborted transaction 519
-Thread 0 executing transaction 393
-Transaction 393 completed
-Thread 5 executing transaction 432
-Transaction 432 completed
-Thread 3 aborted transaction 409
-Thread 10 aborted transaction 514
-Thread 6 executing transaction 502
-Transaction 502 completed
-Thread 5 aborted transaction 522
-Thread 4 aborted transaction 498
-Thread 13 executing transaction 501
-Transaction 501 completed
-Thread 9 executing transaction 468
-Transaction 468 completed
-Thread 14 executing transaction 469
-Transaction 469 completed
-Thread 2 aborted transaction 479
-Thread 15 executing transaction 499
-Transaction 499 completed
-Thread 1 aborted transaction 476
-Thread 12 aborted transaction 481
-Thread 7 executing transaction 518
-Transaction 518 completed
-Thread 1 aborted transaction 550
-Thread 6 aborted transaction 526
-Thread 8 executing transaction 519
-Transaction 519 completed
-Thread 11 aborted transaction 510
-Thread 7 executing transaction 562
-Transaction 562 completed
-Thread 5 aborted transaction 527
-Thread 11 executing transaction 579
-Transaction 579 completed
-Thread 0 executing transaction 521
-Transaction 521 completed
-Thread 10 executing transaction 525
-Transaction 525 completed
-Thread 5 executing transaction 585
-Transaction 585 completed
-Thread 12 executing transaction 555
-Transaction 555 completed
-Thread 13 aborted transaction 530
-Thread 4 aborted transaction 529
-Thread 11 executing transaction 587
-Transaction 587 completed
-Thread 5 executing transaction 600
-Transaction 600 completed
-Thread 0 aborted transaction 593
-Thread 9 executing transaction 532
-Transaction 532 completed
-Thread 7 aborted transaction 584
-Thread 2 executing transaction 538
-Transaction 538 completed
-Thread 6 executing transaction 573
-Transaction 573 completed
-Thread 11 aborted transaction 610
-Thread 8 executing transaction 577
-Transaction 577 completed
-Thread 5 aborted transaction 617
-Thread 3 executing transaction 523
-Transaction 523 completed
-Thread 4 executing transaction 609
-Transaction 609 completed
-Thread 14 aborted transaction 533
-Thread 11 aborted transaction 642
-Thread 13 executing transaction 607
-Transaction 607 completed
-Thread 15 executing transaction 546
-Transaction 546 completed
-Thread 7 aborted transaction 631
-Thread 12 executing transaction 603
-Transaction 603 completed
-Thread 9 executing transaction 628
-Transaction 628 completed
-Thread 12 aborted transaction 678
-Thread 6 executing transaction 639
-Transaction 639 completed
-Thread 5 executing transaction 647
-Transaction 647 completed
-Thread 3 executing transaction 648
-Transaction 648 completed
-Thread 7 aborted transaction 676
-Thread 11 aborted transaction 659
-Thread 6 aborted transaction 689
-Thread 15 executing transaction 668
-Transaction 668 completed
-Thread 10 executing transaction 597
-Transaction 597 completed
-Thread 2 executing transaction 638
-Transaction 638 completed
-Thread 4 aborted transaction 649
-Thread 15 aborted transaction 707
-Thread 5 aborted transaction 692
-Thread 3 executing transaction 697
-Transaction 697 completed
-Thread 7 aborted transaction 700
-Thread 6 executing transaction 706
-Transaction 706 completed
-Thread 5 aborted transaction 725
-Thread 0 executing transaction 627
-Transaction 627 completed
-Thread 1 executing transaction 564
-Transaction 564 completed
-Thread 2 aborted transaction 717
-Thread 14 aborted transaction 653
-Thread 9 executing transaction 678
-Transaction 678 completed
-Thread 8 executing transaction 645
-Transaction 645 completed
-Thread 14 executing transaction 749
-Transaction 749 completed
-Thread 3 aborted transaction 726
-Thread 14 executing transaction 762
-Transaction 762 completed
-Thread 0 aborted transaction 738
-Thread 7 executing transaction 728
-Transaction 728 completed
-Thread 13 aborted transaction 662
-Thread 3 executing transaction 766
-Transaction 766 completed
-Thread 14 aborted transaction 772
-Thread 5 aborted transaction 737
-Thread 12 executing transaction 686
-Transaction 686 completed
-Thread 4 aborted transaction 722
-Thread 15 executing transaction 723
-Transaction 723 completed
-Thread 1 executing transaction 742
-Transaction 742 completed
-Thread 0 aborted transaction 774
-Thread 11 executing transaction 703
-Transaction 703 completed
-Thread 14 executing transaction 795
-Transaction 795 completed
-Thread 10 aborted transaction 708
-Thread 6 executing transaction 732
-Transaction 732 completed
-Thread 2 aborted transaction 745
-Thread 5 aborted transaction 796
-Thread 12 executing transaction 802
-Transaction 802 completed
-Thread 14 aborted transaction 824
-Thread 7 aborted transaction 787
-Thread 1 aborted transaction 812
-Thread 8 aborted transaction 760
-Thread 0 executing transaction 822
-Transaction 822 completed
-Thread 7 executing transaction 855
-Transaction 855 completed
-Thread 4 executing transaction 808
-Transaction 808 completed
-Thread 3 aborted transaction 794
-Thread 12 executing transaction 847
-Transaction 847 completed
-Thread 15 aborted transaction 811
-Thread 2 executing transaction 838
-Transaction 838 completed
-Thread 5 executing transaction 842
-Transaction 842 completed
-Thread 3 aborted transaction 883
-Thread 7 executing transaction 868
-Transaction 868 completed
-Thread 11 executing transaction 823
-Transaction 823 completed
-Thread 12 executing transaction 885
-Transaction 885 completed
-Thread 14 aborted transaction 852
-Thread 15 executing transaction 886
-Transaction 886 completed
-Thread 10 aborted transaction 832
-Thread 9 executing transaction 758
-Transaction 758 completed
-Thread 1 aborted transaction 864
-Thread 2 aborted transaction 888
-Thread 13 aborted transaction 788
-Thread 6 executing transaction 836
-Transaction 836 completed
-Thread 5 executing transaction 894
-Transaction 894 completed
-Thread 8 aborted transaction 863
-Thread 0 aborted transaction 866
-Thread 7 aborted transaction 900
-Thread 11 executing transaction 904
-Transaction 904 completed
-Thread 2 executing transaction 931
-Transaction 931 completed
-Thread 11 aborted transaction 959
-Thread 12 executing transaction 908
-Transaction 908 completed
-Thread 0 aborted transaction 957
-Thread 1 executing transaction 933
-Transaction 933 completed
-Thread 2 executing transaction 959
-Transaction 959 completed
-Thread 14 aborted transaction 920
-Thread 0 executing transaction 970
-Transaction 970 completed
-Thread 4 executing transaction 876
-Transaction 876 completed
-Thread 11 aborted transaction 960
-Thread 3 aborted transaction 899
-Thread 15 executing transaction 921
+Thread 7 executing transaction 921
 Transaction 921 completed
-Thread 12 executing transaction 962
-Transaction 962 completed
-Thread 11 aborted transaction 984
-Thread 11 aborted transaction 992
-Thread 5 aborted transaction 945
-Thread 4 executing transaction 983
-Transaction 983 completed
-Thread 13 aborted transaction 939
-Thread 9 aborted transaction 930
-Thread 10 executing transaction 927
-Transaction 927 completed
-Thread 11 aborted transaction 992
-Thread 13 aborted transaction 1
-Thread 10 executing transaction 5
-Transaction 5 completed
-Thread 0 executing transaction 982
-Transaction 982 completed
-Thread 6 executing transaction 943
-Transaction 943 completed
-Thread 2 executing transaction 978
-Transaction 978 completed
-Thread 0 aborted transaction 43
-Thread 12 executing transaction 991
-Transaction 991 completed
-Thread 11 aborted transaction 8
-Thread 10 executing transaction 37
-Transaction 37 completed
-Thread 5 aborted transaction 996
-Thread 13 executing transaction 30
-Transaction 30 completed
-Thread 7 aborted transaction 958
-Thread 6 executing transaction 49
-Transaction 49 completed
-Thread 8 aborted transaction 953
-Thread 10 aborted transaction 62
-Thread 2 executing transaction 51
-Transaction 51 completed
-Thread 14 aborted transaction 979
-Thread 4 aborted transaction 998
-Thread 1 executing transaction 972
-Transaction 972 completed
-Thread 11 aborted transaction 60
-Thread 0 executing transaction 56
-Transaction 56 completed
-Thread 3 executing transaction 988
-Transaction 988 completed
-Thread 5 aborted transaction 72
-Thread 4 executing transaction 123
-Transaction 123 completed
-Thread 0 executing transaction 156
-Transaction 156 completed
-Thread 11 aborted transaction 154
-Thread 5 executing transaction 177
-Transaction 177 completed
-Thread 0 executing transaction 189
-Transaction 189 completed
-Thread 12 aborted transaction 59
-Thread 4 executing transaction 188
-Transaction 188 completed
-Thread 1 executing transaction 131
-Transaction 131 completed
-Thread 9 aborted transaction 4
-Thread 13 aborted transaction 74
-Thread 15 aborted transaction 990
-Thread 7 executing transaction 77
-Transaction 77 completed
-Thread 8 executing transaction 96
-Transaction 96 completed
-Thread 3 executing transaction 172
-Transaction 172 completed
-Thread 6 aborted transaction 92
-Thread 1 executing transaction 241
-Transaction 241 completed
-Thread 14 executing transaction 119
-Transaction 119 completed
-Thread 12 aborted transaction 225
-Thread 11 executing transaction 198
-Transaction 198 completed
-Thread 3 executing transaction 274
-Transaction 274 completed
-Thread 5 aborted transaction 219
-Thread 1 aborted transaction 306
-Thread 11 aborted transaction 322
-Thread 9 executing transaction 244
-Transaction 244 completed
-Thread 6 aborted transaction 282
-Thread 0 aborted transaction 221
-Thread 10 executing transaction 103
-Transaction 103 completed
-Thread 4 executing transaction 236
-Transaction 236 completed
-Thread 3 aborted transaction 322
-Thread 12 aborted transaction 318
-Thread 1 aborted transaction 341
-Thread 15 aborted transaction 250
-Thread 9 executing transaction 353
-Transaction 353 completed
-Thread 11 executing transaction 346
-Transaction 346 completed
-Thread 6 executing transaction 365
-Transaction 365 completed
-Thread 14 aborted transaction 314
-Thread 8 executing transaction 270
-Transaction 270 completed
-Thread 12 aborted transaction 400
-Thread 7 aborted transaction 254
-Thread 15 executing transaction 409
-Transaction 409 completed
-Thread 6 executing transaction 455
-Transaction 455 completed
-Thread 12 aborted transaction 461
-Thread 10 aborted transaction 373
-Thread 7 executing transaction 462
-Transaction 462 completed
-Thread 9 executing transaction 428
-Transaction 428 completed
-Thread 15 executing transaction 466
-Transaction 466 completed
-Thread 13 aborted transaction 247
-Thread 10 aborted transaction 481
-Thread 5 executing transaction 330
-Transaction 330 completed
-Thread 6 aborted transaction 476
-Thread 2 executing transaction 118
-Transaction 118 completed
-Thread 3 executing transaction 388
-Transaction 388 completed
-Thread 12 aborted transaction 479
-Thread 4 executing transaction 379
-Transaction 379 completed
-Thread 7 aborted transaction 498
-Thread 9 executing transaction 510
-Transaction 510 completed
-Thread 7 aborted transaction 593
-Thread 15 aborted transaction 514
-Thread 2 executing transaction 530
-Transaction 530 completed
-Thread 13 aborted transaction 522
-Thread 15 executing transaction 617
-Transaction 617 completed
-Thread 3 executing transaction 533
-Transaction 533 completed
-Thread 8 aborted transaction 443
-Thread 11 aborted transaction 457
-Thread 9 executing transaction 593
-Transaction 593 completed
-Thread 14 aborted transaction 429
-Thread 5 executing transaction 527
-Transaction 527 completed
-Thread 4 executing transaction 584
-Transaction 584 completed
-Thread 9 aborted transaction 676
-Thread 7 aborted transaction 610
-Thread 5 executing transaction 692
-Transaction 692 completed
-Thread 2 executing transaction 631
-Transaction 631 completed
-Thread 13 executing transaction 642
-Transaction 642 completed
-Thread 6 aborted transaction 529
-Thread 9 executing transaction 707
-Transaction 707 completed
-Thread 0 executing transaction 367
-Transaction 367 completed
-Thread 1 executing transaction 420
-Transaction 420 completed
-Thread 3 aborted transaction 653
-Thread 9 executing transaction 737
-Transaction 737 completed
-Thread 2 aborted transaction 722
-Thread 14 executing transaction 689
-Transaction 689 completed
-Thread 3 aborted transaction 760
-Thread 11 executing transaction 662
-Transaction 662 completed
-Thread 12 executing transaction 550
-Transaction 550 completed
-Thread 4 aborted transaction 700
-Thread 9 executing transaction 772
-Transaction 772 completed
-Thread 10 executing transaction 526
-Transaction 526 completed
-Thread 7 aborted transaction 708
-Thread 2 executing transaction 774
-Transaction 774 completed
-Thread 11 aborted transaction 794
-Thread 0 aborted transaction 738
-Thread 9 executing transaction 812
-Transaction 812 completed
-Thread 7 aborted transaction 832
-Thread 5 executing transaction 717
-Transaction 717 completed
-Thread 3 executing transaction 788
-Transaction 788 completed
-Thread 2 executing transaction 852
-Transaction 852 completed
-Thread 10 aborted transaction 824
-Thread 12 executing transaction 796
-Transaction 796 completed
-Thread 1 aborted transaction 745
-Thread 8 executing transaction 659
-Transaction 659 completed
-Thread 9 aborted transaction 866
-Thread 4 aborted transaction 811
-Thread 6 executing transaction 726
-Transaction 726 completed
-Thread 0 aborted transaction 864
-Thread 12 executing transaction 930
-Transaction 930 completed
-Thread 1 aborted transaction 939
-Thread 2 executing transaction 900
-Transaction 900 completed
-Thread 3 executing transaction 899
-Transaction 899 completed
-Thread 2 executing transaction 990
-Transaction 990 completed
-Thread 15 executing transaction 649
-Transaction 649 completed
-Thread 11 aborted transaction 863
-Thread 12 executing transaction 979
-Transaction 979 completed
-Thread 2 aborted transaction 996
-Thread 15 aborted transaction 998
-Thread 13 executing transaction 725
-Transaction 725 completed
-Thread 9 executing transaction 953
+Thread 9 aborted transaction 902
+Thread 2 executing transaction 918
+Transaction 918 completed
+Thread 7 executing transaction 928
+Transaction 928 completed
+Thread 3 executing transaction 923
+Transaction 923 completed
+Thread 12 aborted transaction 904
+Thread 6 executing transaction 903
+Transaction 903 completed
+Thread 11 executing transaction 926
+Transaction 926 completed
+Thread 5 executing transaction 912
+Transaction 912 completed
+Thread 0 aborted transaction 924
+Thread 10 executing transaction 917
+Transaction 917 completed
+Thread 12 executing transaction 933
+Transaction 933 completed
+Thread 15 aborted transaction 916
+Thread 7 aborted transaction 931
+Thread 0 executing transaction 937
+Transaction 937 completed
+Thread 1 executing transaction 920
+Transaction 920 completed
+Thread 10 aborted transaction 938
+Thread 11 executing transaction 935
+Transaction 935 completed
+Thread 13 executing transaction 925
+Transaction 925 completed
+Thread 6 executing transaction 934
+Transaction 934 completed
+Thread 6 executing transaction 947
+Transaction 947 completed
+Thread 6 executing transaction 948
+Transaction 948 completed
+Thread 9 executing transaction 929
+Transaction 929 completed
+Thread 15 executing transaction 941
+Transaction 941 completed
+Thread 7 executing transaction 940
+Transaction 940 completed
+Thread 0 aborted transaction 942
+Thread 9 executing transaction 950
+Transaction 950 completed
+Thread 5 executing transaction 936
+Transaction 936 completed
+Thread 9 executing transaction 954
+Transaction 954 completed
+Thread 5 executing transaction 955
+Transaction 955 completed
+Thread 15 executing transaction 951
+Transaction 951 completed
+Thread 7 aborted transaction 952
+Thread 8 executing transaction 919
+Transaction 919 completed
+Thread 0 executing transaction 953
 Transaction 953 completed
-Thread 5 aborted transaction 888
+Thread 4 aborted transaction 914
+Thread 8 executing transaction 961
+Transaction 961 completed
+Thread 14 executing transaction 927
+Transaction 927 completed
+Thread 11 executing transaction 945
+Transaction 945 completed
+Thread 5 executing transaction 957
+Transaction 957 completed
+Thread 1 executing transaction 943
+Transaction 943 completed
+Thread 8 executing transaction 963
+Transaction 963 completed
+Thread 3 aborted transaction 932
 Thread 0 executing transaction 960
 Transaction 960 completed
-Thread 6 executing transaction 958
+Thread 4 aborted transaction 962
+Thread 7 executing transaction 958
 Transaction 958 completed
-Thread 7 aborted transaction 883
-Thread 10 executing transaction 920
-Transaction 920 completed
-Thread 14 executing transaction 787
-Transaction 787 completed
-Thread 1 aborted transaction 984
-Thread 3 executing transaction 992
+Thread 6 executing transaction 949
+Transaction 949 completed
+Thread 1 aborted transaction 966
+Thread 13 executing transaction 946
+Transaction 946 completed
+Thread 4 executing transaction 971
+Transaction 971 completed
+Thread 8 executing transaction 968
+Transaction 968 completed
+Thread 6 executing transaction 973
+Transaction 973 completed
+Thread 3 aborted transaction 969
+Thread 8 executing transaction 977
+Transaction 977 completed
+Thread 14 executing transaction 964
+Transaction 964 completed
+Thread 7 executing transaction 972
+Transaction 972 completed
+Thread 0 executing transaction 970
+Transaction 970 completed
+Thread 6 aborted transaction 978
+Thread 9 executing transaction 956
+Transaction 956 completed
+Thread 5 aborted transaction 965
+Thread 2 aborted transaction 930
+Thread 11 executing transaction 967
+Transaction 967 completed
+Thread 9 executing transaction 985
+Transaction 985 completed
+Thread 15 executing transaction 959
+Transaction 959 completed
+Thread 5 executing transaction 986
+Transaction 986 completed
+Thread 13 executing transaction 975
+Transaction 975 completed
+Thread 2 executing transaction 987
+Transaction 987 completed
+Thread 7 aborted transaction 982
+Thread 15 aborted transaction 990
+Thread 0 executing transaction 983
+Transaction 983 completed
+Thread 4 executing transaction 976
+Transaction 976 completed
+Thread 14 executing transaction 981
+Transaction 981 completed
+Thread 9 executing transaction 989
+Transaction 989 completed
+Thread 13 executing transaction 992
 Transaction 992 completed
-Thread 4 aborted transaction 957
-Thread 8 executing transaction 945
-Transaction 945 completed
-Thread 0 aborted transaction 72
-Thread 14 executing transaction 219
-Transaction 219 completed
-Thread 7 executing transaction 92
-Transaction 92 completed
-Thread 13 executing transaction 59
-Transaction 59 completed
-Thread 10 aborted transaction 154
-Thread 7 executing transaction 306
-Transaction 306 completed
-Thread 11 aborted transaction 1
-Thread 6 aborted transaction 74
-Thread 14 executing transaction 282
-Transaction 282 completed
-Thread 5 executing transaction 62
-Transaction 62 completed
-Thread 15 aborted transaction 43
-Thread 9 executing transaction 60
-Transaction 60 completed
-Thread 10 aborted transaction 318
-Thread 4 executing transaction 247
-Transaction 247 completed
-Thread 3 aborted transaction 225
-Thread 5 aborted transaction 429
-Thread 2 executing transaction 8
-Transaction 8 completed
-Thread 1 aborted transaction 221
-Thread 6 executing transaction 373
-Transaction 373 completed
-Thread 0 aborted transaction 254
-Thread 14 aborted transaction 400
-Thread 12 aborted transaction 4
-Thread 4 executing transaction 476
-Transaction 476 completed
-Thread 0 aborted transaction 529
-Thread 8 aborted transaction 250
-Thread 3 executing transaction 479
-Transaction 479 completed
-Thread 1 executing transaction 514
-Transaction 514 completed
-Thread 10 executing transaction 457
-Transaction 457 completed
-Thread 14 aborted transaction 610
-Thread 1 aborted transaction 738
-Thread 3 executing transaction 722
-Transaction 722 completed
-Thread 9 executing transaction 461
-Transaction 461 completed
-Thread 0 aborted transaction 700
-Thread 5 executing transaction 481
-Transaction 481 completed
-Thread 11 aborted transaction 341
-Thread 2 aborted transaction 498
-Thread 4 aborted transaction 676
-Thread 9 executing transaction 824
-Transaction 824 completed
-Thread 5 aborted transaction 863
-Thread 10 executing transaction 745
-Transaction 745 completed
-Thread 6 executing transaction 522
-Transaction 522 completed
-Thread 15 executing transaction 443
-Transaction 443 completed
-Thread 11 aborted transaction 864
-Thread 9 executing transaction 888
-Transaction 888 completed
-Thread 4 aborted transaction 883
-Thread 1 executing transaction 794
-Transaction 794 completed
-Thread 5 aborted transaction 939
-Thread 7 aborted transaction 322
-Thread 12 executing transaction 653
-Transaction 653 completed
-Thread 13 aborted transaction 314
-Thread 10 executing transaction 957
-Transaction 957 completed
-Thread 12 aborted transaction 154
-Thread 2 executing transaction 866
-Transaction 866 completed
-Thread 7 aborted transaction 74
-Thread 9 aborted transaction 1
-Thread 14 executing transaction 760
-Transaction 760 completed
-Thread 11 aborted transaction 998
-Thread 0 executing transaction 832
-Transaction 832 completed
-Thread 15 executing transaction 996
-Transaction 996 completed
-Thread 3 aborted transaction 811
-Thread 8 executing transaction 708
-Transaction 708 completed
-Thread 12 aborted transaction 250
-Thread 14 executing transaction 322
-Transaction 322 completed
-Thread 8 aborted transaction 529
-Thread 1 aborted transaction 43
-Thread 3 aborted transaction 498
-Thread 12 executing transaction 610
-Transaction 610 completed
-Thread 14 executing transaction 676
-Transaction 676 completed
-Thread 6 aborted transaction 984
-Thread 0 aborted transaction 400
-Thread 12 executing transaction 863
-Transaction 863 completed
-Thread 13 executing transaction 221
-Transaction 221 completed
-Thread 14 aborted transaction 864
-Thread 11 executing transaction 341
-Transaction 341 completed
-Thread 0 aborted transaction 939
-Thread 3 aborted transaction 811
-Thread 14 executing transaction 1
-Transaction 1 completed
-Thread 15 aborted transaction 429
-Thread 1 executing transaction 738
-Transaction 738 completed
-Thread 7 executing transaction 314
-Transaction 314 completed
-Thread 2 aborted transaction 254
-Thread 3 executing transaction 74
-Transaction 74 completed
-Thread 12 executing transaction 984
+Thread 4 executing transaction 997
+Transaction 997 completed
+Thread 8 executing transaction 980
+Transaction 980 completed
+Thread 1 aborted transaction 974
+Thread 11 aborted transaction 988
+Thread 3 executing transaction 979
+Transaction 979 completed
+Thread 6 executing transaction 984
 Transaction 984 completed
-Thread 8 aborted transaction 700
-Thread 4 aborted transaction 4
-Thread 3 aborted transaction 811
-Thread 2 executing transaction 529
-Transaction 529 completed
-Thread 11 executing transaction 43
-Transaction 43 completed
-Thread 10 aborted transaction 225
-Thread 8 executing transaction 864
-Transaction 864 completed
-Thread 0 executing transaction 154
-Transaction 154 completed
-Thread 13 aborted transaction 998
-Thread 9 aborted transaction 318
-Thread 15 aborted transaction 400
-Thread 10 executing transaction 254
-Transaction 254 completed
-Thread 3 aborted transaction 225
-Thread 11 aborted transaction 811
-Thread 13 executing transaction 998
-Transaction 998 completed
-Thread 14 executing transaction 250
-Transaction 250 completed
-Thread 0 executing transaction 400
-Transaction 400 completed
+Thread 14 aborted transaction 998
+Thread 1 executing transaction 7
+Transaction 7 completed
+Thread 4 aborted transaction 2
+Thread 11 executing transaction 12
+Transaction 12 completed
+Thread 5 executing transaction 991
+Transaction 991 completed
+Thread 7 executing transaction 994
+Transaction 994 completed
+Thread 15 aborted transaction 995
+Thread 6 executing transaction 21
+Transaction 21 completed
+Thread 0 aborted transaction 996
 Thread 12 executing transaction 939
 Transaction 939 completed
-Thread 4 aborted transaction 4
-Thread 9 aborted transaction 318
-Thread 7 executing transaction 498
-Transaction 498 completed
-Thread 10 aborted transaction 811
-Thread 5 aborted transaction 72
-Thread 2 aborted transaction 700
-Thread 15 executing transaction 225
-Transaction 225 completed
+Thread 15 aborted transaction 45
+Thread 5 executing transaction 39
+Transaction 39 completed
+Thread 13 executing transaction 0
+Transaction 0 completed
+Thread 10 aborted transaction 944
+Thread 14 executing transaction 26
+Transaction 26 completed
+Thread 8 aborted transaction 4
+Thread 15 executing transaction 52
+Transaction 52 completed
+Thread 4 executing transaction 33
+Transaction 33 completed
+Thread 11 executing transaction 38
+Transaction 38 completed
+Thread 9 executing transaction 999
+Transaction 999 completed
+Thread 3 aborted transaction 32
+Thread 2 aborted transaction 993
+Thread 13 executing transaction 64
+Transaction 64 completed
+Thread 7 aborted transaction 43
+Thread 15 executing transaction 80
+Transaction 80 completed
+Thread 14 aborted transaction 67
+Thread 1 executing transaction 28
+Transaction 28 completed
+Thread 0 executing transaction 48
+Transaction 48 completed
+Thread 2 executing transaction 102
+Transaction 102 completed
+Thread 9 executing transaction 93
+Transaction 93 completed
+Thread 6 executing transaction 47
+Transaction 47 completed
+Thread 12 aborted transaction 51
+Thread 3 executing transaction 98
+Transaction 98 completed
+Thread 14 aborted transaction 117
+Thread 5 executing transaction 61
+Transaction 61 completed
+Thread 2 aborted transaction 129
+Thread 13 executing transaction 103
+Transaction 103 completed
+Thread 10 executing transaction 66
+Transaction 66 completed
+Thread 6 executing transaction 133
+Transaction 133 completed
+Thread 12 aborted transaction 135
+Thread 5 aborted transaction 139
+Thread 8 executing transaction 72
+Transaction 72 completed
+Thread 0 aborted transaction 125
+Thread 2 executing transaction 141
+Transaction 141 completed
+Thread 7 executing transaction 110
+Transaction 110 completed
+Thread 3 executing transaction 136
+Transaction 136 completed
+Thread 14 aborted transaction 138
+Thread 10 executing transaction 145
+Transaction 145 completed
+Thread 5 aborted transaction 150
+Thread 13 executing transaction 142
+Transaction 142 completed
+Thread 3 aborted transaction 156
+Thread 13 aborted transaction 160
+Thread 1 aborted transaction 119
+Thread 0 aborted transaction 153
+Thread 12 executing transaction 149
+Transaction 149 completed
+Thread 1 executing transaction 162
+Transaction 162 completed
+Thread 10 executing transaction 158
+Transaction 158 completed
+Thread 11 executing transaction 92
+Transaction 92 completed
+Thread 3 executing transaction 160
+Transaction 160 completed
+Thread 4 aborted transaction 86
+Thread 2 aborted transaction 154
+Thread 0 aborted transaction 163
+Thread 13 executing transaction 161
+Transaction 161 completed
+Thread 12 executing transaction 165
+Transaction 165 completed
+Thread 15 aborted transaction 113
+Thread 13 aborted transaction 173
+Thread 5 executing transaction 159
+Transaction 159 completed
+Thread 13 executing transaction 175
+Transaction 175 completed
+Thread 2 aborted transaction 171
+Thread 8 executing transaction 152
+Transaction 152 completed
+Thread 9 executing transaction 131
+Transaction 131 completed
+Thread 15 executing transaction 174
+Transaction 174 completed
+Thread 12 aborted transaction 173
+Thread 7 executing transaction 155
+Transaction 155 completed
+Thread 4 executing transaction 170
+Transaction 170 completed
+Thread 8 aborted transaction 180
+Thread 14 executing transaction 157
+Transaction 157 completed
+Thread 5 executing transaction 176
+Transaction 176 completed
+Thread 6 executing transaction 147
+Transaction 147 completed
+Thread 12 executing transaction 182
+Transaction 182 completed
+Thread 1 executing transaction 166
+Transaction 166 completed
+Thread 8 executing transaction 186
+Transaction 186 completed
+Thread 12 executing transaction 191
+Transaction 191 completed
+Thread 9 executing transaction 179
+Transaction 179 completed
+Thread 8 executing transaction 193
+Transaction 193 completed
+Thread 14 executing transaction 187
+Transaction 187 completed
+Thread 9 executing transaction 195
+Transaction 195 completed
+Thread 11 executing transaction 168
+Transaction 168 completed
+Thread 6 aborted transaction 189
+Thread 1 executing transaction 192
+Transaction 192 completed
+Thread 8 executing transaction 196
+Transaction 196 completed
+Thread 12 aborted transaction 194
+Thread 11 executing transaction 199
+Transaction 199 completed
+Thread 6 executing transaction 200
+Transaction 200 completed
+Thread 14 aborted transaction 197
+Thread 4 executing transaction 185
+Transaction 185 completed
+Thread 1 executing transaction 201
+Transaction 201 completed
+Thread 3 executing transaction 169
+Transaction 169 completed
+Thread 2 executing transaction 178
+Transaction 178 completed
+Thread 14 aborted transaction 206
+Thread 3 aborted transaction 209
+Thread 8 executing transaction 202
+Transaction 202 completed
+Thread 5 executing transaction 188
+Transaction 188 completed
+Thread 0 executing transaction 172
+Transaction 172 completed
+Thread 11 aborted transaction 204
+Thread 3 executing transaction 212
+Transaction 212 completed
+Thread 12 aborted transaction 203
+Thread 5 executing transaction 214
+Transaction 214 completed
+Thread 4 executing transaction 207
+Transaction 207 completed
+Thread 13 executing transaction 177
+Transaction 177 completed
+Thread 15 aborted transaction 181
+Thread 9 executing transaction 198
+Transaction 198 completed
+Thread 8 executing transaction 213
+Transaction 213 completed
+Thread 3 executing transaction 218
+Transaction 218 completed
+Thread 0 aborted transaction 215
+Thread 7 executing transaction 184
+Transaction 184 completed
+Thread 2 aborted transaction 210
+Thread 13 aborted transaction 227
+Thread 15 executing transaction 223
+Transaction 223 completed
+Thread 1 executing transaction 208
+Transaction 208 completed
+Thread 11 executing transaction 216
+Transaction 216 completed
+Thread 9 aborted transaction 224
+Thread 14 executing transaction 211
+Transaction 211 completed
+Thread 4 executing transaction 221
+Transaction 221 completed
+Thread 6 aborted transaction 205
+Thread 8 executing transaction 236
+Transaction 236 completed
+Thread 1 executing transaction 263
+Transaction 263 completed
+Thread 11 aborted transaction 269
+Thread 13 executing transaction 251
+Transaction 251 completed
+Thread 12 executing transaction 219
+Transaction 219 completed
+Thread 10 executing transaction 167
+Transaction 167 completed
+Thread 6 aborted transaction 283
+Thread 5 aborted transaction 222
+Thread 15 executing transaction 254
+Transaction 254 completed
+Thread 0 executing transaction 242
+Transaction 242 completed
+Thread 12 aborted transaction 297
+Thread 9 executing transaction 273
+Transaction 273 completed
+Thread 3 executing transaction 237
+Transaction 237 completed
+Thread 10 executing transaction 300
+Transaction 300 completed
+Thread 7 aborted transaction 244
+Thread 13 aborted transaction 295
+Thread 6 executing transaction 306
+Transaction 306 completed
+Thread 3 executing transaction 326
+Transaction 326 completed
+Thread 15 aborted transaction 314
+Thread 4 executing transaction 280
+Transaction 280 completed
+Thread 0 executing transaction 318
+Transaction 318 completed
+Thread 4 executing transaction 355
+Transaction 355 completed
+Thread 9 aborted transaction 324
+Thread 11 executing transaction 290
+Transaction 290 completed
+Thread 2 aborted transaction 250
+Thread 6 executing transaction 344
+Transaction 344 completed
+Thread 7 aborted transaction 335
+Thread 8 aborted transaction 288
+Thread 1 executing transaction 289
+Transaction 289 completed
+Thread 4 executing transaction 361
+Transaction 361 completed
+Thread 3 aborted transaction 346
+Thread 6 executing transaction 369
+Transaction 369 completed
+Thread 2 aborted transaction 367
+Thread 5 aborted transaction 313
+Thread 4 executing transaction 378
+Transaction 378 completed
+Thread 1 executing transaction 375
+Transaction 375 completed
+Thread 8 executing transaction 374
+Transaction 374 completed
+Thread 7 executing transaction 371
+Transaction 371 completed
+Thread 10 executing transaction 328
+Transaction 328 completed
+Thread 11 aborted transaction 365
+Thread 6 executing transaction 402
+Transaction 402 completed
+Thread 9 executing transaction 364
+Transaction 364 completed
+Thread 13 aborted transaction 337
+Thread 6 executing transaction 434
+Transaction 434 completed
+Thread 14 aborted transaction 274
+Thread 12 aborted transaction 320
+Thread 4 executing transaction 412
+Transaction 412 completed
+Thread 6 executing transaction 456
+Transaction 456 completed
+Thread 3 executing transaction 393
+Transaction 393 completed
+Thread 13 executing transaction 446
+Transaction 446 completed
+Thread 7 aborted transaction 422
+Thread 5 executing transaction 409
+Transaction 409 completed
+Thread 6 executing transaction 464
+Transaction 464 completed
+Thread 1 aborted transaction 415
+Thread 7 executing transaction 470
+Transaction 470 completed
+Thread 0 executing transaction 357
+Transaction 357 completed
+Thread 8 executing transaction 418
+Transaction 418 completed
+Thread 13 aborted transaction 468
+Thread 9 aborted transaction 436
+Thread 4 executing transaction 462
+Transaction 462 completed
+Thread 11 executing transaction 433
+Transaction 433 completed
+Thread 6 executing transaction 473
+Transaction 473 completed
+Thread 3 aborted transaction 466
+Thread 4 aborted transaction 499
+Thread 0 aborted transaction 489
+Thread 2 executing transaction 405
+Transaction 405 completed
+Thread 6 executing transaction 510
+Transaction 510 completed
+Thread 8 executing transaction 491
+Transaction 491 completed
+Thread 7 executing transaction 483
+Transaction 483 completed
+Thread 14 executing transaction 457
+Transaction 457 completed
+Thread 5 aborted transaction 474
+Thread 11 aborted transaction 505
+Thread 2 executing transaction 536
+Transaction 536 completed
+Thread 10 executing transaction 423
+Transaction 423 completed
+Thread 12 aborted transaction 461
+Thread 9 aborted transaction 493
+Thread 14 aborted transaction 546
+Thread 6 executing transaction 538
+Transaction 538 completed
+Thread 15 executing transaction 353
+Transaction 353 completed
+Thread 5 executing transaction 547
+Transaction 547 completed
+Thread 11 executing transaction 549
+Transaction 549 completed
+Thread 10 executing transaction 564
+Transaction 564 completed
+Thread 1 aborted transaction 480
+Thread 7 executing transaction 545
+Transaction 545 completed
+Thread 3 aborted transaction 526
+Thread 6 executing transaction 577
+Transaction 577 completed
+Thread 8 executing transaction 541
+Transaction 541 completed
+Thread 1 executing transaction 594
+Transaction 594 completed
+Thread 10 aborted transaction 593
+Thread 5 executing transaction 584
+Transaction 584 completed
+Thread 9 executing transaction 572
+Transaction 572 completed
+Thread 11 executing transaction 587
+Transaction 587 completed
+Thread 2 executing transaction 550
+Transaction 550 completed
+Thread 0 executing transaction 529
+Transaction 529 completed
+Thread 6 aborted transaction 607
+Thread 15 executing transaction 582
+Transaction 582 completed
+Thread 12 executing transaction 568
+Transaction 568 completed
+Thread 4 executing transaction 528
+Transaction 528 completed
+Thread 12 executing transaction 641
+Transaction 641 completed
+Thread 8 executing transaction 609
+Transaction 609 completed
+Thread 0 executing transaction 631
+Transaction 631 completed
+Thread 11 executing transaction 628
+Transaction 628 completed
+Thread 7 aborted transaction 600
+Thread 15 executing transaction 635
+Transaction 635 completed
+Thread 12 executing transaction 643
+Transaction 643 completed
+Thread 3 executing transaction 603
+Transaction 603 completed
+Thread 10 executing transaction 617
+Transaction 617 completed
+Thread 13 aborted transaction 492
+Thread 0 executing transaction 649
+Transaction 649 completed
+Thread 1 executing transaction 610
+Transaction 610 completed
+Thread 5 executing transaction 618
+Transaction 618 completed
+Thread 2 executing transaction 630
+Transaction 630 completed
+Thread 11 executing transaction 657
+Transaction 657 completed
+Thread 0 aborted transaction 680
+Thread 9 executing transaction 620
+Transaction 620 completed
+Thread 6 executing transaction 634
+Transaction 634 completed
+Thread 15 aborted transaction 660
+Thread 1 executing transaction 688
+Transaction 688 completed
+Thread 12 aborted transaction 664
+Thread 8 executing transaction 648
+Transaction 648 completed
+Thread 3 executing transaction 668
+Transaction 668 completed
+Thread 4 aborted transaction 642
+Thread 11 executing transaction 704
+Transaction 704 completed
+Thread 13 executing transaction 677
+Transaction 677 completed
+Thread 7 executing transaction 659
+Transaction 659 completed
+Thread 2 executing transaction 700
+Transaction 700 completed
+Thread 10 executing transaction 676
+Transaction 676 completed
+Thread 14 aborted transaction 574
+Thread 4 executing transaction 738
+Transaction 738 completed
+Thread 0 aborted transaction 707
+Thread 0 executing transaction 759
+Transaction 759 completed
+Thread 6 executing transaction 717
+Transaction 717 completed
+Thread 15 executing transaction 722
+Transaction 722 completed
+Thread 9 executing transaction 708
+Transaction 708 completed
+Thread 2 executing transaction 754
+Transaction 754 completed
+Thread 11 aborted transaction 741
+Thread 3 executing transaction 737
+Transaction 737 completed
+Thread 12 executing transaction 732
+Transaction 732 completed
+Thread 8 aborted transaction 736
+Thread 13 aborted transaction 748
+Thread 9 executing transaction 778
+Transaction 778 completed
+Thread 5 executing transaction 689
+Transaction 689 completed
+Thread 12 executing transaction 800
+Transaction 800 completed
+Thread 1 aborted transaction 723
+Thread 6 executing transaction 762
+Transaction 762 completed
+Thread 11 executing transaction 782
+Transaction 782 completed
+Thread 8 executing transaction 805
+Transaction 805 completed
+Thread 3 executing transaction 788
+Transaction 788 completed
+Thread 1 executing transaction 815
+Transaction 815 completed
+Thread 6 executing transaction 820
+Transaction 820 completed
+Thread 15 aborted transaction 774
+Thread 10 aborted transaction 756
+Thread 11 aborted transaction 822
+Thread 4 aborted transaction 758
+Thread 15 executing transaction 836
+Transaction 836 completed
+Thread 12 executing transaction 814
+Transaction 814 completed
+Thread 6 executing transaction 833
+Transaction 833 completed
+Thread 7 aborted transaction 743
+Thread 10 executing transaction 839
+Transaction 839 completed
+Thread 3 executing transaction 827
+Transaction 827 completed
+Thread 5 aborted transaction 813
+Thread 6 aborted transaction 856
+Thread 1 aborted transaction 832
+Thread 14 aborted transaction 757
+Thread 0 executing transaction 760
+Transaction 760 completed
+Thread 9 aborted transaction 807
+Thread 13 executing transaction 821
+Transaction 821 completed
+Thread 5 executing transaction 866
+Transaction 866 completed
+Thread 3 executing transaction 864
+Transaction 864 completed
+Thread 6 aborted transaction 869
+Thread 4 aborted transaction 847
+Thread 7 aborted transaction 857
+Thread 13 executing transaction 900
+Transaction 900 completed
+Thread 5 aborted transaction 902
+Thread 10 executing transaction 863
+Transaction 863 completed
+Thread 3 aborted transaction 904
+Thread 12 executing transaction 854
+Transaction 854 completed
+Thread 6 executing transaction 908
+Transaction 908 completed
+Thread 9 executing transaction 894
+Transaction 894 completed
+Thread 8 executing transaction 825
+Transaction 825 completed
+Thread 7 aborted transaction 914
+Thread 14 aborted transaction 883
+Thread 15 executing transaction 844
+Transaction 844 completed
+Thread 6 executing transaction 938
+Transaction 938 completed
+Thread 1 aborted transaction 874
+Thread 2 executing transaction 780
+Transaction 780 completed
+Thread 8 executing transaction 944
+Transaction 944 completed
+Thread 10 aborted transaction 930
+Thread 1 executing transaction 969
+Transaction 969 completed
+Thread 15 executing transaction 965
+Transaction 965 completed
+Thread 3 aborted transaction 931
+Thread 6 executing transaction 966
+Transaction 966 completed
+Thread 12 aborted transaction 932
+Thread 14 executing transaction 962
+Transaction 962 completed
+Thread 8 executing transaction 978
+Transaction 978 completed
+Thread 2 aborted transaction 974
+Thread 6 executing transaction 995
+Transaction 995 completed
+Thread 5 aborted transaction 924
+Thread 12 executing transaction 996
+Transaction 996 completed
+Thread 7 aborted transaction 952
+Thread 13 executing transaction 916
+Transaction 916 completed
+Thread 4 executing transaction 909
+Transaction 909 completed
+Thread 15 aborted transaction 990
+Thread 12 executing transaction 45
+Transaction 45 completed
+Thread 6 executing transaction 32
+Transaction 32 completed
+Thread 3 aborted transaction 993
+Thread 7 aborted transaction 51
+Thread 10 executing transaction 988
+Transaction 988 completed
+Thread 12 aborted transaction 117
+Thread 14 executing transaction 998
+Transaction 998 completed
+Thread 1 aborted transaction 982
+Thread 8 executing transaction 2
+Transaction 2 completed
+Thread 6 executing transaction 119
+Transaction 119 completed
+Thread 2 aborted transaction 4
+Thread 15 aborted transaction 113
+Thread 5 aborted transaction 43
+Thread 12 aborted transaction 138
+Thread 7 executing transaction 129
+Transaction 129 completed
+Thread 2 executing transaction 156
+Transaction 156 completed
+Thread 14 executing transaction 139
+Transaction 139 completed
+Thread 3 aborted transaction 125
+Thread 15 executing transaction 163
+Transaction 163 completed
+Thread 14 executing transaction 189
+Transaction 189 completed
+Thread 12 executing transaction 171
+Transaction 171 completed
+Thread 6 aborted transaction 150
+Thread 1 executing transaction 154
+Transaction 154 completed
+Thread 4 executing transaction 86
+Transaction 86 completed
+Thread 8 aborted transaction 153
+Thread 3 executing transaction 194
+Transaction 194 completed
+Thread 15 aborted transaction 197
+Thread 12 executing transaction 203
+Transaction 203 completed
+Thread 0 aborted transaction 885
+Thread 6 executing transaction 204
+Transaction 204 completed
+Thread 5 executing transaction 180
+Transaction 180 completed
+Thread 11 executing transaction 842
+Transaction 842 completed
+Thread 8 executing transaction 209
+Transaction 209 completed
+Thread 2 aborted transaction 181
+Thread 7 executing transaction 173
+Transaction 173 completed
+Thread 9 executing transaction 942
+Transaction 942 completed
+Thread 6 executing transaction 224
+Transaction 224 completed
+Thread 13 executing transaction 67
+Transaction 67 completed
+Thread 12 executing transaction 215
+Transaction 215 completed
+Thread 15 executing transaction 244
+Transaction 244 completed
+Thread 11 aborted transaction 250
+Thread 3 aborted transaction 210
+Thread 14 executing transaction 197
+Transaction 197 completed
+Thread 8 executing transaction 269
+Transaction 269 completed
+Thread 12 executing transaction 313
+Transaction 313 completed
+Thread 4 aborted transaction 206
+Thread 7 executing transaction 283
+Transaction 283 completed
+Thread 13 executing transaction 297
+Transaction 297 completed
+Thread 0 aborted transaction 222
+Thread 4 executing transaction 365
+Transaction 365 completed
+Thread 6 aborted transaction 295
+Thread 7 executing transaction 367
+Transaction 367 completed
+Thread 14 executing transaction 335
+Transaction 335 completed
+Thread 0 aborted transaction 422
+Thread 2 aborted transaction 274
+Thread 5 executing transaction 227
+Transaction 227 completed
+Thread 12 executing transaction 337
+Transaction 337 completed
+Thread 6 aborted transaction 461
+Thread 3 executing transaction 324
+Transaction 324 completed
+Thread 0 executing transaction 474
+Transaction 474 completed
+Thread 7 aborted transaction 466
+Thread 9 executing transaction 288
+Transaction 288 completed
+Thread 15 aborted transaction 314
+Thread 8 aborted transaction 346
+Thread 1 executing transaction 205
+Transaction 205 completed
+Thread 12 executing transaction 492
+Transaction 492 completed
+Thread 0 executing transaction 505
+Transaction 505 completed
+Thread 13 executing transaction 415
+Transaction 415 completed
+Thread 14 executing transaction 468
+Transaction 468 completed
+Thread 4 aborted transaction 436
+Thread 6 executing transaction 493
+Transaction 493 completed
+Thread 7 executing transaction 526
+Transaction 526 completed
+Thread 8 executing transaction 593
+Transaction 593 completed
+Thread 14 aborted transaction 664
+Thread 15 aborted transaction 574
+Thread 12 aborted transaction 607
+Thread 2 aborted transaction 480
+Thread 5 executing transaction 489
+Transaction 489 completed
+Thread 1 aborted transaction 600
+Thread 4 executing transaction 680
+Transaction 680 completed
+Thread 11 executing transaction 320
+Transaction 320 completed
+Thread 9 executing transaction 546
+Transaction 546 completed
+Thread 6 executing transaction 707
+Transaction 707 completed
+Thread 0 aborted transaction 642
+Thread 12 executing transaction 748
+Transaction 748 completed
+Thread 7 executing transaction 723
+Transaction 723 completed
+Thread 15 executing transaction 743
+Transaction 743 completed
+Thread 14 executing transaction 741
+Transaction 741 completed
+Thread 1 aborted transaction 758
+Thread 0 executing transaction 832
+Transaction 832 completed
+Thread 8 executing transaction 736
+Transaction 736 completed
+Thread 11 executing transaction 807
+Transaction 807 completed
+Thread 12 executing transaction 847
+Transaction 847 completed
+Thread 7 aborted transaction 856
+Thread 5 executing transaction 757
+Transaction 757 completed
+Thread 15 executing transaction 857
+Transaction 857 completed
+Thread 4 executing transaction 774
+Transaction 774 completed
+Thread 13 executing transaction 660
+Transaction 660 completed
+Thread 6 executing transaction 822
+Transaction 822 completed
+Thread 14 executing transaction 869
+Transaction 869 completed
+Thread 1 aborted transaction 874
+Thread 4 aborted transaction 931
+Thread 7 aborted transaction 914
+Thread 0 executing transaction 883
+Transaction 883 completed
+Thread 5 aborted transaction 924
+Thread 8 aborted transaction 885
+Thread 15 executing transaction 930
+Transaction 930 completed
+Thread 7 executing transaction 990
+Transaction 990 completed
+Thread 4 executing transaction 982
+Transaction 982 completed
+Thread 12 aborted transaction 904
+Thread 6 executing transaction 993
+Transaction 993 completed
+Thread 3 aborted transaction 499
+Thread 9 aborted transaction 813
+Thread 11 executing transaction 902
+Transaction 902 completed
+Thread 7 aborted transaction 117
+Thread 8 executing transaction 113
+Transaction 113 completed
+Thread 1 executing transaction 974
+Transaction 974 completed
+Thread 14 executing transaction 952
+Transaction 952 completed
 Thread 0 executing transaction 4
 Transaction 4 completed
-Thread 8 aborted transaction 318
-Thread 14 executing transaction 811
-Transaction 811 completed
-Thread 4 aborted transaction 318
-Thread 13 executing transaction 318
-Transaction 318 completed
-Thread 6 executing transaction 883
-Transaction 883 completed
-Thread 1 aborted transaction 429
-Thread 2 executing transaction 429
-Transaction 429 completed
-Thread 12 executing transaction 72
-Transaction 72 completed
-Thread 5 aborted transaction 700
-Thread 4 executing transaction 700
-Transaction 700 completed
+Thread 15 executing transaction 51
+Transaction 51 completed
+Thread 6 executing transaction 150
+Transaction 150 completed
+Thread 4 executing transaction 125
+Transaction 125 completed
+Thread 2 executing transaction 756
+Transaction 756 completed
+Thread 10 executing transaction 135
+Transaction 135 completed
+Thread 1 executing transaction 250
+Transaction 250 completed
+Thread 5 aborted transaction 43
+Thread 7 executing transaction 210
+Transaction 210 completed
+Thread 0 aborted transaction 295
+Thread 14 executing transaction 274
+Transaction 274 completed
+Thread 6 executing transaction 346
+Transaction 346 completed
+Thread 15 aborted transaction 314
+Thread 4 executing transaction 422
+Transaction 422 completed
+Thread 9 aborted transaction 153
+Thread 1 aborted transaction 466
+Thread 1 aborted transaction 813
+Thread 13 aborted transaction 932
+Thread 10 executing transaction 461
+Transaction 461 completed
+Thread 7 aborted transaction 499
+Thread 12 aborted transaction 138
+Thread 7 executing transaction 874
+Transaction 874 completed
+Thread 8 aborted transaction 222
+Thread 6 aborted transaction 607
+Thread 11 aborted transaction 181
+Thread 14 executing transaction 600
+Transaction 600 completed
+Thread 5 executing transaction 480
+Transaction 480 completed
+Thread 3 executing transaction 206
+Transaction 206 completed
+Thread 0 executing transaction 574
+Transaction 574 completed
+Thread 2 executing transaction 436
+Transaction 436 completed
+Thread 15 executing transaction 642
+Transaction 642 completed
+Thread 9 executing transaction 758
+Transaction 758 completed
+Thread 7 aborted transaction 914
+Thread 14 aborted transaction 43
+Thread 1 aborted transaction 813
+Thread 12 executing transaction 904
+Transaction 904 completed
+Thread 4 executing transaction 664
+Transaction 664 completed
+Thread 6 executing transaction 931
+Transaction 931 completed
+Thread 2 aborted transaction 181
+Thread 13 aborted transaction 856
+Thread 5 executing transaction 117
+Transaction 117 completed
+Thread 12 executing transaction 607
+Transaction 607 completed
+Thread 10 executing transaction 885
+Transaction 885 completed
+Thread 8 executing transaction 924
+Transaction 924 completed
+Thread 11 aborted transaction 932
+Thread 7 executing transaction 314
+Transaction 314 completed
+Thread 6 executing transaction 914
+Transaction 914 completed
+Thread 10 aborted transaction 932
+Thread 1 executing transaction 499
+Transaction 499 completed
+Thread 0 executing transaction 153
+Transaction 153 completed
+Thread 3 aborted transaction 138
+Thread 14 aborted transaction 466
+Thread 11 aborted transaction 932
+Thread 2 executing transaction 43
+Transaction 43 completed
+Thread 4 executing transaction 813
+Transaction 813 completed
+Thread 0 aborted transaction 466
+Thread 10 executing transaction 138
+Transaction 138 completed
+Thread 12 executing transaction 932
+Transaction 932 completed
+Thread 3 executing transaction 466
+Transaction 466 completed
+Thread 5 executing transaction 856
+Transaction 856 completed
+Thread 9 executing transaction 295
+Transaction 295 completed
+Thread 15 executing transaction 222
+Transaction 222 completed
+Thread 13 executing transaction 181
+Transaction 181 completed
