@@ -322,18 +322,18 @@ int main() {
     //Read input from file
     ifstream fin("input.txt");
     fin >> n >> totTrans  >>  TransactionsFile;
-    cout << "Number of threads: " << n << endl;
-    cout << "Number of transactions: " << totTrans << endl;
-    cout << "Transactions file: " << TransactionsFile << endl; 
+    // cout << "Number of threads: " << n << endl;
+    // cout << "Number of transactions: " << totTrans << endl;
+    // cout << "Transactions file: " << TransactionsFile << endl; 
     fin.close();
 
     //initialize DAG
     DAG = new DAGmodule(totTrans);
 
-    cout<< "Reading transactions from file..." << endl;
+    // cout<< "Reading transactions from file..." << endl;
     //read transactions from the file
     readTransactions(TransactionsFile);
-    cout<< "Transactions read successfully" << endl;
+    // cout<< "Transactions read successfully" << endl;
 
     //create data items
     dataItems = vector<dataItem*>();
@@ -342,7 +342,7 @@ int main() {
     }
 
     //create DAG using n threads
-    cout<<" Created DAG using " << n << " threads" << endl;
+    // cout<<" Created DAG using " << n << " threads" << endl;
 
     // start time 
     auto thrdStartTime = chrono::high_resolution_clock::now();
@@ -364,7 +364,7 @@ int main() {
 
     auto thrdEndTime = chrono::high_resolution_clock::now();
     auto elapsedTime = chrono::duration_cast<chrono::microseconds>(thrdEndTime - thrdStartTime).count();
-    cout << "Elapsed time for DAG creation: " << elapsedTime << " microseconds" << endl;
+    // cout << "Elapsed time for DAG creation: " << elapsedTime << " microseconds" << endl;
 
     //create threads to execute transactions
     vector<thread> execThreads(n);
@@ -376,12 +376,13 @@ int main() {
     for (int i = 0; i < n; i++) {
         execThreads[i].join();
     }
-    cout << "All transactions executed" << endl;
+    // cout << "All transactions executed" << endl;
 
     auto thrdEndTime2 = chrono::high_resolution_clock::now();
     auto elapsedTime2 = chrono::duration_cast<chrono::microseconds>(thrdEndTime2 - thrdEndTime).count();
-    cout << "Elapsed time for transaction execution: " << elapsedTime2 << " microseconds" << endl;
-    cout << "Total elapsed time: " << elapsedTime + elapsedTime2 << " microseconds" << endl;
+    // cout << "Elapsed time for transaction execution: " << elapsedTime2 << " microseconds" << endl;
+    // cout << "Total elapsed time: " << elapsedTime + elapsedTime2 << " microseconds" << endl;
+    cout << elapsedTime2 << " " << elapsedTime << endl;
 
     fclose(logFile);
     delete DAG;

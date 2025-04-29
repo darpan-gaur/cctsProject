@@ -254,18 +254,18 @@ int main() {
     //Read input from file
     ifstream fin("input.txt");
     fin >> n >> totTrans >> TransactionsFile;
-    cout << "Number of threads: " << n << endl;
-    cout << "Number of transactions: " << totTrans << endl;
-    cout << "Transactions file: " << TransactionsFile << endl;
+    // cout << "Number of threads: " << n << endl;
+    // cout << "Number of transactions: " << totTrans << endl;
+    // cout << "Transactions file: " << TransactionsFile << endl;
     fin.close();
 
     totalAbortCnt.resize(n, 0);
 
     //initialize OCC_WSI
     OCC = new OCC_WSI(totTrans, 0);
-    cout << "Reading transactions from file..." << endl;
+    // cout << "Reading transactions from file..." << endl;
     readTransactions(TransactionsFile);
-    cout << "Transactions read successfully." << endl;
+    // cout << "Transactions read successfully." << endl;
 
     // start time 
     auto thrdStartTime = chrono::high_resolution_clock::now();
@@ -280,18 +280,19 @@ int main() {
     for (int i = 0; i < n; i++) {
         threads[i].join();
     }
-    cout << "All transactions completed." << endl;
+    // cout << "All transactions completed." << endl;
 
 
     auto thrdEndTime = chrono::high_resolution_clock::now();
     auto elapsedTime = chrono::duration_cast<chrono::microseconds>(thrdEndTime - thrdStartTime).count();
-    cout << "Elapsed time: " << elapsedTime << " microseconds" << endl;
-
+    // cout << "Elapsed time: " << elapsedTime << " microseconds" << endl;
+    cout << elapsedTime << " ";
     long long totalAborts=0;
     for (int i = 0; i < n; i++) {
         totalAborts += totalAbortCnt[i];
     }
-    cout << "Total aborts: " << totalAborts << endl;
+    // cout << "Total aborts: " << totalAborts << endl;
+    cout << totalAborts << endl;
 
     // close output file
     fclose(logFile);
