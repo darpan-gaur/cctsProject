@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2025.4.2)  29 APR 2025 21:12
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2025.4.2)  30 APR 2025 15:03
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -343,27 +343,90 @@ LaTeX Font Info:    Trying to load font information for U+msb on input line 33.
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) [1
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] (./main.aux)
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-ts1.enc}] [2]
+Overfull \hbox (10.35388pt too wide) in paragraph at lines 104--105
+[]\OT1/cmr/m/n/12 Validators ex-e-cute the com-mit-ted trans-ac-tions from the pro-posed block us-ing a dependency-
+ []
+
+[3]
+LaTeX Font Info:    Font shape `OT1/cmtt/bx/n' in size <14.4> not available
+(Font)              Font shape `OT1/cmtt/m/n' tried instead on input line 159.
+ [4] [5]
+<images/numTrans_vs_Time.png, id=126, 462.528pt x 346.896pt>
+File: images/numTrans_vs_Time.png Graphic file (type png)
+<use images/numTrans_vs_Time.png>
+Package pdftex.def Info: images/numTrans_vs_Time.png  used on input line 222.
+(pdftex.def)             Requested size: 375.80544pt x 281.86818pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<images/numTrans_vs_Aborts.png, id=128, 462.528pt x 346.896pt>
+File: images/numTrans_vs_Aborts.png Graphic file (type png)
+<use images/numTrans_vs_Aborts.png>
+Package pdftex.def Info: images/numTrans_vs_Aborts.png  used on input line 229.
+(pdftex.def)             Requested size: 375.80544pt x 281.86818pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<images/dp_vs_Time.png, id=129, 462.528pt x 346.896pt>
+File: images/dp_vs_Time.png Graphic file (type png)
+<use images/dp_vs_Time.png>
+Package pdftex.def Info: images/dp_vs_Time.png  used on input line 240.
+(pdftex.def)             Requested size: 375.80544pt x 281.86818pt.
+<images/dp_vs_Aborts.png, id=130, 462.528pt x 346.896pt>
+File: images/dp_vs_Aborts.png Graphic file (type png)
+<use images/dp_vs_Aborts.png>
+Package pdftex.def Info: images/dp_vs_Aborts.png  used on input line 246.
+(pdftex.def)             Requested size: 375.80544pt x 281.86818pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<images/numThreads_vs_Time.png, id=131, 462.528pt x 346.896pt>
+File: images/numThreads_vs_Time.png Graphic file (type png)
+<use images/numThreads_vs_Time.png>
+Package pdftex.def Info: images/numThreads_vs_Time.png  used on input line 256.
+(pdftex.def)             Requested size: 375.80544pt x 281.86818pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<images/numThreads_vs_Aborts.png, id=132, 462.528pt x 346.896pt>
+File: images/numThreads_vs_Aborts.png Graphic file (type png)
+<use images/numThreads_vs_Aborts.png>
+Package pdftex.def Info: images/numThreads_vs_Aborts.png  used on input line 263.
+(pdftex.def)             Requested size: 375.80544pt x 281.86818pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Overfull \hbox (27.49634pt too wide) in paragraph at lines 274--275
+\OT1/cmr/m/n/12 ter-na-tional Con-fer-ence on Par-al-lel Pro-cess-ing (ICPP), 2023. DOI: []10.1145/3605573.3605621[]. 
+ []
+
+[6] [7 <./images/numTrans_vs_Time.png>] [8 <./images/numTrans_vs_Aborts.png> <./images/dp_vs_Time.png>] [9 <./images/dp_vs_Aborts.png> <./images/numThreads_vs_Time.png>] [10 <./images/numThreads_vs_Aborts.png>] (./main.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-22>
  ***********
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 7AD6518EC8B4EE91E4889F55D3857A13;816.
+(rerunfilecheck)             Checksum: F821A26E044893C1260D75C9F6E86F5C;2351.
  ) 
 Here is how much of TeX's memory you used:
- 10088 strings out of 474222
- 152332 string characters out of 5748734
- 1928975 words of memory out of 5000000
- 32228 multiletter control sequences out of 15000+600000
- 562485 words of font info for 53 fonts, out of 8000000 for 9000
+ 10246 strings out of 474222
+ 155208 string characters out of 5748734
+ 1933975 words of memory out of 5000000
+ 32323 multiletter control sequences out of 15000+600000
+ 568161 words of font info for 75 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,12n,79p,603b,438s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb>
-Output written on main.pdf (1 page, 26961 bytes).
+ 75i,12n,79p,610b,534s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1200.pfb>
+Output written on main.pdf (10 pages, 693041 bytes).
 PDF statistics:
- 54 PDF objects out of 1000 (max. 8388607)
- 46 compressed objects within 1 object stream
- 9 named destinations out of 1000 (max. 500000)
- 57 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 234 PDF objects out of 1000 (max. 8388607)
+ 188 compressed objects within 2 object streams
+ 61 named destinations out of 1000 (max. 500000)
+ 167 words of extra memory for PDF output out of 10000 (max. 10000000)
 
