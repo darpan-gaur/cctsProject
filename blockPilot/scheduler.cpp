@@ -13,59 +13,26 @@
 #include <sstream>
 #include <unistd.h> // for sleep
 
+#include "dataItem.h"
+#include "transaction.h"
+
 using namespace std;
 
 int numDataItems = 1005; // number of data items
-
-class dataItem {
-    public:
-        mutex dataItemLock; // lock for data item
-        int val; // value of data item
-
-        // constructor
-        dataItem(int v) {
-            val = v;
-        }
-
-        // read function
-        int read() {
-            return val;
-        }
-
-        // write function
-        void write(int newVal) {
-            val = newVal;
-        }
-
-};
-
-class transaction {
-public:
-    int tID; // transaction id
-    int snapVer;
-    vector<int> localMem; // local memory of transaction
-    set<int> readSet;
-    set<int> writeSet;
-
-};
+int totTrans = 0;
+double lambda = 20;
 
 vector<transaction*> transactions;
-int totTrans = 0;
 vector<long long> totalAbortCnt;
 
 // random number generator
 random_device rd;
 mt19937 gen(rd());
-
-double lambda = 20;
-
-
 // global start time in microseconds
 auto startTime = chrono::high_resolution_clock::now();
 auto S = chrono::duration_cast<chrono::microseconds>(startTime.time_since_epoch()).count();
 
 mutex OutputMutex;
-
 // open output file
 FILE *logFile = fopen("output_OCC.txt", "w");
 
@@ -99,7 +66,6 @@ void readTransactions(string fileName) {
     }
     fin.close();
 }
-
 
 
 class OCC_WSI {

@@ -71,11 +71,12 @@
 
 \section{Problem Statement}
 Sequential execution of smart contract transactions (SCTs) in blockchain systems restricts concurrency and limits performance.
-There is a need for a framework that facilitates concurrent execution of SCTs, enhancing performance by allowing non-conflicting transactions to be processed simultaneously while preserving deterministic order. 
+There is a need for a framework that facilitates concurrent execution of SCTs, enhancing performance by allowing non-conflicting transactions to be processed simultaneously while preserving deterministic order.
+In this project, we aim to compare two frameworks: \textbf{DAG} and \textbf{BlockPilot}, which enable parallel execution of SCTs. We will implement these frameworks and evaluate their performance based on execution time, abort rates, and scalability.
 
 \section{DAG}
 
-In blockchain systems, particularly those handling smart contracts, executing transactions sequentially within a block limits throughput and scalability. To address this, we employ a DAG-based (Directed Acyclic Graph) parallel execution framework. The DAG encodes dependencies between transactions based on their read and write sets, ensuring that only independent transactions are executed concurrently. This approach allows for a significant improvement in execution efficiency.
+In blockchain systems, particularly those handling smart contracts, executing transactions sequentially within a block limits throughput and scalability. To address this, they employ a DAG-based (Directed Acyclic Graph) parallel execution framework. The DAG encodes dependencies between transactions based on their read and write sets, ensuring that only independent transactions are executed concurrently. This approach allows for a significant improvement in execution efficiency.
 
 The DAG represents transactions as nodes and dependencies (conflicts) as directed edges. A transaction $T_i$ has an edge to $T_j$ if $T_j$ accesses data that $T_i$ modifies or vice versa. Three types of conflicts are considered:
 \begin{itemize}
@@ -393,6 +394,16 @@ For DAG time to execute the transactions is taken and reported in figure, DAG cr
 \end{figure}
 
 \section{Observation and Conclusion}
+In our experiments, we observed that:
+\begin{itemize}
+    \item BlockPilot consistently outperformed the DAG framework in terms of execution time across all experiments.
+    \item As the number of transactions and dependency percentage increased, the execution time and number of aborts also increased.
+    \item The DAG creation time increased with the number of transactions and dependency percentage, but decreased with the number of threads.
+    \item The number of aborts increased with the number of transactions, dependency percentage, and number of threads for BlockPilot
+\end{itemize}
+In conclusion, the BlockPilot framework demonstrates superior performance in parallel execution of smart contract transactions compared to the DAG framework. The results indicate that the choice of concurrency control and scheduling mechanisms significantly impacts the efficiency of transaction processing in blockchain systems. 
+DAG framework can be used when there is no acceptance for aborts in the system, as it does not abort any transactions.
+However, it is important to note that the DAG framework may not be suitable for all scenarios, especially when the number of transactions is large and the dependency percentage is high. In such cases, the BlockPilot framework may be a better choice due to its ability to handle conflicts and aborts more efficiently.
 
 
 \section{References}

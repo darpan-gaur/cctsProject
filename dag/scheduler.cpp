@@ -12,92 +12,15 @@
 #include <fstream>
 #include <sstream>
 
+#include "DAG.h"
+#include "transaction.h"
+#include "dataItem.h"
+
 using namespace std;
 
 int numDataItems = 1005; // number of data items
-
-class dataItem {
-    public:
-        mutex dataItemLock; // lock for data item
-        int val; // value of data item
-
-        // constructor
-        dataItem(int v) {
-            val = v;
-        }
-
-        // read function
-        int read() {
-            return val;
-        }
-
-        // write function
-        void write(int newVal) {
-            val = newVal;
-        }
-
-};
-
-struct transaction {
-    // int txnID;
-    set<int> readSet;
-    set<int> writeSet;
-    vector<int> localMem; // local memory of transaction
-};
-
-class DAGmodule {
-    public:
-        // map<int, set<int>> adjList;
-        vector<vector<int>> adjList;
-        atomic<int> completedTxn{0};
-        atomic<int> lastTxn{0};
-        atomic<int> transactionCount{0};
-        unique_ptr<std::atomic<int>[]> inDegree;
-
-        DAGmodule(int totTrans) {
-            // adjList.clear();
-            inDegree = unique_ptr<std::atomic<int>[]>(new std::atomic<int>[totTrans]);
-            for (int i = 0; i < totTrans; ++i) {
-                inDegree[i].store(0);  // Atomic store to set initial value to 0
-            }
-            adjList.resize(totTrans, vector<int>());
-        }
-        // void addNode(int txnID) {
-        //     // std::cout << "A\n";
-        //     inDegree[txnID].store(0);
-        //     // std::cout << "B\n";
-        //     adjList[txnID] = set<int>();
-        //     // std::cout << "C\n";
-        // }
-        void addEdge(int u, int v) {
-            // cout << inDegree[v].load() << " " << u << " " << v << endl;
-            inDegree[v].fetch_add(1, std::memory_order_relaxed);
-            
-            // adjList[u].insert(v);
-            adjList[u].push_back(v);
-        }
-        void printDAG() {
-            // for (int i = 0; i < adjList.size(); i++) {
-            //     cout << "Transaction " << i << ": ";
-            //     for (int j = 0; j < adjList[i].size(); j++) {
-            //         cout << adjList[i][j] << " ";
-            //     }
-            //     cout << endl;
-            // }
-            //print inDegree
-            cout << "InDegree: ";
-            for (int i = 0; i < transactionCount; i++) {
-                cout << inDegree[i].load() << " ";
-            }
-            cout << endl;
-        }
-};
-
-// global variables
 int totTrans; //number of transactions
-
-vector<transaction *> transactions;
-DAGmodule *DAG;
+double lambda = 20;
 
 mutex OutputMutex; // mutex for output file
 
@@ -108,12 +31,12 @@ FILE *logFile = fopen("output_DAG.txt", "w");
 random_device rd;
 mt19937 gen(rd());
 
-double lambda = 20;
-
 // global start time in microseconds
 auto startTime = chrono::high_resolution_clock::now();
 auto S = chrono::duration_cast<chrono::microseconds>(startTime.time_since_epoch()).count();
 
+vector<transaction *> transactions;
+DAGmodule *DAG;
 vector<dataItem*> dataItems; // vector to hold data items
 
 // function to read transactions from the file
@@ -279,11 +202,11 @@ void threadFunction(int threadID) {
         // cout<< "Thread " << threadID << " selected transaction " << txnID << endl;
         // cout<< DAG->completedTxn.load() << " transactions completed" << endl;
         if(txnID < 0) {
-            // OutputMutex.lock();
-            // ofstream fout("output_DAG.txt", ios::app);
-            // fout << "Thread " << threadID << " found no transaction to execute" << endl;
-            // fout.close();
-            // OutputMutex.unlock();
+            OutputMutex.lock();
+            ofstream fout("output_DAG.txt", ios::app);
+            fout << "Thread " << threadID << " found no transaction to execute" << endl;
+            fout.close();
+            OutputMutex.unlock();
             continue;
         }
         else{
