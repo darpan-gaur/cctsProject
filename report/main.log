@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2025.4.2)  1 MAY 2025 12:16
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2025.4.2)  1 MAY 2025 20:06
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -619,42 +619,42 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-ts1.enc}] [2]
-Overfull \hbox (10.35388pt too wide) in paragraph at lines 140--141
+Overfull \hbox (10.35388pt too wide) in paragraph at lines 141--142
 []\OT1/cmr/m/n/12 Validators ex-e-cute the com-mit-ted trans-ac-tions from the pro-posed block us-ing a dependency-
  []
 
 [3]
-Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on input line 169.
-LaTeX Font Info:    Trying to load font information for OMS+cmr on input line 170.
+Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on input line 170.
+LaTeX Font Info:    Trying to load font information for OMS+cmr on input line 171.
  (/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2023/04/13 v2.5m Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 170.
-LaTeX Font Info:    Trying to load font information for OML+cmr on input line 171.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 171.
+LaTeX Font Info:    Trying to load font information for OML+cmr on input line 172.
  (/usr/share/texlive/texmf-dist/tex/latex/base/omlcmr.fd
 File: omlcmr.fd 2023/04/13 v2.5m Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OML/cmr/m/n' in size <10> not available
-(Font)              Font shape `OML/cmm/m/it' tried instead on input line 171.
+(Font)              Font shape `OML/cmm/m/it' tried instead on input line 172.
  [4]
 LaTeX Font Info:    Font shape `OT1/cmtt/bx/n' in size <14.4> not available
-(Font)              Font shape `OT1/cmtt/m/n' tried instead on input line 222.
+(Font)              Font shape `OT1/cmtt/m/n' tried instead on input line 223.
  [5] [6]
 <images/numTrans_vs_Time.png, id=178, 462.528pt x 346.896pt>
 File: images/numTrans_vs_Time.png Graphic file (type png)
 <use images/numTrans_vs_Time.png>
-Package pdftex.def Info: images/numTrans_vs_Time.png  used on input line 295.
+Package pdftex.def Info: images/numTrans_vs_Time.png  used on input line 296.
 (pdftex.def)             Requested size: 375.80544pt x 281.86818pt.
 <images/numTrans_vs_Aborts.png, id=180, 462.528pt x 346.896pt>
 File: images/numTrans_vs_Aborts.png Graphic file (type png)
 <use images/numTrans_vs_Aborts.png>
-Package pdftex.def Info: images/numTrans_vs_Aborts.png  used on input line 307.
+Package pdftex.def Info: images/numTrans_vs_Aborts.png  used on input line 308.
 (pdftex.def)             Requested size: 230.18253pt x 172.63771pt.
 <images/numTrans_vs_DAGCreationTime.png, id=181, 462.528pt x 346.896pt>
 File: images/numTrans_vs_DAGCreationTime.png Graphic file (type png)
 <use images/numTrans_vs_DAGCreationTime.png>
-Package pdftex.def Info: images/numTrans_vs_DAGCreationTime.png  used on input line 314.
+Package pdftex.def Info: images/numTrans_vs_DAGCreationTime.png  used on input line 315.
 (pdftex.def)             Requested size: 230.18253pt x 172.63771pt.
 
 
@@ -664,7 +664,7 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 <images/dp_vs_Time.png, id=197, 462.528pt x 346.896pt>
 File: images/dp_vs_Time.png Graphic file (type png)
 <use images/dp_vs_Time.png>
-Package pdftex.def Info: images/dp_vs_Time.png  used on input line 337.
+Package pdftex.def Info: images/dp_vs_Time.png  used on input line 338.
 (pdftex.def)             Requested size: 375.80544pt x 281.86818pt.
 
 
@@ -673,12 +673,12 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 <images/dp_vs_Aborts.png, id=198, 462.528pt x 346.896pt>
 File: images/dp_vs_Aborts.png Graphic file (type png)
 <use images/dp_vs_Aborts.png>
-Package pdftex.def Info: images/dp_vs_Aborts.png  used on input line 345.
+Package pdftex.def Info: images/dp_vs_Aborts.png  used on input line 346.
 (pdftex.def)             Requested size: 230.18253pt x 172.63771pt.
 <images/dp_vs_DAGCreationTime.png, id=199, 462.528pt x 346.896pt>
 File: images/dp_vs_DAGCreationTime.png Graphic file (type png)
 <use images/dp_vs_DAGCreationTime.png>
-Package pdftex.def Info: images/dp_vs_DAGCreationTime.png  used on input line 352.
+Package pdftex.def Info: images/dp_vs_DAGCreationTime.png  used on input line 353.
 (pdftex.def)             Requested size: 230.18253pt x 172.63771pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
@@ -686,7 +686,7 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 <images/numThreads_vs_Time.png, id=203, 462.528pt x 346.896pt>
 File: images/numThreads_vs_Time.png Graphic file (type png)
 <use images/numThreads_vs_Time.png>
-Package pdftex.def Info: images/numThreads_vs_Time.png  used on input line 373.
+Package pdftex.def Info: images/numThreads_vs_Time.png  used on input line 374.
 (pdftex.def)             Requested size: 375.80544pt x 281.86818pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
@@ -694,22 +694,22 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 <images/numThreads_vs_Aborts.png, id=204, 462.528pt x 346.896pt>
 File: images/numThreads_vs_Aborts.png Graphic file (type png)
 <use images/numThreads_vs_Aborts.png>
-Package pdftex.def Info: images/numThreads_vs_Aborts.png  used on input line 382.
+Package pdftex.def Info: images/numThreads_vs_Aborts.png  used on input line 383.
 (pdftex.def)             Requested size: 230.18253pt x 172.63771pt.
 <images/numThreads_vs_DAGCreationTime.png, id=205, 462.528pt x 346.896pt>
 File: images/numThreads_vs_DAGCreationTime.png Graphic file (type png)
 <use images/numThreads_vs_DAGCreationTime.png>
-Package pdftex.def Info: images/numThreads_vs_DAGCreationTime.png  used on input line 389.
+Package pdftex.def Info: images/numThreads_vs_DAGCreationTime.png  used on input line 390.
 (pdftex.def)             Requested size: 230.18253pt x 172.63771pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-
-Overfull \hbox (27.49634pt too wide) in paragraph at lines 401--402
+[8 <./images/numTrans_vs_Aborts.png> <./images/numTrans_vs_DAGCreationTime.png>]
+Overfull \hbox (27.49634pt too wide) in paragraph at lines 412--413
 \OT1/cmr/m/n/12 ter-na-tional Con-fer-ence on Par-al-lel Pro-cess-ing (ICPP), 2023. DOI: []10.1145/3605573.3605621[]. 
  []
 
-[8 <./images/numTrans_vs_Aborts.png> <./images/numTrans_vs_DAGCreationTime.png>] [9 <./images/dp_vs_Time.png>] [10 <./images/dp_vs_Aborts.png> <./images/dp_vs_DAGCreationTime.png> <./images/numThreads_vs_Time.png>] [11 <./images/numThreads_vs_Aborts.png> <./images/numThreads_vs_DAGCreationTime.png>] (./main.aux)
+[9 <./images/dp_vs_Time.png>] [10 <./images/dp_vs_Aborts.png> <./images/dp_vs_DAGCreationTime.png>] [11 <./images/numThreads_vs_Time.png> <./images/numThreads_vs_Aborts.png> <./images/numThreads_vs_DAGCreationTime.png>] (./main.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-22>
@@ -726,7 +726,7 @@ Here is how much of TeX's memory you used:
  1141 hyphenation exceptions out of 8191
  83i,12n,93p,610b,1670s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1200.pfb>
-Output written on main.pdf (11 pages, 1013126 bytes).
+Output written on main.pdf (11 pages, 1014511 bytes).
 PDF statistics:
  326 PDF objects out of 1000 (max. 8388607)
  262 compressed objects within 3 object streams
