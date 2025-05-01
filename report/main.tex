@@ -3,6 +3,8 @@
 \usepackage{graphicx}
 \usepackage{amsmath,amsthm,amssymb}
 \usepackage{hyperref}
+\usepackage{listings}
+\usepackage{tcolorbox}
 
 \title{
     \textbf{CS5280: Project Report} \\
@@ -25,6 +27,40 @@
     \end{tabular}
 }
 
+% Define the style for the code box
+\tcbuselibrary{listings, breakable, skins}
+\lstset
+{ %Formatting for code in appendix
+    language=C++,
+    basicstyle=\footnotesize,
+    numbers=left,
+    stepnumber=1,
+    showstringspaces=false,
+    tabsize=1,
+    breaklines=true,
+    breakatwhitespace=false,
+}
+\tcbset{
+    colback=white,
+    colframe=black!70,
+    listing only,
+    left=5mm,
+    enhanced,
+    boxrule=0.5pt,
+    top=0pt,
+    bottom=0pt,
+    sharp corners,
+    breakable,
+    listing options={
+        basicstyle=\small\ttfamily,
+        numbers=left,
+        numberstyle=\tiny\color{gray},
+        breaklines=true,
+        language=C++,
+        captionpos=b,
+        label=lst:example
+    }
+}
 
 \date{}
 
@@ -127,19 +163,46 @@ The proposer initializes a reserve table to track versioning for each data item 
 
 This behavior mirrors Algorithm 1 in BlockPilot, and the core logic is implemented in our \texttt{detectConflict()} method in \texttt{scheduler.cpp}.
 
-\subsection*{Validator-Side: Threaded Execution Scheduler}
+Pseudo code for the OCC-WSI execution is provided in Listing \ref{lst:occ-wsi}.
 
-Once a proposer generates a serializable schedule, validators re-execute transactions deterministically. In our model:
-\begin{itemize}
-    \item Validators execute transactions in parallel, using a dependency-aware scheduling strategy.
-    \item Each thread is assigned non-conflicting transactions (based on disjoint read/write sets).
-    \item Transactions are executed in local memory, and final changes are applied atomically.
-    \item All committed results are logged and checked against expected outputs.
-\end{itemize}
+\begin{tcolorbox}
+\begin{lstlisting}[language=C++, caption={Pseudo code for OCC-WSI Execution}, label={lst:occ-wsi}]
+void threadFunc(int threadID) {
+    while (completedTxn < totTrans) {
+        int txnID = selectTxn();
 
-Each thread independently runs the \texttt{threadFunction()}, repeatedly selecting a transaction, simulating execution, validating it, and committing results if no conflict is found. This resembles the \textit{pipeline validator model} in BlockPilot with stages for preparation, execution, validation, and commitment.
+        snapshotVersion = state;
 
-This modular and thread-safe design achieves high throughput and minimizes abort rates under concurrent loads, as supported by our empirical measurements.
+        rs, ws = executeTx(txnID, snapshotVersion);
+
+        conflictResult = detectConflict(txnID, rs, ws);
+        if (conflictResult == -1) {
+            // Transaction aborted
+            continue;
+        }
+        // Transaction committed
+        completedTxn++;
+    }
+}
+
+int detectConflict(int txnID, set<int> rs, set<int> ws) {
+    for (int rec: rs) {
+        if (Table[rec] > snapshotVersion) {
+            // Conflict detected
+            return -1;
+        }
+        
+    }
+    state = snapshotVersion + 1;
+    for (int rec: ws) {
+        Table[rec] = state;
+        // update the global memory
+    }
+    return 0;   // transaction committed
+}
+
+\end{lstlisting}
+\end{tcolorbox}
 
 
 
@@ -216,7 +279,17 @@ Dependency achieved: 70\% (Target: 70\%)
 \section{Experiments}
 \subsection{Number of Transactions}
 In this experiment number of transactions are varied from 1000 to 5000 in increments of 1000. 
-The number of threads is kept constant at 16 and dependency percentage is kept constant at 40\%.
+The number of threads is kept constant at 16 and dependency percentage is kept constant at 40\%. \\
+Figure \ref{fig:numTrans_vs_Time} shows the execution time vs number of transactions and Figure \ref{fig:numTrans_vs_Aborts} shows the number of aborts vs number of transactions.
+Figure \ref{fig:numTrans_vs_DAGCreationTime} shows the DAG creation time vs number of transactions.
+For DAG time to execute the transactions is taken and reported in figure, DAG creation time is not included. 
+\begin{itemize}
+    \item As number of transactions increases, the execution time also increases.
+    \item Block Pilot performs better than DAG in terms of execution time.
+    \item Number of aborts also increases with the number of transactions.
+    \item DAG creation time also increases with the number of transactions.
+\end{itemize}
+
 \begin{figure}[h]
     \centering
     \includegraphics[width=0.8\textwidth]{images/numTrans_vs_Time.png}
@@ -226,15 +299,39 @@ The number of threads is kept constant at 16 and dependency percentage is kept c
 
 \begin{figure}[h]
     \centering
-    \includegraphics[width=0.8\textwidth]{images/numTrans_vs_Aborts.png}
-    \caption{Number of Aborts vs Number of Transactions}
-    \label{fig:numTrans_vs_Aborts}
+    % \includegraphics[width=0.8\textwidth]{images/numTrans_vs_Aborts.png}
+    % \caption{Number of Aborts vs Number of Transactions}
+    % \label{fig:numTrans_vs_Aborts}
+    \begin{minipage}
+        {0.49\textwidth}
+        \includegraphics[width=\textwidth]{images/numTrans_vs_Aborts.png}
+        \caption{Number of Aborts vs Number of Transactions}
+        \label{fig:numTrans_vs_Aborts}
+    \end{minipage}
+    \hfill
+    \begin{minipage}
+        {0.49\textwidth}
+        \includegraphics[width=\textwidth]{images/numTrans_vs_DAGCreationTime.png}
+        \caption{DAG Creation Time vs Number of Transactions}
+        \label{fig:numTrans_vs_DAGCreationTime}
+    \end{minipage}
 \end{figure}
     
 
 \subsection{Dependency Percentage}
 In this experiment dependency percentage is varied from 0\% to 80\% in increments of 20\%.
-The number of transactions is kept constant at 3000 and number of threads is kept constant at 16.
+The number of transactions is kept constant at 3000 and number of threads is kept constant at 16. \\
+Figure \ref{fig:dp_vs_Time} shows the execution time vs dependency percentage and Figure \ref{fig:dp_vs_Aborts} shows the number of aborts vs dependency percentage.
+Figure \ref{fig:dp_vs_DAGCreationTime} shows the DAG creation time vs dependency percentage.
+For DAG time to execute the transactions is taken and reported in figure, DAG creation time is not included.
+
+\begin{itemize}
+    \item As dependency percentage increases, the execution time also increases.
+    \item Block Pilot performs better than DAG in terms of execution time.
+    \item Number of aborts also increases with the dependency percentage.
+    \item DAG creation time also increases with the dependency percentage, but the rate of increase decreases as the dependency percentage increases and having almost equal time for 60\% and 80\%.
+\end{itemize}
+
 \begin{figure}[h]
     \centering
     \includegraphics[width=0.8\textwidth]{images/dp_vs_Time.png}
@@ -243,14 +340,34 @@ The number of transactions is kept constant at 3000 and number of threads is kep
 \end{figure}
 \begin{figure}[h]
     \centering
-    \includegraphics[width=0.8\textwidth]{images/dp_vs_Aborts.png}
-    \caption{Number of Aborts vs Dependency Percentage}
-    \label{fig:dp_vs_Aborts}
+    \begin{minipage}
+        {0.49\textwidth}
+        \includegraphics[width=\textwidth]{images/dp_vs_Aborts.png}
+        \caption{Number of Aborts vs Dependency Percentage}
+        \label{fig:dp_vs_Aborts}
+    \end{minipage}
+    \hfill
+    \begin{minipage}
+        {0.49\textwidth}
+        \includegraphics[width=\textwidth]{images/dp_vs_DAGCreationTime.png}
+        \caption{DAG Creation Time vs Dependency Percentage}
+        \label{fig:dp_vs_DAGCreationTime}
+    \end{minipage}
 \end{figure}
 
 \subsection{Number of Threads}
 In this experiment, the number of threads is varied from 2 to 32 in increments of multiples of 2. 
 The number of transactions is kept constant at 3000 and dependency percentage is kept constant at 40\%.
+Figure \ref{fig:numThreads_vs_Time} shows the execution time vs number of threads and Figure \ref{fig:numThreads_vs_Aborts} shows the number of aborts vs number of threads.
+Figure \ref{fig:numThreads_vs_DAGCreationTime} shows the DAG creation time vs number of threads.
+For DAG time to execute the transactions is taken and reported in figure, DAG creation time is not included.
+\begin{itemize}
+    \item As number of threads increases, the execution first decreases and then increases.
+    \item Block Pilot performs better than DAG in terms of execution time.
+    \item For Block Pilot as number of threads increases, so number of aborts hence execution time starts increases after 8 threads.
+    \item Number of aborts also increases with the number of threads.
+    \item DAG creation time decreases with the number of threads, as more threads are available to process the transactions.
+\end{itemize}
 \begin{figure}[h]
     \centering
     \includegraphics[width=0.8\textwidth]{images/numThreads_vs_Time.png}
@@ -260,9 +377,19 @@ The number of transactions is kept constant at 3000 and dependency percentage is
 
 \begin{figure}[h]
     \centering
-    \includegraphics[width=0.8\textwidth]{images/numThreads_vs_Aborts.png}
-    \caption{Number of Aborts vs Number of Threads}
-    \label{fig:numThreads_vs_Aborts}
+    \begin{minipage}
+        {0.49\textwidth}
+        \includegraphics[width=\textwidth]{images/numThreads_vs_Aborts.png}
+        \caption{Number of Aborts vs Number of Threads}
+        \label{fig:numThreads_vs_Aborts}
+    \end{minipage}
+    \hfill
+    \begin{minipage}
+        {0.49\textwidth}
+        \includegraphics[width=\textwidth]{images/numThreads_vs_DAGCreationTime.png}
+        \caption{DAG Creation Time vs Number of Threads}
+        \label{fig:numThreads_vs_DAGCreationTime}
+    \end{minipage}
 \end{figure}
 
 \section{Observation and Conclusion}
